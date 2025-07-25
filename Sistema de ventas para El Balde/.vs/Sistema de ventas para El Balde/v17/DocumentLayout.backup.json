@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ferme\\OneDrive\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-para-El-Balde-c-\\Sistema de ventas para El Balde\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\onedrive\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-para-el-balde-c-\\sistema de ventas para el balde\\capavisual\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\onedrive\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-para-el-balde-c-\\sistema de ventas para el balde\\capavisual\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmcompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCompras.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ferme\\OneDrive\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-para-El-Balde-c-\\Sistema de ventas para El Balde\\CapaVisual\\frmCompras.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmCompras.cs",
+              "ToolTip": "C:\\Users\\ferme\\OneDrive\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-para-El-Balde-c-\\Sistema de ventas para El Balde\\CapaVisual\\frmCompras.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVisual\\frmCompras.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:28:11.177Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ferme\\OneDrive\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-para-El-Balde-c-\\Sistema de ventas para El Balde\\CapaVisual\\frmVentas.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmVentas.cs",
+              "ToolTip": "C:\\Users\\ferme\\OneDrive\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-para-El-Balde-c-\\Sistema de ventas para El Balde\\CapaVisual\\frmVentas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVisual\\frmVentas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:25:35.684Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

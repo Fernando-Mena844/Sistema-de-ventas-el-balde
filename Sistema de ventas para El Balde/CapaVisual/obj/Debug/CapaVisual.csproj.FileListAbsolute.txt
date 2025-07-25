@@ -1,0 +1,110 @@
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe.config
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.AssemblyReference.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmInicio.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Properties.Resources.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.GenerateResource.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
+C:\Users\japvs\OneDrive\Escritorio\Sistema de ventas c#\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe.config
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.pdb
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmInicio.resources
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Properties.Resources.resources
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.GenerateResource.cache
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\Estudiante\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmLogin.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe.config
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.AssemblyReference.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmInicio.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmLogin.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Properties.Resources.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.GenerateResource.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaEntidad.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaNegocio.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaDatos.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaEntidad.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaNegocio.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaDatos.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.Up2Date
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmUsuarios.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCategoria.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmClientes.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCompras.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmNegocio.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmProducto.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmProveedores.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmVentas.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmReporteCompra.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmReporteVenta.resources
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmAcercaDe.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe.config
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.pdb
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaEntidad.dll
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaNegocio.dll
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaDatos.dll
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaEntidad.pdb
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaNegocio.pdb
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaDatos.pdb
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.AssemblyReference.cache
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmAcercaDe.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCategoria.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmClientes.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCompras.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmNegocio.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmProducto.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmProveedores.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmReporteCompra.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmReporteVenta.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmUsuarios.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmVentas.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmInicio.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmLogin.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Properties.Resources.resources
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.GenerateResource.cache
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.Up2Date
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
+C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe.config
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.exe
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaVisual.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaEntidad.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaNegocio.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaDatos.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaEntidad.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaNegocio.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\CapaDatos.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.AssemblyReference.cache
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe.config
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmAcercaDe.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCategoria.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmClientes.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCompras.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmNegocio.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmProducto.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmProveedores.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmReporteCompra.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmReporteVenta.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmUsuarios.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmVentas.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmInicio.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmLogin.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Properties.Resources.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.GenerateResource.cache
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.Up2Date
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdProveedor.resources
