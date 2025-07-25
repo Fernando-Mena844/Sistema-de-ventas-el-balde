@@ -223,5 +223,8 @@
   <ItemGroup>
     <None Include="Resources\Check.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\El balde logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
