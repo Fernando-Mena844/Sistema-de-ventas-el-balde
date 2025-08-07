@@ -39,11 +39,16 @@ namespace CapaVisual
             cmbCategoria.ValueMember = "Valor";
             cmbCategoria.SelectedIndex = 0;
 
-            foreach (DataGridViewColumn columna in dgvProductos.Columns)
+            cmbBusca.Items.Clear();
+
+            if (cmbBusca.Items.Count == 0)
             {
-                if (columna.Visible == true && columna.Name != "btnseleccionar")
+                foreach (DataGridViewColumn columna in dgvProductos.Columns)
                 {
-                    cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
+                    if (columna.Visible == true && columna.Name != "btnseleccionar")
+                    {
+                        cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
+                    }
                 }
             }
 
@@ -68,7 +73,29 @@ namespace CapaVisual
             cmbBusca.ValueMember = "Valor";
             cmbBusca.SelectedIndex = 0;
 
+            ActualizarComboCategorias();  // Llamar al método para llenar el combo de categorías
+
         }
+
+        private void ActualizarComboCategorias()
+        {
+            cmbCategoria.Items.Clear();  // Limpiar items existentes
+
+            List<Categoria> listaCategorias = new CN_Categoria().Listar()
+                .Where(c => c.Estado).ToList();  // Filtrar solo categorías activas si usas borrado lógico
+
+            foreach (Categoria categoria in listaCategorias)
+            {
+                cmbCategoria.Items.Add(new OpcionCombos()
+                {
+                    Valor = categoria.IdCategoria,
+                    Texto = categoria.descripcionCategoria
+                });
+            }
+
+            cmbCategoria.SelectedIndex = 0;  // Seleccionar la primera opción
+        }
+
 
         private void btnBuscarProveedor_Click(object sender, EventArgs e)
         {
@@ -253,16 +280,16 @@ namespace CapaVisual
         {
             if (Convert.ToInt32(txtid.Text) != 0)
             {
-                if (MessageBox.Show("Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("¿Desea eliminar el producto?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string mensaje = string.Empty;
-                    Usuario objusuario = new Usuario()
+                    Producto objproducto = new Producto()
                     {
-                        IdUsuario = Convert.ToInt32(txtid.Text)
+                        IdProducto = Convert.ToInt32(txtid.Text)
                     };
 
 
-                    bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
+                    bool respuesta = new CN_Producto().Eliminar(objproducto, out mensaje);
 
                     if (int.TryParse(txtIndice.Text, out int index) && index >= 0 && index < dgvProductos.Rows.Count)
                     {

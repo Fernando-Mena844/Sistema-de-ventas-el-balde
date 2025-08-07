@@ -107,11 +107,30 @@ namespace CapaDatos
             return idProductoGenerado;
         }
 
+        private bool ProveedorExiste(int idProveedor)
+        {
+            using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM PROVEEDOR WHERE IdProveedor = @IdProveedor", oconexion);
+                cmd.Parameters.AddWithValue("@IdProveedor", idProveedor);
+                oconexion.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0; // Devuelve true si existe, false si no
+            }
+        }
 
         public bool Editar(Producto obj, out string mensaje)
         {
             bool respuesta = false;
             mensaje = string.Empty;
+
+            // Validar que el IdProveedor existe
+            if (!ProveedorExiste(obj.oProveedor.IdProveedor))
+            {
+                mensaje = "El proveedor seleccionado no existe.";
+                return false;
+            }
+
 
             try
             {

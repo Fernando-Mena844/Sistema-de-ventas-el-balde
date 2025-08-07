@@ -48,12 +48,12 @@
             this.txtNombreCategoria = new System.Windows.Forms.TextBox();
             this.lblNombreCategoría = new System.Windows.Forms.Label();
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
-            this.pnlDetallesUsuario = new System.Windows.Forms.Panel();
             this.btnseleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.idCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlDetallesUsuario = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.pnlDetallesUsuario.SuspendLayout();
@@ -62,57 +62,57 @@
             // cmbBusca
             // 
             this.cmbBusca.FormattingEnabled = true;
-            this.cmbBusca.Location = new System.Drawing.Point(395, 37);
-            this.cmbBusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbBusca.Location = new System.Drawing.Point(296, 30);
+            this.cmbBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbBusca.Name = "cmbBusca";
-            this.cmbBusca.Size = new System.Drawing.Size(96, 24);
+            this.cmbBusca.Size = new System.Drawing.Size(73, 21);
             this.cmbBusca.TabIndex = 2;
             // 
             // txtIndice
             // 
-            this.txtIndice.Location = new System.Drawing.Point(136, 14);
-            this.txtIndice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtIndice.Location = new System.Drawing.Point(102, 11);
+            this.txtIndice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIndice.Name = "txtIndice";
-            this.txtIndice.Size = new System.Drawing.Size(30, 22);
+            this.txtIndice.Size = new System.Drawing.Size(24, 20);
             this.txtIndice.TabIndex = 17;
             this.txtIndice.Text = "0";
-            this.txtIndice.Visible = false;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(136, 40);
-            this.txtid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtid.Location = new System.Drawing.Point(102, 32);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(30, 22);
+            this.txtid.Size = new System.Drawing.Size(24, 20);
             this.txtid.TabIndex = 16;
             this.txtid.Text = "0";
-            this.txtid.Visible = false;
             // 
             // cmbEstado
             // 
             this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(10, 139);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbEstado.Location = new System.Drawing.Point(8, 113);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(160, 24);
+            this.cmbEstado.Size = new System.Drawing.Size(121, 21);
             this.cmbEstado.TabIndex = 15;
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(6, 121);
+            this.lblEstado.Location = new System.Drawing.Point(4, 98);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(53, 16);
+            this.lblEstado.Size = new System.Drawing.Size(43, 13);
             this.lblEstado.TabIndex = 14;
             this.lblEstado.Text = "Estado:";
             // 
             // lblDetallesCategoria
             // 
             this.lblDetallesCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetallesCategoria.Location = new System.Drawing.Point(4, 12);
+            this.lblDetallesCategoria.Location = new System.Drawing.Point(3, 10);
+            this.lblDetallesCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDetallesCategoria.Name = "lblDetallesCategoria";
-            this.lblDetallesCategoria.Size = new System.Drawing.Size(131, 50);
+            this.lblDetallesCategoria.Size = new System.Drawing.Size(98, 41);
             this.lblDetallesCategoria.TabIndex = 11;
             this.lblDetallesCategoria.Text = "Detalles de la categoría";
             // 
@@ -122,10 +122,10 @@
             this.btnBorrarBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBorrarBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrarBusqueda.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarBusqueda.Location = new System.Drawing.Point(716, 38);
-            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBorrarBusqueda.Location = new System.Drawing.Point(537, 31);
+            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrarBusqueda.Name = "btnBorrarBusqueda";
-            this.btnBorrarBusqueda.Size = new System.Drawing.Size(77, 31);
+            this.btnBorrarBusqueda.Size = new System.Drawing.Size(58, 25);
             this.btnBorrarBusqueda.TabIndex = 12;
             this.btnBorrarBusqueda.Text = "Borrar";
             this.btnBorrarBusqueda.UseVisualStyleBackColor = false;
@@ -138,10 +138,10 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Image = global::CapaVisual.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(619, 38);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBuscar.Location = new System.Drawing.Point(464, 31);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(77, 31);
+            this.btnBuscar.Size = new System.Drawing.Size(58, 25);
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -156,26 +156,26 @@
             this.panel2.Controls.Add(this.cmbBusca);
             this.panel2.Controls.Add(this.lblBusca);
             this.panel2.Controls.Add(this.lblCategorias);
-            this.panel2.Location = new System.Drawing.Point(201, 14);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(151, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(855, 90);
+            this.panel2.Size = new System.Drawing.Size(641, 73);
             this.panel2.TabIndex = 6;
             // 
             // txtBusca
             // 
-            this.txtBusca.Location = new System.Drawing.Point(504, 38);
-            this.txtBusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBusca.Location = new System.Drawing.Point(378, 31);
+            this.txtBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBusca.Name = "txtBusca";
-            this.txtBusca.Size = new System.Drawing.Size(104, 22);
+            this.txtBusca.Size = new System.Drawing.Size(79, 20);
             this.txtBusca.TabIndex = 3;
             // 
             // lblBusca
             // 
             this.lblBusca.AutoSize = true;
-            this.lblBusca.Location = new System.Drawing.Point(314, 39);
+            this.lblBusca.Location = new System.Drawing.Point(236, 32);
+            this.lblBusca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBusca.Name = "lblBusca";
-            this.lblBusca.Size = new System.Drawing.Size(71, 16);
+            this.lblBusca.Size = new System.Drawing.Size(58, 13);
             this.lblBusca.TabIndex = 1;
             this.lblBusca.Text = "Busca por:";
             // 
@@ -183,10 +183,9 @@
             // 
             this.lblCategorias.AutoSize = true;
             this.lblCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategorias.Location = new System.Drawing.Point(20, 34);
-            this.lblCategorias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCategorias.Location = new System.Drawing.Point(15, 28);
             this.lblCategorias.Name = "lblCategorias";
-            this.lblCategorias.Size = new System.Drawing.Size(117, 25);
+            this.lblCategorias.Size = new System.Drawing.Size(96, 20);
             this.lblCategorias.TabIndex = 0;
             this.lblCategorias.Text = "Categorías";
             // 
@@ -196,10 +195,10 @@
             this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(10, 308);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBorrar.Location = new System.Drawing.Point(8, 250);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(158, 29);
+            this.btnBorrar.Size = new System.Drawing.Size(118, 24);
             this.btnBorrar.TabIndex = 10;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
@@ -211,10 +210,10 @@
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(10, 232);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuardar.Location = new System.Drawing.Point(8, 188);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(158, 32);
+            this.btnGuardar.Size = new System.Drawing.Size(118, 26);
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -226,10 +225,10 @@
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(9, 269);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLimpiar.Location = new System.Drawing.Point(7, 219);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(158, 34);
+            this.btnLimpiar.Size = new System.Drawing.Size(118, 28);
             this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -237,18 +236,19 @@
             // 
             // txtNombreCategoria
             // 
-            this.txtNombreCategoria.Location = new System.Drawing.Point(9, 85);
-            this.txtNombreCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreCategoria.Location = new System.Drawing.Point(7, 69);
+            this.txtNombreCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreCategoria.Name = "txtNombreCategoria";
-            this.txtNombreCategoria.Size = new System.Drawing.Size(160, 22);
+            this.txtNombreCategoria.Size = new System.Drawing.Size(121, 20);
             this.txtNombreCategoria.TabIndex = 4;
             // 
             // lblNombreCategoría
             // 
             this.lblNombreCategoría.AutoSize = true;
-            this.lblNombreCategoría.Location = new System.Drawing.Point(5, 68);
+            this.lblNombreCategoría.Location = new System.Drawing.Point(4, 55);
+            this.lblNombreCategoría.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreCategoría.Name = "lblNombreCategoría";
-            this.lblNombreCategoría.Size = new System.Drawing.Size(66, 16);
+            this.lblNombreCategoría.Size = new System.Drawing.Size(54, 13);
             this.lblNombreCategoría.TabIndex = 0;
             this.lblNombreCategoría.Text = "Categoría";
             // 
@@ -271,8 +271,8 @@
             this.Categoria,
             this.Estado,
             this.EstadoValor});
-            this.dgvCategorias.Location = new System.Drawing.Point(202, 149);
-            this.dgvCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvCategorias.Location = new System.Drawing.Point(152, 121);
+            this.dgvCategorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvCategorias.MultiSelect = false;
             this.dgvCategorias.Name = "dgvCategorias";
             this.dgvCategorias.ReadOnly = true;
@@ -286,29 +286,10 @@
             this.dgvCategorias.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCategorias.RowHeadersWidth = 62;
             this.dgvCategorias.RowTemplate.Height = 28;
-            this.dgvCategorias.Size = new System.Drawing.Size(574, 395);
+            this.dgvCategorias.Size = new System.Drawing.Size(430, 321);
             this.dgvCategorias.TabIndex = 5;
             this.dgvCategorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategorias_CellContentClick);
             this.dgvCategorias.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvCategorias_CellPainting);
-            // 
-            // pnlDetallesUsuario
-            // 
-            this.pnlDetallesUsuario.BackColor = System.Drawing.Color.White;
-            this.pnlDetallesUsuario.Controls.Add(this.txtIndice);
-            this.pnlDetallesUsuario.Controls.Add(this.txtid);
-            this.pnlDetallesUsuario.Controls.Add(this.cmbEstado);
-            this.pnlDetallesUsuario.Controls.Add(this.lblEstado);
-            this.pnlDetallesUsuario.Controls.Add(this.lblDetallesCategoria);
-            this.pnlDetallesUsuario.Controls.Add(this.btnBorrar);
-            this.pnlDetallesUsuario.Controls.Add(this.btnGuardar);
-            this.pnlDetallesUsuario.Controls.Add(this.btnLimpiar);
-            this.pnlDetallesUsuario.Controls.Add(this.txtNombreCategoria);
-            this.pnlDetallesUsuario.Controls.Add(this.lblNombreCategoría);
-            this.pnlDetallesUsuario.Location = new System.Drawing.Point(11, 0);
-            this.pnlDetallesUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlDetallesUsuario.Name = "pnlDetallesUsuario";
-            this.pnlDetallesUsuario.Size = new System.Drawing.Size(178, 554);
-            this.pnlDetallesUsuario.TabIndex = 4;
             // 
             // btnseleccionar
             // 
@@ -352,16 +333,34 @@
             this.EstadoValor.ReadOnly = true;
             this.EstadoValor.Width = 150;
             // 
+            // pnlDetallesUsuario
+            // 
+            this.pnlDetallesUsuario.BackColor = System.Drawing.Color.White;
+            this.pnlDetallesUsuario.Controls.Add(this.txtIndice);
+            this.pnlDetallesUsuario.Controls.Add(this.txtid);
+            this.pnlDetallesUsuario.Controls.Add(this.cmbEstado);
+            this.pnlDetallesUsuario.Controls.Add(this.lblEstado);
+            this.pnlDetallesUsuario.Controls.Add(this.lblDetallesCategoria);
+            this.pnlDetallesUsuario.Controls.Add(this.btnBorrar);
+            this.pnlDetallesUsuario.Controls.Add(this.btnGuardar);
+            this.pnlDetallesUsuario.Controls.Add(this.btnLimpiar);
+            this.pnlDetallesUsuario.Controls.Add(this.txtNombreCategoria);
+            this.pnlDetallesUsuario.Controls.Add(this.lblNombreCategoría);
+            this.pnlDetallesUsuario.Location = new System.Drawing.Point(8, 0);
+            this.pnlDetallesUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDetallesUsuario.Name = "pnlDetallesUsuario";
+            this.pnlDetallesUsuario.Size = new System.Drawing.Size(134, 450);
+            this.pnlDetallesUsuario.TabIndex = 4;
+            // 
             // frmCategoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.pnlDetallesUsuario);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCategoria";
             this.Text = "frmCategoria";
             this.Load += new System.EventHandler(this.frmCategoria_Load);
