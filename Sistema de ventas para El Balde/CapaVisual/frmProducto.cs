@@ -11,6 +11,7 @@ using CapaEntidad;
 using CapaNegocio;
 using CapaVisual.Modales;
 using CapaVisual.Utilidades;
+using ClosedXML.Excel;
 
 namespace CapaVisual
 {
@@ -332,6 +333,76 @@ namespace CapaVisual
                 row.Visible = true;
             }
 
+        }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            if (dgvProductos.Rows.Count < 1)
+            {
+                MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else
+            {
+                DataTable dt = new DataTable();
+                foreach (DataGridViewColumn column in dgvProductos.Columns)
+                {
+                    if (column.Visible && column.Name != "btnseleccionar" && column.HeaderText!=string.Empty)
+                    {
+                        dt.Columns.Add(column.HeaderText, typeof(string));
+                    }
+                }
+                foreach (DataGridViewRow row in dgvProductos.Rows)
+                {
+                    if (row.Visible) // Solo agregar filas visibles
+                    {
+
+                        //dt.Rows.Add(new object[]
+                        //{
+                        //    row.Cells[2].Value.ToString(),
+                        //    row.Cells[3].Value.ToString(),
+                        //    row.Cells[4].Value.ToString(),
+                        //    row.Cells[5].Value.ToString(),
+                        //    row.Cells[7].Value.ToString(),
+                        //    row.Cells[9].Value.ToString(),
+                        //    row.Cells[10].Value.ToString(),
+                        //    row.Cells[11].Value.ToString(),
+                        //    row.Cells[12].Value.ToString(),
+                        //}); // Agregar una nueva fila al DataTable
+
+                        DataRow dr = dt.NewRow();
+                        for (int i = 0; i < dgvProductos.Columns.Count; i++)
+                        {
+                            if (dgvProductos.Columns[i].Visible && dgvProductos.Columns[i].HeaderText != string.Empty && dgvProductos.Columns[i].Name != "btnseleccionar")
+                            {
+                                dr[dgvProductos.Columns[i].HeaderText] = row.Cells[i].Value.ToString();
+                            }
+                        }
+                        dt.Rows.Add(dr);
+                        SaveFileDialog guardarExcel = new SaveFileDialog
+                        {
+                            FileName = "Productos_" + DateTime.Now.ToString("DDMMyyyy_HHmmss") + ".xlsx",
+                            Filter = "Excel Files|*.xlsx",
+                            Title = "Guardar archivo Excel"
+                        };
+                        if (guardarExcel.ShowDialog() == DialogResult.OK)
+                        {
+                            try
+                            {
+                                XLWorkbook wb = new XLWorkbook();
+                                var hoja = wb.Worksheets.Add(dt, "Informe"); 
+                                hoja.ColumnsUsed().AdjustToContents(); // Ajustar el ancho de las columnas
+                                wb.SaveAs(guardarExcel.FileName);
+                                MessageBox.Show("Archivo exportado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Error al exportar el archivo", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
