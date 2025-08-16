@@ -173,7 +173,7 @@ namespace CapaVisual
         private void btnCompras_Click(object sender, EventArgs e)
         {
             // Abrir el formulario de compras
-            AbrirFormulario((Button)sender, new frmCompras());
+            AbrirFormulario((Button)sender, new frmCompras(usuarioActual));
             // Activar el botón presionado
             ActivarBoton(btnCompras);
         }

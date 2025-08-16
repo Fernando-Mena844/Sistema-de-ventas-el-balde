@@ -25,3 +25,12 @@ C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-B
 C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.pdb

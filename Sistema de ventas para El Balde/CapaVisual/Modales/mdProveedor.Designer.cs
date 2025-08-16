@@ -55,10 +55,9 @@
             this.panel2.Controls.Add(this.cmbBusca);
             this.panel2.Controls.Add(this.lblBusca);
             this.panel2.Controls.Add(this.lblUsuarios);
-            this.panel2.Location = new System.Drawing.Point(37, 56);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(28, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(855, 90);
+            this.panel2.Size = new System.Drawing.Size(641, 73);
             this.panel2.TabIndex = 10;
             // 
             // btnBorrarBusqueda
@@ -67,10 +66,10 @@
             this.btnBorrarBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBorrarBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrarBusqueda.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarBusqueda.Location = new System.Drawing.Point(716, 38);
-            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBorrarBusqueda.Location = new System.Drawing.Point(537, 31);
+            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrarBusqueda.Name = "btnBorrarBusqueda";
-            this.btnBorrarBusqueda.Size = new System.Drawing.Size(77, 31);
+            this.btnBorrarBusqueda.Size = new System.Drawing.Size(58, 25);
             this.btnBorrarBusqueda.TabIndex = 12;
             this.btnBorrarBusqueda.Text = "Borrar";
             this.btnBorrarBusqueda.UseVisualStyleBackColor = false;
@@ -83,10 +82,10 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Image = global::CapaVisual.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(619, 38);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBuscar.Location = new System.Drawing.Point(464, 31);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(77, 31);
+            this.btnBuscar.Size = new System.Drawing.Size(58, 25);
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -94,27 +93,28 @@
             // 
             // txtBusca
             // 
-            this.txtBusca.Location = new System.Drawing.Point(504, 38);
-            this.txtBusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBusca.Location = new System.Drawing.Point(378, 31);
+            this.txtBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBusca.Name = "txtBusca";
-            this.txtBusca.Size = new System.Drawing.Size(104, 22);
+            this.txtBusca.Size = new System.Drawing.Size(79, 20);
             this.txtBusca.TabIndex = 3;
             // 
             // cmbBusca
             // 
             this.cmbBusca.FormattingEnabled = true;
-            this.cmbBusca.Location = new System.Drawing.Point(395, 37);
-            this.cmbBusca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbBusca.Location = new System.Drawing.Point(296, 30);
+            this.cmbBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbBusca.Name = "cmbBusca";
-            this.cmbBusca.Size = new System.Drawing.Size(96, 24);
+            this.cmbBusca.Size = new System.Drawing.Size(73, 21);
             this.cmbBusca.TabIndex = 2;
             // 
             // lblBusca
             // 
             this.lblBusca.AutoSize = true;
-            this.lblBusca.Location = new System.Drawing.Point(313, 39);
+            this.lblBusca.Location = new System.Drawing.Point(235, 32);
+            this.lblBusca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBusca.Name = "lblBusca";
-            this.lblBusca.Size = new System.Drawing.Size(71, 16);
+            this.lblBusca.Size = new System.Drawing.Size(58, 13);
             this.lblBusca.TabIndex = 1;
             this.lblBusca.Text = "Busca por:";
             // 
@@ -122,10 +122,9 @@
             // 
             this.lblUsuarios.AutoSize = true;
             this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.Location = new System.Drawing.Point(20, 33);
-            this.lblUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuarios.Location = new System.Drawing.Point(15, 27);
             this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(118, 25);
+            this.lblUsuarios.Size = new System.Drawing.Size(95, 20);
             this.lblUsuarios.TabIndex = 0;
             this.lblUsuarios.Text = "Proveedor:";
             // 
@@ -147,8 +146,8 @@
             this.id,
             this.NroDocumento,
             this.RazonSocial});
-            this.dgvdata.Location = new System.Drawing.Point(37, 191);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvdata.Location = new System.Drawing.Point(28, 99);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -165,8 +164,9 @@
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdata.Size = new System.Drawing.Size(855, 395);
+            this.dgvdata.Size = new System.Drawing.Size(641, 321);
             this.dgvdata.TabIndex = 9;
+            this.dgvdata.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentDoubleClick);
             this.dgvdata.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellDoubleClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
             // 
@@ -205,11 +205,12 @@
             // 
             // mdProveedor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 645);
+            this.ClientSize = new System.Drawing.Size(690, 442);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvdata);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mdProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mdProveedor";

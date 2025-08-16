@@ -33,11 +33,17 @@ namespace CapaVisual
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+          
             List<Usuario> listaUsuarios = new CN_Usuario().Listar();
 
-            Usuario oUsuario = new CN_Usuario().Listar().Where(u=> u.DocumentoUsuario == txtUsuario.Text && u.Clave == txtContrasena.Text).FirstOrDefault();
+           Usuario oUsuario = new CN_Usuario().Listar().Where(u=> u.DocumentoUsuario == txtUsuario.Text && u.Clave == txtContrasena.Text).FirstOrDefault();
 
             // Verifica si el usuario existe en la lista de usuarios obtenida de la capa de negocio
+
+            //Usuario oUsuario = new Usuario();
+
+            //oUsuario.DocumentoUsuario = txtUsuario.Text;
+            //oUsuario.Clave = txtContrasena.Text;
 
             if (oUsuario != null)
             {

@@ -17,6 +17,8 @@ namespace CapaVisual
 {
     public partial class frmProducto: Form
     {
+        public object IdProducto { get; internal set; }
+        public string Nombre { get; internal set; }
 
         public frmProducto()
         {
@@ -105,8 +107,8 @@ namespace CapaVisual
                 var result = modal.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    txtProveedor.Text = modal.Proveedor.razonSocialProveedor;
-                    txtProveedor.Tag = modal.Proveedor.IdProveedor;
+                    txtProveedor.Text = modal._Proveedor.razonSocialProveedor;
+                    txtProveedor.Tag = modal._Proveedor.IdProveedor;
                 }
                 else
                 {
@@ -387,6 +389,11 @@ namespace CapaVisual
                     MessageBox.Show("Error al exportar el archivo", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void cmbBusca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

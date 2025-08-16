@@ -10,3 +10,9 @@ C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ve
 C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\emili\OneDrive\Desktop\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.pdb

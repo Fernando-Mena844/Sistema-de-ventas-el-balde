@@ -16,7 +16,9 @@ namespace CapaVisual.Modales
     public partial class mdProveedor : Form
     {
 
-        public Proveedor Proveedor { get; set; }
+        public Proveedor _Proveedor { get; set; }
+        //public object Proveedor { get; internal set; }
+
         public mdProveedor()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace CapaVisual.Modales
         {
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-                if (columna.Visible == true && columna.Name != "btnseleccionar")
+                if (columna.Visible == true)
                 {
                     cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
                 }
@@ -36,7 +38,7 @@ namespace CapaVisual.Modales
 
             foreach (Proveedor item in listaProveedor)
             {
-                dgvdata.Rows.Add(new object[] { "", item.IdProveedor, item.documentoProveedor, item.razonSocialProveedor, item.correoProveedor, item.telefonoProveedor,
+                dgvdata.Rows.Add(new object[] { "", item.IdProveedor, item.documentoProveedor, item.razonSocialProveedor,
                 item.Estado == true ? 1 : 0,
                 item.Estado == true ? "Activo" : "No Activo"
                 });
@@ -61,7 +63,7 @@ namespace CapaVisual.Modales
 
             if (iFila >= 0 && iColumna > 0)
             {
-                Proveedor = new Proveedor()
+                _Proveedor = new Proveedor()
                 {
                     IdProveedor = Convert.ToInt32(dgvdata.Rows[iFila].Cells["id"].Value.ToString()),
                     documentoProveedor = dgvdata.Rows[iFila].Cells["NroDocumento"].Value.ToString(),
@@ -120,6 +122,11 @@ namespace CapaVisual.Modales
                 e.Handled = true;
             }
 
+        }
+
+        private void dgvdata_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int iRow = e.RowIndex;
         }
     }
 }
