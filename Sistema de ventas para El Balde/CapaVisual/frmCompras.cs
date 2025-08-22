@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace CapaVisual
 {
-    public partial class frmCompras: Form
+    public partial class frmCompras : Form
     {
         private Usuario _Usuario;
 
@@ -28,7 +29,7 @@ namespace CapaVisual
 
         private void frmCompras_Load(object sender, EventArgs e)
         {
-            
+
 
 
             cbotipodocumento.Items.Add(new OpcionCombos() { Valor = "Boleta", Texto = "Boleta" });
@@ -42,7 +43,7 @@ namespace CapaVisual
 
             txtidproveedor.Text = "0";
             txtidproducto.Text = "0";
-            
+
 
 
         }
@@ -65,11 +66,11 @@ namespace CapaVisual
         {
 
         }
-       
+
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnBuscarprov_Click(object sender, EventArgs e)
@@ -78,11 +79,11 @@ namespace CapaVisual
             {
                 var result = modal.ShowDialog();
 
-                if(result == DialogResult.OK)
+                if (result == DialogResult.OK)
                 {
-                 txtidproveedor.Text=modal._Proveedor.IdProveedor.ToString();
-                 txtdocproveedor.Text = modal._Proveedor.documentoProveedor;
-                 txtRazonsocial.Text = modal._Proveedor.razonSocialProveedor;
+                    txtidproveedor.Text = modal._Proveedor.IdProveedor.ToString();
+                    txtdocproveedor.Text = modal._Proveedor.documentoProveedor;
+                    txtRazonsocial.Text = modal._Proveedor.razonSocialProveedor;
 
                 }
                 else
@@ -114,7 +115,7 @@ namespace CapaVisual
 
         private void txtcodproducto_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyData == Keys.Enter)
+            if (e.KeyData == Keys.Enter)
             {
                 Producto oProducto = new CN_Producto().Listar().Where(p => p.codigoProducto == txtcodproducto.Text && p.Estado == true).FirstOrDefault();
 
@@ -130,13 +131,13 @@ namespace CapaVisual
                 }
                 else
                 {
-                    txtcodproducto.BackColor= System.Drawing.Color.MistyRose;
+                    txtcodproducto.BackColor = System.Drawing.Color.MistyRose;
                     ;
                     txtidproducto.Text = "0";
                     txtproducto.Text = "";
                 }
             }
-            
+
         }
 
         private void btnagregar_Click(object sender, EventArgs e)
@@ -181,20 +182,20 @@ namespace CapaVisual
 
             if (!producto_existe)
             {
-               dgvdata.Rows.Add(new object[]
-                {
+                dgvdata.Rows.Add(new object[]
+                 {
                     txtidproducto.Text,
                     txtproducto.Text,
                     preciocompra.ToString("0.00"),
                     precioventa.ToString("0.00"),
                     txtcantidad.Value.ToString(),
                     (txtcantidad.Value * preciocompra).ToString("0.00"),
-                });
+                 });
                 calcularTotal();
                 LimpiarProductos();
                 txtcodproducto.Select();
             }
-           
+
 
 
         }
@@ -258,7 +259,7 @@ namespace CapaVisual
 
                 if (indice >= 0)
                 {
-                   dgvdata.Rows.RemoveAt(indice);
+                    dgvdata.Rows.RemoveAt(indice);
                     calcularTotal();
 
 
@@ -321,6 +322,93 @@ namespace CapaVisual
             }
         }
 
+        private void btnRegistrarC_Click(object sender, EventArgs e)
+        {
+            // Validar que se haya seleccionado un proveedor
+            if (Convert.ToInt32(txtidproveedor.Text) == 0)
+            {
+                MessageBox.Show("Debe seleccionar un proveedor", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            // Validar que se haya agregado al menos un producto
+            if (dgvdata.Rows.Count == 0)
+            {
+                MessageBox.Show("Debe agregar al menos un producto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            // Crear el DataTable para el detalle de la compra
+            DataTable detalle_compra = new DataTable();
+            detalle_compra.Columns.Add("IdProducto", typeof(int));
+            detalle_compra.Columns.Add("PrecioCompra", typeof(decimal));
+            detalle_compra.Columns.Add("PrecioVenta", typeof(decimal));
+            detalle_compra.Columns.Add("Cantidad", typeof(int));
+            detalle_compra.Columns.Add("MontoTotal", typeof(decimal));
+
+            // Llenar el DataTable con los datos de dgvdata
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                if (row.Cells["IdProducto"].Value != null) // Asegurarse de que la celda no sea nula
+                {
+                    detalle_compra.Rows.Add
+                    (
+                        new object[]
+                        {
+                    Convert.ToInt32(row.Cells["IdProducto"].Value),
+                    Convert.ToDecimal(row.Cells["PrecioCompra"].Value),
+                    Convert.ToDecimal(row.Cells["PrecioVenta"].Value),
+                    Convert.ToInt32(row.Cells["Cantidad"].Value),
+                    Convert.ToDecimal(row.Cells["SubTotal"].Value)
+                        }
+                    );
+                }
+            }
         
+            // Obtener el correlativo
+            int idCorrelativo = new CN_Compra().ObtenerCorrelativo();
+            if (idCorrelativo == 0)
+            {
+                MessageBox.Show("Error al obtener el correlativo de la compra.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Generar el número de documento
+            string numeroDocumento = string.Format("{0:00000}", idCorrelativo);
+
+            // Crear el objeto Compra
+            Compra oCompra = new Compra()
+            {
+                oUsuario = new Usuario() { IdUsuario = _Usuario.IdUsuario },
+                oProveedor = new Proveedor() { IdProveedor = Convert.ToInt32(txtidproveedor.Text) },
+                oTipoDocumentoCompra = new TipoDocumentoCompra { NombreDocumentoCompra = ((OpcionCombos)cbotipodocumento.SelectedItem).Texto },
+                NumeroDocumentoCompra = numeroDocumento,
+                MontoTotal = Convert.ToDecimal(txttotalapagar.Text),
+            };
+
+            // Registrar la compra
+            string mensaje = string.Empty;
+            bool respuesta = new CN_Compra().Registrar(oCompra, detalle_compra, out mensaje);
+            if (respuesta)
+            {
+                var result = MessageBox.Show("Número de compra: " + numeroDocumento + "\n¿Desea copiarlo al portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    Clipboard.SetText(numeroDocumento);
+                }
+                // Limpiar los campos después de registrar
+                dgvdata.Rows.Clear();
+                calcularTotal();
+                txtidproveedor.Text = "0";
+                txtdocproveedor.Text = "";
+                txtRazonsocial.Text = "";
+                txtFechaC.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                cbotipodocumento.SelectedIndex = 0;
+            }
+            else
+            {
+                MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

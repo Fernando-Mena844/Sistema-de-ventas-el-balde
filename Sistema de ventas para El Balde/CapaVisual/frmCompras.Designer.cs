@@ -55,6 +55,13 @@
             this.btnBorrarC = new System.Windows.Forms.Button();
             this.btnBuscarC = new System.Windows.Forms.Button();
             this.dgvdata = new System.Windows.Forms.DataGridView();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preciocompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioventa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBoxProveedor = new System.Windows.Forms.GroupBox();
             this.txtidproveedor = new System.Windows.Forms.TextBox();
             this.btnBuscarprov = new System.Windows.Forms.Button();
@@ -69,13 +76,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsuarios = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preciocompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioventa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -222,7 +222,6 @@
             this.txtpreciocompra.Name = "txtpreciocompra";
             this.txtpreciocompra.Size = new System.Drawing.Size(103, 20);
             this.txtpreciocompra.TabIndex = 7;
-           
             this.txtpreciocompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpreciocompra_KeyPress);
             // 
             // txtidproducto
@@ -284,6 +283,7 @@
             this.btnRegistrarC.TabIndex = 14;
             this.btnRegistrarC.Text = "Registrar";
             this.btnRegistrarC.UseVisualStyleBackColor = true;
+            this.btnRegistrarC.Click += new System.EventHandler(this.btnRegistrarC_Click);
             // 
             // txtNuevodoc
             // 
@@ -366,6 +366,55 @@
             this.dgvdata.TabIndex = 5;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvdata_CellPainting);
+            // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "IdProducto";
+            this.IdProducto.MinimumWidth = 6;
+            this.IdProducto.Name = "IdProducto";
+            this.IdProducto.Visible = false;
+            this.IdProducto.Width = 125;
+            // 
+            // producto
+            // 
+            this.producto.HeaderText = "Producto";
+            this.producto.MinimumWidth = 6;
+            this.producto.Name = "producto";
+            this.producto.Width = 125;
+            // 
+            // preciocompra
+            // 
+            this.preciocompra.HeaderText = "PrecioCompra";
+            this.preciocompra.MinimumWidth = 6;
+            this.preciocompra.Name = "preciocompra";
+            this.preciocompra.Width = 125;
+            // 
+            // precioventa
+            // 
+            this.precioventa.HeaderText = "Precio Venta";
+            this.precioventa.MinimumWidth = 6;
+            this.precioventa.Name = "precioventa";
+            this.precioventa.Visible = false;
+            this.precioventa.Width = 125;
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.MinimumWidth = 6;
+            this.cantidad.Name = "cantidad";
+            this.cantidad.Width = 125;
+            // 
+            // subtotal
+            // 
+            this.subtotal.HeaderText = "Sub total";
+            this.subtotal.MinimumWidth = 6;
+            this.subtotal.Name = "subtotal";
+            this.subtotal.Width = 125;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.HeaderText = "";
+            this.btnEliminar.Name = "btnEliminar";
             // 
             // groupBoxProveedor
             // 
@@ -497,55 +546,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ver detalle";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // IdProducto
-            // 
-            this.IdProducto.HeaderText = "IdProducto";
-            this.IdProducto.MinimumWidth = 6;
-            this.IdProducto.Name = "IdProducto";
-            this.IdProducto.Visible = false;
-            this.IdProducto.Width = 125;
-            // 
-            // producto
-            // 
-            this.producto.HeaderText = "Producto";
-            this.producto.MinimumWidth = 6;
-            this.producto.Name = "producto";
-            this.producto.Width = 125;
-            // 
-            // preciocompra
-            // 
-            this.preciocompra.HeaderText = "PrecioCompra";
-            this.preciocompra.MinimumWidth = 6;
-            this.preciocompra.Name = "preciocompra";
-            this.preciocompra.Width = 125;
-            // 
-            // precioventa
-            // 
-            this.precioventa.HeaderText = "Precio Venta";
-            this.precioventa.MinimumWidth = 6;
-            this.precioventa.Name = "precioventa";
-            this.precioventa.Visible = false;
-            this.precioventa.Width = 125;
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "Cantidad";
-            this.cantidad.MinimumWidth = 6;
-            this.cantidad.Name = "cantidad";
-            this.cantidad.Width = 125;
-            // 
-            // subtotal
-            // 
-            this.subtotal.HeaderText = "Sub total";
-            this.subtotal.MinimumWidth = 6;
-            this.subtotal.Name = "subtotal";
-            this.subtotal.Width = 125;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.HeaderText = "";
-            this.btnEliminar.Name = "btnEliminar";
             // 
             // frmCompras
             // 

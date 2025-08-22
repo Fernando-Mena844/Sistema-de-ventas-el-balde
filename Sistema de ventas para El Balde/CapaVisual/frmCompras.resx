@@ -121,7 +121,7 @@
   <data name="btnbuscarproducto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAIZJREFUKFN9z7EOQUEQheEPV6NQ33gLteeiVWi8k+Q+CSWdREWHDLPJZiX+ZLMz
+        DAAACwwBP0AiyAAAAIZJREFUKFN9z7EOQUEQheEPV6NQ33gLteeiVWi8k+Q+CSWdREWHDLPJZiX+ZLMz
         s2fO7PBllKdm3OQfQrTGA0c8sUDXijbYVnlwxaydFA41MXaOoS5Gx6ntTM5t4Z53WWCCFfa1QTz2uOWf
         giVeGU+LMAiH2PCAC3ZZL+Kf7WuKUxH/pYi7N2zxES1vaBxfAAAAAElFTkSuQmCC
 </value>
@@ -150,30 +150,9 @@
   <data name="btnBuscarprov.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAIZJREFUKFN9z7EOQUEQheEPV6NQ33gLteeiVWi8k+Q+CSWdREWHDLPJZiX+ZLMz
+        DQAACw0B7QfALAAAAIZJREFUKFN9z7EOQUEQheEPV6NQ33gLteeiVWi8k+Q+CSWdREWHDLPJZiX+ZLMz
         s2fO7PBllKdm3OQfQrTGA0c8sUDXijbYVnlwxaydFA41MXaOoS5Gx6ntTM5t4Z53WWCCFfa1QTz2uOWf
         giVeGU+LMAiH2PCAC3ZZL+Kf7WuKUxH/pYi7N2zxES1vaBxfAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="IdProducto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="producto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="preciocompra.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="precioventa.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cantidad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="subtotal.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnEliminar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

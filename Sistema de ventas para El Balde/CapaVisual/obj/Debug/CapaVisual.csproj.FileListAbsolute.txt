@@ -191,3 +191,5 @@ C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas 
 C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.SuggestedBindingRedirects.cache
 C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe.config
 C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdProducto.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.SuggestedBindingRedirects.cache
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdProducto.resources
