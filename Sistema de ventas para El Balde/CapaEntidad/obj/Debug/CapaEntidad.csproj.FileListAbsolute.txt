@@ -22,3 +22,9 @@ C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-B
 C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaEntidad\obj\Debug\CapaEntidad.pdb

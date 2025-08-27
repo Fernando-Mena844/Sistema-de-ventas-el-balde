@@ -100,12 +100,7 @@ namespace CapaVisual
             cmbEstado.DisplayMember = "Texto";
             cmbEstado.ValueMember = "Valor";
             cmbEstado.SelectedIndex = 0;
-
             List<Rol> listaRol = new CN_Rol().Listar();
-
-
-
-
             foreach (DataGridViewColumn columna in dgvClientes.Columns)
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
@@ -113,40 +108,25 @@ namespace CapaVisual
                     cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
                 }
             }
-
-            List<Cliente> listaUsuario = new CN_Cliente().Listar();
-
-            foreach (Cliente item in listaUsuario)
+            List<Cliente> listaClientes = new CN_Cliente().Listar();
+            foreach (Cliente item in listaClientes)
             {
-                dgvClientes.Rows.Add(new object[] { "", item.IdCliente, item.documentoCliente ,item.telefonoCliente, item.correoCliente, item.telefonoCliente,
-         item.Estado == true ? 1 : 0,
-         item.Estado == true ? "Activo" : "No Activo"
-         });
-            }
-            cmbBusca.DisplayMember = "Texto";
-            cmbBusca.ValueMember = "Valor";
-            cmbBusca.SelectedIndex = 0;
-
-            foreach (DataGridViewColumn columna in dgvClientes.Columns)
-            {
-                if (columna.Visible == true && columna.Name != "btnseleccionar" && columna.Name != "idRol" && columna.Name != "EstadoValor")
+                dgvClientes.Rows.Add(new object[]
                 {
-                    cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
+                "",
+                item.IdCliente,
+                item.documentoCliente,
+                item.nombreCompletoCliente,
+                item.correoCliente,
+                item.telefonoCliente,
+                item.Estado == true ? 1 : 0,
+                item.Estado == true ? "Activo" : "No Activo"
                 }
+            );
             }
             cmbBusca.DisplayMember = "Texto";
             cmbBusca.ValueMember = "Valor";
             cmbBusca.SelectedIndex = 0;
-
-            List<Cliente> lisata = new CN_Cliente().Listar();
-
-            foreach (Cliente item in lisata)
-            {
-                dgvClientes.Rows.Add(new object[] {"",item.IdCliente,item.documentoCliente,item.nombreCompletoCliente,item.correoCliente,item.telefonoCliente,
-                    item.Estado ==true ? 1:0,
-                    item.Estado == true?"true":"no Activo"
-                });
-            }
 
         }
 
@@ -234,5 +214,30 @@ namespace CapaVisual
             }
 
         }
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvClientes.Columns[e.ColumnIndex].Name == "btnseleccionar")
+            {
+                int indice = e.RowIndex;
+                if (indice >= 0)
+                {
+                    txtIndice.Text = indice.ToString();
+                    txtid.Text = dgvClientes.Rows[indice].Cells["id"].Value.ToString();
+                    txtNroDocumento.Text = dgvClientes.Rows[indice].Cells["NroDocumento"].Value.ToString();
+                    txtNombre.Text = dgvClientes.Rows[indice].Cells["Nombre"].Value.ToString();
+                    txtCorreo.Text = dgvClientes.Rows[indice].Cells["Correo"].Value.ToString();
+                    txtTelefono.Text = dgvClientes.Rows[indice].Cells["Telefono"].Value.ToString();
+                    foreach (OpcionCombos opcioncombo in cmbEstado.Items)
+                    {
+                        if (opcioncombo.Texto == dgvClientes.Rows[indice].Cells["EstadoValor"].Value.ToString())
+                        {
+                            int indice_combo = cmbEstado.Items.IndexOf(opcioncombo);
+                            cmbEstado.SelectedIndex = indice_combo;
+                            break;
+                        }
+                    }
+                }
+            }
     }
 }
