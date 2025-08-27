@@ -78,7 +78,7 @@ namespace CapaVisual
                     row.Cells["NroDocumento"].Value = txtNroDocumento.Text;
                     row.Cells["Nombre"].Value = txtNombre.Text;
                     row.Cells["Correo"].Value = txtCorreo.Text;
-                    row.Cells["telefono"].Value = txtTelefono.Text;
+                    row.Cells["Telefono"].Value = txtTelefono.Text;
                     row.Cells["EstadoValor"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString();
                     row.Cells["Estado"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString();
 
@@ -239,5 +239,11 @@ namespace CapaVisual
                     }
                 }
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
     }
 }

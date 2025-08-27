@@ -42,6 +42,7 @@ namespace CapaDatos
                                 documentoCliente = datareader["documentoCliente"].ToString(),
                                 nombreCompletoCliente = datareader["nombreCompletoCliente"].ToString(),
                                 correoCliente = datareader["correoCliente"].ToString(),
+                                telefonoCliente = datareader["telefonoCliente"].ToString(),
                                 Estado = Convert.ToBoolean(datareader["Estado"]),
 
                             });

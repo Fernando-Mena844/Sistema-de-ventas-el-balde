@@ -88,7 +88,7 @@
             this.pnlDetallesUsuario.Controls.Add(this.lblNombre);
             this.pnlDetallesUsuario.Controls.Add(this.lblNroDocumento);
             this.pnlDetallesUsuario.Location = new System.Drawing.Point(14, -1);
-            this.pnlDetallesUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDetallesUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDetallesUsuario.Name = "pnlDetallesUsuario";
             this.pnlDetallesUsuario.Size = new System.Drawing.Size(133, 450);
             this.pnlDetallesUsuario.TabIndex = 8;
@@ -96,7 +96,7 @@
             // txtIndice
             // 
             this.txtIndice.Location = new System.Drawing.Point(105, 31);
-            this.txtIndice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIndice.Margin = new System.Windows.Forms.Padding(2);
             this.txtIndice.Name = "txtIndice";
             this.txtIndice.Size = new System.Drawing.Size(23, 20);
             this.txtIndice.TabIndex = 17;
@@ -106,7 +106,7 @@
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(76, 31);
-            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(23, 20);
             this.txtid.TabIndex = 16;
@@ -118,7 +118,7 @@
             this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(7, 237);
-            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);
             this.cmbEstado.TabIndex = 15;
@@ -151,7 +151,7 @@
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
             this.btnBorrar.Location = new System.Drawing.Point(7, 333);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(119, 23);
             this.btnBorrar.TabIndex = 10;
@@ -166,7 +166,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(7, 271);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(119, 26);
             this.btnGuardar.TabIndex = 9;
@@ -181,17 +181,18 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Location = new System.Drawing.Point(6, 301);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(119, 27);
             this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(7, 192);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(121, 20);
             this.txtTelefono.TabIndex = 7;
@@ -199,7 +200,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(7, 151);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(121, 20);
             this.txtCorreo.TabIndex = 6;
@@ -207,7 +208,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(7, 110);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 20);
             this.txtNombre.TabIndex = 5;
@@ -215,7 +216,7 @@
             // txtNroDocumento
             // 
             this.txtNroDocumento.Location = new System.Drawing.Point(7, 69);
-            this.txtNroDocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNroDocumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNroDocumento.Name = "txtNroDocumento";
             this.txtNroDocumento.Size = new System.Drawing.Size(121, 20);
             this.txtNroDocumento.TabIndex = 4;
@@ -332,7 +333,7 @@
             this.Estado,
             this.EstadoValor});
             this.dgvClientes.Location = new System.Drawing.Point(176, 109);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvClientes.MultiSelect = false;
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
@@ -371,7 +372,7 @@
             // txtBusca
             // 
             this.txtBusca.Location = new System.Drawing.Point(378, 31);
-            this.txtBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBusca.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusca.Name = "txtBusca";
             this.txtBusca.Size = new System.Drawing.Size(79, 20);
             this.txtBusca.TabIndex = 3;
@@ -417,7 +418,7 @@
             this.btnBorrarBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrarBusqueda.ForeColor = System.Drawing.Color.White;
             this.btnBorrarBusqueda.Location = new System.Drawing.Point(537, 31);
-            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.btnBorrarBusqueda.Name = "btnBorrarBusqueda";
             this.btnBorrarBusqueda.Size = new System.Drawing.Size(58, 25);
             this.btnBorrarBusqueda.TabIndex = 12;
@@ -432,7 +433,7 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Location = new System.Drawing.Point(464, 31);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(58, 25);
             this.btnBuscar.TabIndex = 11;
@@ -444,7 +445,7 @@
             // 
             this.cmbBusca.FormattingEnabled = true;
             this.cmbBusca.Location = new System.Drawing.Point(262, 30);
-            this.cmbBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbBusca.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBusca.Name = "cmbBusca";
             this.cmbBusca.Size = new System.Drawing.Size(107, 21);
             this.cmbBusca.TabIndex = 2;
