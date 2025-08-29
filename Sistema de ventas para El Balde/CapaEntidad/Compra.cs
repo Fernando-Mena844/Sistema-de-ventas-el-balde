@@ -8,6 +8,8 @@ namespace CapaEntidad
 {
     public class Compra
     {
+        public List<DetalleCompra> oDetalleCompra;
+
         public int IdCompra { get; set; }
         public Usuario oUsuario { get; set; }
         public TipoDocumentoCompra oTipoDocumentoCompra { get; set; }

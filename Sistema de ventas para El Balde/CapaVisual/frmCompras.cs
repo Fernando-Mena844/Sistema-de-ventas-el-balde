@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ using CapaNegocio;
 using CapaVisual.Modales;
 using CapaVisual.Utilidades;
 using DocumentFormat.OpenXml.Wordprocessing;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
 
 namespace CapaVisual
 {
@@ -408,6 +411,112 @@ namespace CapaVisual
             else
             {
                 MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscarD_Click(object sender, EventArgs e)
+        {
+            Compra oCompra = new CN_Compra().ObtenerCompra(txtBuscarD.Text);
+
+            if (oCompra.IdCompra != 0)
+            {
+                txtNumeroDocumentoProveedorD.Text = oCompra.oProveedor.documentoProveedor;
+                txtFechaD.Text = oCompra.FechaRegistro;
+                cmbTipoDocumentoD.SelectedText = oCompra.oTipoDocumentoCompra.NombreDocumentoCompra;
+                txtRazonSocialD.Text = oCompra.oProveedor.razonSocialProveedor;
+
+                dgvDetalleCompra.Rows.Clear();
+                foreach(DetalleCompra dc in oCompra.oDetalleCompra)
+                {
+                    dgvDetalleCompra.Rows.Add(new object[] { dc.oProducto.nombreProducto, dc.PrecioCompra, dc.Cantidad, dc.MontoTotal });
+                }
+
+                txtMontoTotalD.Text = oCompra.MontoTotal.ToString("0.00");
+            }
+        }
+
+        private void btnBorrarD_Click(object sender, EventArgs e)
+        {
+            txtFechaD.Text = "";
+            txtNumeroDocumentoProveedorD.Text = "";
+            cmbTipoDocumentoD.SelectedIndex = -1;
+            txtRazonSocialD.Text = "";
+
+            dgvDetalleCompra.Rows.Clear();
+            txtMontoTotalD.Text = "0.00";
+        }
+
+        private void btnDescargarPDF_Click(object sender, EventArgs e)
+        {
+            if(txtRazonSocialD.Text == "")
+            {
+                MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            string Texto_Html= Properties.Resources.PlantillaCompra.ToString();
+            DatosNegocio odatos = new CN_Negocio().ObtenerDatosNegocio();
+
+            Texto_Html = Texto_Html.Replace("@nombrenegocio", odatos.NombreNegocio.ToUpper());
+            Texto_Html = Texto_Html.Replace("@docnegocio", odatos.NitDatoNegocio);
+            Texto_Html = Texto_Html.Replace("direccionnegocio", odatos.ubicacionNegocio);
+
+
+            Texto_Html = Texto_Html.Replace("@tipodocumento", cmbTipoDocumentoD.Text);
+            Texto_Html = Texto_Html.Replace("@numerodocumento", btnBuscarD.Text);
+
+            Texto_Html = Texto_Html.Replace("@docproveedor", txtNumeroDocumentoProveedorD.Text);
+            Texto_Html = Texto_Html.Replace("@nombreproveedor", txtRazonSocialD.Text);
+            Texto_Html = Texto_Html.Replace("@fecharegistro", txtFechaD.Text);
+            Texto_Html = Texto_Html.Replace("@usuarioregistro", "Usuario");
+
+            string filas = string.Empty;
+            foreach (DataGridViewRow row in dgvDetalleCompra.Rows)
+            {
+                filas += "<tr>";
+                filas += "<td style='text-align: left;'>" + row.Cells["ProductoD"].Value.ToString() + "</td>";
+                filas += "<td style='text-align: right;'>" + row.Cells["PrecioCompraD"].Value.ToString() + "</td>";
+                filas += "<td style='text-align: right;'>" + row.Cells["CantidadD"].Value.ToString() + "</td>";
+                filas += "<td style='text-align: right;'>" + row.Cells["SubTotalD"].Value.ToString() + "</td>";
+                filas += "</tr>";
+            }
+            Texto_Html = Texto_Html.Replace("@filas", filas);
+            Texto_Html = Texto_Html.Replace("@montototal", txtMontoTotalD.Text);
+
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.FileName = string.Format("Compra_{0}.pdf", txtBuscarD.Text);
+            savefile.Filter = "PDF Files|*.pdf";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                {
+                    iTextSharp.text.Document pdfDoc = new iTextSharp.text.Document(iTextSharp.text.PageSize.A4,25,25,25,25);
+
+                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+
+                    bool obtenido = true;
+                    byte[] byteImage = new CN_Negocio().ObtenerLogo(out obtenido);
+
+                    if (obtenido)
+                    {
+                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(byteImage);
+                        img.ScaleToFit(60, 60);
+                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                        img.SetAbsolutePosition(pdfDoc.Left, pdfDoc.GetTop(51));
+                        pdfDoc.Add(img);
+                    }
+
+                    using (StringReader sr = new StringReader(Texto_Html))
+                    {
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                    }
+
+                    pdfDoc.Close();
+                    stream.Close();
+                    MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }
