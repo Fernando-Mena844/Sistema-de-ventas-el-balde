@@ -216,3 +216,10 @@ C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\C
 C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
 C:\Users\HP\Desktop\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.xml
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BCrypt.Net-Next.xml

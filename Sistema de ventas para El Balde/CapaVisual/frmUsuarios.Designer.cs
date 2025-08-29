@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlDetallesUsuario = new System.Windows.Forms.Panel();
             this.txtIndice = new System.Windows.Forms.TextBox();
             this.txtid = new System.Windows.Forms.TextBox();
@@ -65,8 +65,8 @@
             this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDetallesUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.panel2.SuspendLayout();
@@ -93,25 +93,28 @@
             this.pnlDetallesUsuario.Controls.Add(this.lblCorreo);
             this.pnlDetallesUsuario.Controls.Add(this.lblNombre);
             this.pnlDetallesUsuario.Controls.Add(this.lblNroDocumento);
-            this.pnlDetallesUsuario.Location = new System.Drawing.Point(12, 0);
+            this.pnlDetallesUsuario.Location = new System.Drawing.Point(8, 0);
+            this.pnlDetallesUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDetallesUsuario.Name = "pnlDetallesUsuario";
-            this.pnlDetallesUsuario.Size = new System.Drawing.Size(200, 692);
+            this.pnlDetallesUsuario.Size = new System.Drawing.Size(133, 450);
             this.pnlDetallesUsuario.TabIndex = 1;
             // 
             // txtIndice
             // 
-            this.txtIndice.Location = new System.Drawing.Point(157, 47);
+            this.txtIndice.Location = new System.Drawing.Point(105, 31);
+            this.txtIndice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIndice.Name = "txtIndice";
-            this.txtIndice.Size = new System.Drawing.Size(33, 26);
+            this.txtIndice.Size = new System.Drawing.Size(23, 20);
             this.txtIndice.TabIndex = 17;
             this.txtIndice.Text = "0";
             this.txtIndice.Visible = false;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(114, 47);
+            this.txtid.Location = new System.Drawing.Point(76, 31);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(33, 26);
+            this.txtid.Size = new System.Drawing.Size(23, 20);
             this.txtid.TabIndex = 16;
             this.txtid.Text = "0";
             this.txtid.Visible = false;
@@ -120,17 +123,19 @@
             // 
             this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(10, 430);
+            this.cmbEstado.Location = new System.Drawing.Point(7, 280);
+            this.cmbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(180, 28);
+            this.cmbEstado.Size = new System.Drawing.Size(121, 21);
             this.cmbEstado.TabIndex = 15;
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(6, 407);
+            this.lblEstado.Location = new System.Drawing.Point(4, 265);
+            this.lblEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(64, 20);
+            this.lblEstado.Size = new System.Drawing.Size(43, 13);
             this.lblEstado.TabIndex = 14;
             this.lblEstado.Text = "Estado:";
             // 
@@ -138,17 +143,19 @@
             // 
             this.cmbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbRol.FormattingEnabled = true;
-            this.cmbRol.Location = new System.Drawing.Point(10, 362);
+            this.cmbRol.Location = new System.Drawing.Point(7, 235);
+            this.cmbRol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbRol.Name = "cmbRol";
-            this.cmbRol.Size = new System.Drawing.Size(180, 28);
+            this.cmbRol.Size = new System.Drawing.Size(121, 21);
             this.cmbRol.TabIndex = 13;
             // 
             // lblRol
             // 
             this.lblRol.AutoSize = true;
-            this.lblRol.Location = new System.Drawing.Point(6, 339);
+            this.lblRol.Location = new System.Drawing.Point(4, 220);
+            this.lblRol.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(37, 20);
+            this.lblRol.Size = new System.Drawing.Size(26, 13);
             this.lblRol.TabIndex = 12;
             this.lblRol.Text = "Rol:";
             // 
@@ -156,9 +163,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 15);
+            this.label2.Location = new System.Drawing.Point(3, 10);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 58);
+            this.label2.Size = new System.Drawing.Size(109, 40);
             this.label2.TabIndex = 11;
             this.label2.Text = "Detalles del \r\nUsuario ";
             // 
@@ -168,9 +176,10 @@
             this.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrar.ForeColor = System.Drawing.Color.White;
-            this.btnBorrar.Location = new System.Drawing.Point(10, 641);
+            this.btnBorrar.Location = new System.Drawing.Point(7, 417);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(178, 36);
+            this.btnBorrar.Size = new System.Drawing.Size(119, 23);
             this.btnBorrar.TabIndex = 10;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
@@ -182,9 +191,10 @@
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(10, 546);
+            this.btnGuardar.Location = new System.Drawing.Point(7, 355);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(178, 40);
+            this.btnGuardar.Size = new System.Drawing.Size(119, 26);
             this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -196,9 +206,10 @@
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(9, 593);
+            this.btnLimpiar.Location = new System.Drawing.Point(6, 385);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(178, 42);
+            this.btnLimpiar.Size = new System.Drawing.Size(119, 27);
             this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -206,80 +217,88 @@
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(10, 296);
+            this.txtClave.Location = new System.Drawing.Point(7, 192);
+            this.txtClave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(180, 26);
+            this.txtClave.Size = new System.Drawing.Size(121, 20);
             this.txtClave.TabIndex = 7;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(10, 232);
+            this.txtCorreo.Location = new System.Drawing.Point(7, 151);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(180, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(121, 20);
             this.txtCorreo.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(10, 170);
+            this.txtNombre.Location = new System.Drawing.Point(7, 110);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(180, 26);
+            this.txtNombre.Size = new System.Drawing.Size(121, 20);
             this.txtNombre.TabIndex = 5;
             // 
             // txtNroDocumento
             // 
-            this.txtNroDocumento.Location = new System.Drawing.Point(10, 106);
+            this.txtNroDocumento.Location = new System.Drawing.Point(7, 69);
+            this.txtNroDocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNroDocumento.Name = "txtNroDocumento";
-            this.txtNroDocumento.Size = new System.Drawing.Size(180, 26);
+            this.txtNroDocumento.Size = new System.Drawing.Size(121, 20);
             this.txtNroDocumento.TabIndex = 4;
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(6, 273);
+            this.lblContraseña.Location = new System.Drawing.Point(4, 177);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(96, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(64, 13);
             this.lblContraseña.TabIndex = 3;
             this.lblContraseña.Text = "Contraseña:";
             // 
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(6, 209);
+            this.lblCorreo.Location = new System.Drawing.Point(4, 136);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(61, 20);
+            this.lblCorreo.Size = new System.Drawing.Size(41, 13);
             this.lblCorreo.TabIndex = 2;
             this.lblCorreo.Text = "Correo:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(6, 144);
+            this.lblNombre.Location = new System.Drawing.Point(4, 94);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(141, 20);
+            this.lblNombre.Size = new System.Drawing.Size(94, 13);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre Completo:";
             // 
             // lblNroDocumento
             // 
             this.lblNroDocumento.AutoSize = true;
-            this.lblNroDocumento.Location = new System.Drawing.Point(6, 85);
+            this.lblNroDocumento.Location = new System.Drawing.Point(4, 55);
+            this.lblNroDocumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNroDocumento.Name = "lblNroDocumento";
-            this.lblNroDocumento.Size = new System.Drawing.Size(121, 20);
+            this.lblNroDocumento.Size = new System.Drawing.Size(82, 13);
             this.lblNroDocumento.TabIndex = 0;
             this.lblNroDocumento.Text = "Nro Documento";
             // 
             // dgvUsuarios
             // 
             this.dgvUsuarios.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnseleccionar,
@@ -290,23 +309,24 @@
             this.Contraseña,
             this.idRol,
             this.Rol,
-            this.Estado,
-            this.EstadoValor});
-            this.dgvUsuarios.Location = new System.Drawing.Point(227, 186);
+            this.EstadoValor,
+            this.Estado});
+            this.dgvUsuarios.Location = new System.Drawing.Point(151, 121);
+            this.dgvUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvUsuarios.MultiSelect = false;
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsuarios.RowHeadersWidth = 62;
             this.dgvUsuarios.RowTemplate.Height = 28;
-            this.dgvUsuarios.Size = new System.Drawing.Size(962, 494);
+            this.dgvUsuarios.Size = new System.Drawing.Size(641, 321);
             this.dgvUsuarios.TabIndex = 2;
             this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
             this.dgvUsuarios.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvUsuarios_CellPainting);
@@ -320,10 +340,9 @@
             this.panel2.Controls.Add(this.cmbBusca);
             this.panel2.Controls.Add(this.lblBusca);
             this.panel2.Controls.Add(this.lblUsuarios);
-            this.panel2.Location = new System.Drawing.Point(226, 18);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(151, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(962, 112);
+            this.panel2.Size = new System.Drawing.Size(641, 73);
             this.panel2.TabIndex = 3;
             // 
             // btnBorrarBusqueda
@@ -332,9 +351,10 @@
             this.btnBorrarBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBorrarBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrarBusqueda.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarBusqueda.Location = new System.Drawing.Point(806, 48);
+            this.btnBorrarBusqueda.Location = new System.Drawing.Point(537, 31);
+            this.btnBorrarBusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrarBusqueda.Name = "btnBorrarBusqueda";
-            this.btnBorrarBusqueda.Size = new System.Drawing.Size(87, 39);
+            this.btnBorrarBusqueda.Size = new System.Drawing.Size(58, 25);
             this.btnBorrarBusqueda.TabIndex = 12;
             this.btnBorrarBusqueda.Text = "Borrar";
             this.btnBorrarBusqueda.UseVisualStyleBackColor = false;
@@ -347,9 +367,10 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Image = global::CapaVisual.Properties.Resources.Search;
-            this.btnBuscar.Location = new System.Drawing.Point(696, 48);
+            this.btnBuscar.Location = new System.Drawing.Point(464, 31);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(87, 39);
+            this.btnBuscar.Size = new System.Drawing.Size(58, 25);
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -357,25 +378,28 @@
             // 
             // txtBusca
             // 
-            this.txtBusca.Location = new System.Drawing.Point(567, 47);
+            this.txtBusca.Location = new System.Drawing.Point(378, 31);
+            this.txtBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBusca.Name = "txtBusca";
-            this.txtBusca.Size = new System.Drawing.Size(116, 26);
+            this.txtBusca.Size = new System.Drawing.Size(79, 20);
             this.txtBusca.TabIndex = 3;
             // 
             // cmbBusca
             // 
             this.cmbBusca.FormattingEnabled = true;
-            this.cmbBusca.Location = new System.Drawing.Point(444, 46);
+            this.cmbBusca.Location = new System.Drawing.Point(296, 30);
+            this.cmbBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbBusca.Name = "cmbBusca";
-            this.cmbBusca.Size = new System.Drawing.Size(108, 28);
+            this.cmbBusca.Size = new System.Drawing.Size(73, 21);
             this.cmbBusca.TabIndex = 2;
             // 
             // lblBusca
             // 
             this.lblBusca.AutoSize = true;
-            this.lblBusca.Location = new System.Drawing.Point(353, 49);
+            this.lblBusca.Location = new System.Drawing.Point(235, 32);
+            this.lblBusca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBusca.Name = "lblBusca";
-            this.lblBusca.Size = new System.Drawing.Size(85, 20);
+            this.lblBusca.Size = new System.Drawing.Size(58, 13);
             this.lblBusca.TabIndex = 1;
             this.lblBusca.Text = "Busca por:";
             // 
@@ -383,10 +407,9 @@
             // 
             this.lblUsuarios.AutoSize = true;
             this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.Location = new System.Drawing.Point(22, 42);
-            this.lblUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuarios.Location = new System.Drawing.Point(15, 27);
             this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(123, 29);
+            this.lblUsuarios.Size = new System.Drawing.Size(85, 20);
             this.lblUsuarios.TabIndex = 0;
             this.lblUsuarios.Text = "Usuarios:";
             // 
@@ -456,33 +479,32 @@
             this.Rol.ReadOnly = true;
             this.Rol.Width = 150;
             // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado Valor";
-            this.Estado.MinimumWidth = 8;
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.Visible = false;
-            this.Estado.Width = 150;
-            // 
             // EstadoValor
             // 
-            this.EstadoValor.HeaderText = "Estado ";
+            this.EstadoValor.HeaderText = "Estado Valor";
             this.EstadoValor.MinimumWidth = 8;
             this.EstadoValor.Name = "EstadoValor";
             this.EstadoValor.ReadOnly = true;
+            this.EstadoValor.Visible = false;
             this.EstadoValor.Width = 150;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado ";
+            this.Estado.MinimumWidth = 8;
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Width = 150;
             // 
             // frmUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.pnlDetallesUsuario);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
@@ -532,7 +554,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Contraseña;
         private System.Windows.Forms.DataGridViewTextBoxColumn idRol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }

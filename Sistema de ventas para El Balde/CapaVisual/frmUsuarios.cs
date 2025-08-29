@@ -8,9 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaEntidad;
+using CapaNegocio;
 using CapaVisual;
 using CapaVisual.Utilidades;
-using CapaNegocio;
+using Org.BouncyCastle.Crypto.Generators;
+using BCrypt.Net;
 
 namespace CapaVisual
 {
@@ -51,7 +53,7 @@ namespace CapaVisual
 
             foreach (Usuario item in listaUsuario)
             {
-                dgvUsuarios.Rows.Add(new object[] { "", item.IdUsuario, item.DocumentoUsuario, item.NombreCompletoUsuario, item.correoUsuario, item.Clave,
+                dgvUsuarios.Rows.Add(new object[] { "", item.IdUsuario, item.DocumentoUsuario, item.NombreCompletoUsuario, item.correoUsuario, "******",
                 item.oRol.IdRol,
                 item.oRol.Descripcion,
                 item.Estado == true ? 1 : 0,
@@ -77,29 +79,45 @@ namespace CapaVisual
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
+
+            // Creamos el objeto usuario con los datos del formulario
             Usuario objusuario = new Usuario()
             {
                 IdUsuario = Convert.ToInt32(txtid.Text),
                 DocumentoUsuario = txtNroDocumento.Text,
                 NombreCompletoUsuario = txtNombre.Text,
                 correoUsuario = txtCorreo.Text,
-                Clave = txtClave.Text,
                 oRol = new Rol() { IdRol = Convert.ToInt32(((OpcionCombos)cmbRol.SelectedItem).Valor) },
-                Estado = Convert.ToInt32(((OpcionCombos)cmbEstado.SelectedItem).Valor) == 1 ? true : false
+                Estado = Convert.ToInt32(((OpcionCombos)cmbEstado.SelectedItem).Valor) == 1
             };
 
-            if(objusuario.IdUsuario == 0)
+            // Si se ingresa una contraseña, la hasheamos
+            if (!string.IsNullOrWhiteSpace(txtClave.Text))
+            {
+                objusuario.Clave = BCrypt.Net.BCrypt.HashPassword(txtClave.Text);
+            }
+
+            // Si es nuevo usuario
+            if (objusuario.IdUsuario == 0)
             {
                 int IdUsuarioGenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
 
                 if (IdUsuarioGenerado != 0)
                 {
-                    dgvUsuarios.Rows.Add(new object[] { "", IdUsuarioGenerado, txtNroDocumento.Text, txtNombre.Text, txtCorreo.Text, txtClave.Text,
-            ((OpcionCombos)cmbRol.SelectedItem).Valor.ToString(),
-            ((OpcionCombos)cmbRol.SelectedItem).Texto.ToString(),
-            ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
-            ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
-            });
+                    dgvUsuarios.Rows.Add(new object[]
+                    {
+                "",
+                IdUsuarioGenerado,
+                txtNroDocumento.Text,
+                txtNombre.Text,
+                txtCorreo.Text,
+                "******", // No mostramos la contraseña
+                ((OpcionCombos)cmbRol.SelectedItem).Valor.ToString(),
+                ((OpcionCombos)cmbRol.SelectedItem).Texto.ToString(),
+                ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
+                ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
+                    });
+
                     Limpiar();
                 }
                 else
@@ -107,10 +125,17 @@ namespace CapaVisual
                     MessageBox.Show(mensaje);
                 }
             }
-
+            // Si es edición de usuario
             else
             {
+                // Si txtClave tiene valor, actualizamos la contraseña (ya hasheada)
+                if (!string.IsNullOrWhiteSpace(txtClave.Text))
+                {
+                    objusuario.Clave = BCrypt.Net.BCrypt.HashPassword(txtClave.Text);
+                }
+
                 bool resultado = new CN_Usuario().Editar(objusuario, out mensaje);
+
                 if (resultado)
                 {
                     DataGridViewRow row = dgvUsuarios.Rows[Convert.ToInt32(txtIndice.Text)];
@@ -118,15 +143,70 @@ namespace CapaVisual
                     row.Cells["NroDocumento"].Value = txtNroDocumento.Text;
                     row.Cells["Nombre"].Value = txtNombre.Text;
                     row.Cells["Correo"].Value = txtCorreo.Text;
-                    row.Cells["Contraseña"].Value = txtClave.Text;
+                    row.Cells["Contraseña"].Value = "******"; // Siempre ocultamos la contraseña
                     row.Cells["idRol"].Value = ((OpcionCombos)cmbRol.SelectedItem).Valor.ToString();
                     row.Cells["EstadoValor"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString();
                     row.Cells["Estado"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString();
 
                     Limpiar();
                 }
+                else
+                {
+                    MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
+            //string mensaje = string.Empty;
+            //Usuario objusuario = new Usuario()
+            //{
+            //    IdUsuario = Convert.ToInt32(txtid.Text),
+            //    DocumentoUsuario = txtNroDocumento.Text,
+            //    NombreCompletoUsuario = txtNombre.Text,
+            //    correoUsuario = txtCorreo.Text,
+            //    Clave = BCrypt.Net.BCrypt.HashPassword(txtClave.Text), //Aqui hasheamos la clave para encriptarla
+            //    oRol = new Rol() { IdRol = Convert.ToInt32(((OpcionCombos)cmbRol.SelectedItem).Valor) },
+            //    Estado = Convert.ToInt32(((OpcionCombos)cmbEstado.SelectedItem).Valor) == 1 ? true : false
+            //};
+
+            //if(objusuario.IdUsuario == 0)
+            //{
+            //    int IdUsuarioGenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
+
+            //    if (IdUsuarioGenerado != 0)
+            //    {
+            //        dgvUsuarios.Rows.Add(new object[] { "", IdUsuarioGenerado, txtNroDocumento.Text, txtNombre.Text, txtCorreo.Text, txtClave.Text,
+            //((OpcionCombos)cmbRol.SelectedItem).Valor.ToString(),
+            //((OpcionCombos)cmbRol.SelectedItem).Texto.ToString(),
+            //((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
+            //((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
+            //});
+            //        Limpiar();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show(mensaje);
+            //    }
+            //}
+
+            //else
+            //{
+            //    bool resultado = new CN_Usuario().Editar(objusuario, out mensaje);
+            //    if (resultado)
+            //    {
+            //        DataGridViewRow row = dgvUsuarios.Rows[Convert.ToInt32(txtIndice.Text)];
+            //        row.Cells["id"].Value = txtid.Text;
+            //        row.Cells["NroDocumento"].Value = txtNroDocumento.Text;
+            //        row.Cells["Nombre"].Value = txtNombre.Text;
+            //        row.Cells["Correo"].Value = txtCorreo.Text;
+            //        row.Cells["Contraseña"].Value = txtClave.Text;
+            //        row.Cells["idRol"].Value = ((OpcionCombos)cmbRol.SelectedItem).Valor.ToString();
+            //        row.Cells["EstadoValor"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString();
+            //        row.Cells["Estado"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString();
+
+            //        Limpiar();
+            //    }
+
+            //}
 
         }
 
@@ -176,7 +256,7 @@ namespace CapaVisual
                     txtNroDocumento.Text = dgvUsuarios.Rows[indice].Cells["NroDocumento"].Value.ToString();
                     txtNombre.Text = dgvUsuarios.Rows[indice].Cells["Nombre"].Value.ToString();
                     txtCorreo.Text = dgvUsuarios.Rows[indice].Cells["Correo"].Value.ToString();
-                    txtClave.Text = dgvUsuarios.Rows[indice].Cells["Contraseña"].Value.ToString();
+                    txtClave.Text = "******";
 
                     foreach (OpcionCombos opcioncombo in cmbRol.Items)
                     {

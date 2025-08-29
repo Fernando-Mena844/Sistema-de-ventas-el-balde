@@ -91,7 +91,7 @@ namespace CapaDatos
                     query.AppendLine("inner join USUARIO U on U.IdUsuario = C.usuario_id");
                     query.AppendLine("inner join PROVEEDOR P on P.IdProveedor = P.IdProveedor");
                     query.AppendLine("inner join TipoDocumentoCompra TDC on TDC.idTipoDocumentoCompra = C.tipoDocumentoCompra_id");
-                    query.AppendLine("where NumeroDocumentoCompra = 1");
+                    query.AppendLine("where NumeroDocumentoCompra = @numero");
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.Parameters.AddWithValue("@numero", numero);

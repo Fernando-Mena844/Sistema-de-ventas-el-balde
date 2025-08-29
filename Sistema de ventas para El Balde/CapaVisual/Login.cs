@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using CapaNegocio;
 using CapaEntidad; //Se llama la referencia CapaEntidad que fue agregada al proyecto previamente
+using BCrypt.Net;
 
 
 namespace CapaVisual
@@ -33,22 +34,20 @@ namespace CapaVisual
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-          
+
+            // Obtenemos la lista de usuarios
             List<Usuario> listaUsuarios = new CN_Usuario().Listar();
 
-           Usuario oUsuario = new CN_Usuario().Listar().Where(u=> u.DocumentoUsuario == txtUsuario.Text && u.Clave == txtContrasena.Text).FirstOrDefault();
+            // Buscamos el usuario por Documento
+            Usuario oUsuario = listaUsuarios
+                .Where(u => u.DocumentoUsuario == txtUsuario.Text)
+                .FirstOrDefault();
 
-            // Verifica si el usuario existe en la lista de usuarios obtenida de la capa de negocio
-
-            //Usuario oUsuario = new Usuario();
-
-            //oUsuario.DocumentoUsuario = txtUsuario.Text;
-            //oUsuario.Clave = txtContrasena.Text;
-
-            if (oUsuario != null)
+            // Verificamos que el usuario exista y que la contraseña coincida
+            if (oUsuario != null && BCrypt.Net.BCrypt.Verify(txtContrasena.Text, oUsuario.Clave))
             {
+                // Login correcto, abrimos el formulario principal
                 frmInicio form = new frmInicio(oUsuario);
-
                 form.Show();
                 this.Hide();
 
@@ -56,12 +55,40 @@ namespace CapaVisual
             }
             else
             {
+                // Login incorrecto
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsuario.Text = "";
                 txtContrasena.Text = "";
                 txtUsuario.Focus();
             }
 
+            // List<Usuario> listaUsuarios = new CN_Usuario().Listar();
+
+            //Usuario oUsuario = new CN_Usuario().Listar().Where(u=> u.DocumentoUsuario == txtUsuario.Text && u.Clave == txtContrasena.Text).FirstOrDefault();
+
+            // // Verifica si el usuario existe en la lista de usuarios obtenida de la capa de negocio
+
+            // //Usuario oUsuario = new Usuario();
+
+            // //oUsuario.DocumentoUsuario = txtUsuario.Text;
+            // //oUsuario.Clave = txtContrasena.Text;
+
+            // if (oUsuario != null)
+            // {
+            //     frmInicio form = new frmInicio(oUsuario);
+
+            //     form.Show();
+            //     this.Hide();
+
+            //     form.FormClosing += frm_closing;
+            // }
+            // else
+            // {
+            //     MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //     txtUsuario.Text = "";
+            //     txtContrasena.Text = "";
+            //     txtUsuario.Focus();
+            // }
 
         }
 
