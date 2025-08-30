@@ -16,5 +16,20 @@ namespace CapaVisual
         {
             InitializeComponent();
         }
+
+        private void btnDescargarPDF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBorrarD_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarD_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
