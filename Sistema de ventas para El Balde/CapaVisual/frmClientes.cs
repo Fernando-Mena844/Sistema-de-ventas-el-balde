@@ -245,5 +245,7 @@ namespace CapaVisual
         {
             Limpiar();
         }
+
+        
     }
 }

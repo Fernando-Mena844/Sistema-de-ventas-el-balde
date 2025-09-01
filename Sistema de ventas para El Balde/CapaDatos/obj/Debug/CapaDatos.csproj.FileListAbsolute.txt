@@ -72,3 +72,13 @@ C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas 
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Buffers.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Memory.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Buffers.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Memory.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

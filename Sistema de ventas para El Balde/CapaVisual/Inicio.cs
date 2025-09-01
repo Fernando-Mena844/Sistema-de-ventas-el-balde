@@ -165,7 +165,7 @@ namespace CapaVisual
         private void btnVentas_Click(object sender, EventArgs e)
         {
             // Abrir el formulario de ventas
-            AbrirFormulario((Button)sender, new frmVentas());
+            AbrirFormulario((Button)sender, new frmVentas(usuarioActual));
             // Activar el botón presionado
             ActivarBoton(btnVentas);
         }

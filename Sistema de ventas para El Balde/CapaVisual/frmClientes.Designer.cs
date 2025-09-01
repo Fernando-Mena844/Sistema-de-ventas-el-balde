@@ -449,6 +449,7 @@
             this.cmbBusca.Name = "cmbBusca";
             this.cmbBusca.Size = new System.Drawing.Size(107, 21);
             this.cmbBusca.TabIndex = 2;
+           
             // 
             // frmClientes
             // 

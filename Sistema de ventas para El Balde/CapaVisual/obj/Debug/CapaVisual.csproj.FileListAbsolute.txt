@@ -288,3 +288,11 @@ C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas 
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.Up2Date
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.exe
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.pdb
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.xml
+C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdCliente.resources
