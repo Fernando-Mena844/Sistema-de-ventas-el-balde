@@ -72,7 +72,6 @@ namespace CapaDatos
             }
             return Respuesta;
         }
-
         public Compra ObtenerCompra(string numero)
         {
             Compra obj = new Compra();
@@ -82,16 +81,18 @@ namespace CapaDatos
                 try
                 {
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("select C.IdCompra,");
+                    query.AppendLine("select TOP 1 C.IdCompra,");
                     query.AppendLine("U.nombreCompletoUsuario,");
                     query.AppendLine("P.documentoProveedor, P.razonSocialProveedor,");
                     query.AppendLine("TDC.nombreDocumentoCompra,");
-                    query.AppendLine("C.NumeroDocumentoCompra, C.MontoTotal,convert(char(10), C.FechaRegistro,103)[FechaRegistro] ");
+                    query.AppendLine("C.NumeroDocumentoCompra, C.MontoTotal, convert(char(10), C.FechaRegistro, 103) as FechaRegistro");
                     query.AppendLine("from COMPRA C");
                     query.AppendLine("inner join USUARIO U on U.IdUsuario = C.usuario_id");
-                    query.AppendLine("inner join PROVEEDOR P on P.IdProveedor = P.IdProveedor");
+                    query.AppendLine("inner join DETALLE_COMPRA DC on DC.compra_id = C.IdCompra");
+                    query.AppendLine("inner join PRODUCTO PR on PR.IdProducto = DC.producto_id");
+                    query.AppendLine("inner join PROVEEDOR P on P.IdProveedor = PR.proveedor_id");
                     query.AppendLine("inner join TipoDocumentoCompra TDC on TDC.idTipoDocumentoCompra = C.tipoDocumentoCompra_id");
-                    query.AppendLine("where NumeroDocumentoCompra = @numero");
+                    query.AppendLine("where C.NumeroDocumentoCompra = @numero");
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.Parameters.AddWithValue("@numero", numero);
@@ -101,24 +102,24 @@ namespace CapaDatos
 
                     using (SqlDataReader datareader = cmd.ExecuteReader())
                     {
-                        while (datareader.Read())
+                        if (datareader.Read())
                         {
                             obj = new Compra()
                             {
                                 IdCompra = Convert.ToInt32(datareader["IdCompra"]),
                                 oUsuario = new Usuario() { NombreCompletoUsuario = datareader["nombreCompletoUsuario"].ToString() },
-                                oProveedor = new Proveedor() { documentoProveedor = datareader["documentoProveedor"].ToString(), razonSocialProveedor = datareader["razonSocialProveedor"].ToString() },
+                                oProveedor = new Proveedor()
+                                {
+                                    documentoProveedor = datareader["documentoProveedor"].ToString(),
+                                    razonSocialProveedor = datareader["razonSocialProveedor"].ToString()
+                                },
                                 oTipoDocumentoCompra = new TipoDocumentoCompra() { NombreDocumentoCompra = datareader["nombreDocumentoCompra"].ToString() },
                                 NumeroDocumentoCompra = datareader["NumeroDocumentoCompra"].ToString(),
                                 MontoTotal = Convert.ToDecimal(datareader["MontoTotal"]),
                                 FechaRegistro = datareader["FechaRegistro"].ToString()
                             };
-
                         }
-
                     }
-
-
                 }
                 catch (Exception)
                 {

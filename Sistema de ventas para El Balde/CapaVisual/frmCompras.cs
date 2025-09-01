@@ -107,6 +107,8 @@ namespace CapaVisual
                     txtidproducto.Text = modal._Producto.IdProducto.ToString();
                     txtcodproducto.Text = modal._Producto.codigoProducto;
                     txtproducto.Text = modal._Producto.nombreProducto;
+                    txtpreciocompra.Text=modal._Producto.PrecioCompra.ToString();
+                    txtprecioventa.Text=modal._Producto.PrecioVenta.ToString();
                     txtpreciocompra.Select();
                 }
                 else
@@ -417,21 +419,31 @@ namespace CapaVisual
         private void btnBuscarD_Click(object sender, EventArgs e)
         {
             Compra oCompra = new CN_Compra().ObtenerCompra(txtBuscarD.Text);
-
             if (oCompra.IdCompra != 0)
             {
                 txtNumeroDocumentoProveedorD.Text = oCompra.oProveedor.documentoProveedor;
                 txtFechaD.Text = oCompra.FechaRegistro;
-                cmbTipoDocumentoD.SelectedText = oCompra.oTipoDocumentoCompra.NombreDocumentoCompra;
+                cmbTipoDocumentoD.SelectedIndex = cmbTipoDocumentoD.FindStringExact(oCompra.oTipoDocumentoCompra.NombreDocumentoCompra);
                 txtRazonSocialD.Text = oCompra.oProveedor.razonSocialProveedor;
-
                 dgvDetalleCompra.Rows.Clear();
-                foreach(DetalleCompra dc in oCompra.oDetalleCompra)
+                if (oCompra.oDetalleCompra != null && oCompra.oDetalleCompra.Count > 0)
                 {
-                    dgvDetalleCompra.Rows.Add(new object[] { dc.oProducto.nombreProducto, dc.PrecioCompra, dc.Cantidad, dc.MontoTotal });
+                    foreach (DetalleCompra dc in oCompra.oDetalleCompra)
+                    {
+                        dgvDetalleCompra.Rows.Add(
+                            dc.oProducto.nombreProducto,
+                            dc.PrecioCompra.ToString("0.00"),   
+                            dc.PrecioVenta.ToString("0.00"),
+                            dc.Cantidad,
+                            dc.MontoTotal.ToString("0.00")
+                        );
+                    }
                 }
-
                 txtMontoTotalD.Text = oCompra.MontoTotal.ToString("0.00");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la compra con ese número de documento.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -448,76 +460,102 @@ namespace CapaVisual
 
         private void btnDescargarPDF_Click(object sender, EventArgs e)
         {
-            if(txtRazonSocialD.Text == "")
+            if (string.IsNullOrWhiteSpace(txtRazonSocialD.Text))
             {
                 MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            string Texto_Html= Properties.Resources.PlantillaCompra.ToString();
-            DatosNegocio odatos = new CN_Negocio().ObtenerDatosNegocio();
-
-            Texto_Html = Texto_Html.Replace("@nombrenegocio", odatos.NombreNegocio.ToUpper());
-            Texto_Html = Texto_Html.Replace("@docnegocio", odatos.NitDatoNegocio);
-            Texto_Html = Texto_Html.Replace("direccionnegocio", odatos.ubicacionNegocio);
-
-
-            Texto_Html = Texto_Html.Replace("@tipodocumento", cmbTipoDocumentoD.Text);
-            Texto_Html = Texto_Html.Replace("@numerodocumento", btnBuscarD.Text);
-
-            Texto_Html = Texto_Html.Replace("@docproveedor", txtNumeroDocumentoProveedorD.Text);
-            Texto_Html = Texto_Html.Replace("@nombreproveedor", txtRazonSocialD.Text);
-            Texto_Html = Texto_Html.Replace("@fecharegistro", txtFechaD.Text);
-            Texto_Html = Texto_Html.Replace("@usuarioregistro", "Usuario");
-
-            string filas = string.Empty;
-            foreach (DataGridViewRow row in dgvDetalleCompra.Rows)
+            try
             {
-                filas += "<tr>";
-                filas += "<td style='text-align: left;'>" + row.Cells["ProductoD"].Value.ToString() + "</td>";
-                filas += "<td style='text-align: right;'>" + row.Cells["PrecioCompraD"].Value.ToString() + "</td>";
-                filas += "<td style='text-align: right;'>" + row.Cells["CantidadD"].Value.ToString() + "</td>";
-                filas += "<td style='text-align: right;'>" + row.Cells["SubTotalD"].Value.ToString() + "</td>";
-                filas += "</tr>";
-            }
-            Texto_Html = Texto_Html.Replace("@filas", filas);
-            Texto_Html = Texto_Html.Replace("@montototal", txtMontoTotalD.Text);
+                string Texto_Html = Properties.Resources.PlantillaCompra.ToString();
+                DatosNegocio odatos = new CN_Negocio().ObtenerDatosNegocio();
 
-            SaveFileDialog savefile = new SaveFileDialog();
-            savefile.FileName = string.Format("Compra_{0}.pdf", txtBuscarD.Text);
-            savefile.Filter = "PDF Files|*.pdf";
+                Texto_Html = Texto_Html.Replace("@nombrenegocio", odatos.NombreNegocio.ToUpper());
+                Texto_Html = Texto_Html.Replace("@docnegocio", odatos.NitDatoNegocio);
+                Texto_Html = Texto_Html.Replace("@direccionnegocio", odatos.ubicacionNegocio);
 
-            if (savefile.ShowDialog() == DialogResult.OK)
-            {
-                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                Texto_Html = Texto_Html.Replace("@tipodocumento", cmbTipoDocumentoD.Text);
+                Texto_Html = Texto_Html.Replace("@numerodocumento", txtBuscarD.Text);
+
+                Texto_Html = Texto_Html.Replace("@docproveedor", txtNumeroDocumentoProveedorD.Text);
+                Texto_Html = Texto_Html.Replace("@nombreproveedor", txtRazonSocialD.Text);
+                Texto_Html = Texto_Html.Replace("@fecharegistro", txtFechaD.Text);
+
+                // Si tienes el usuario que registró la compra, reemplaza aquí
+                Texto_Html = Texto_Html.Replace("@usuarioregistro", "Usuario");
+
+                string filas = string.Empty;
+                foreach (DataGridViewRow row in dgvDetalleCompra.Rows)
                 {
-                    iTextSharp.text.Document pdfDoc = new iTextSharp.text.Document(iTextSharp.text.PageSize.A4,25,25,25,25);
-
-                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
-                    pdfDoc.Open();
-
-                    bool obtenido = true;
-                    byte[] byteImage = new CN_Negocio().ObtenerLogo(out obtenido);
-
-                    if (obtenido)
+                    if (!row.IsNewRow)
                     {
-                        iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(byteImage);
-                        img.ScaleToFit(60, 60);
-                        img.Alignment = iTextSharp.text.Image.UNDERLYING;
-                        img.SetAbsolutePosition(pdfDoc.Left, pdfDoc.GetTop(51));
-                        pdfDoc.Add(img);
+                        string producto = row.Cells[0].Value?.ToString() ?? "";
+                        string precioCompra = row.Cells[1].Value?.ToString() ?? "0.00";
+                        string cantidad = row.Cells[2].Value?.ToString() ?? "0";
+                        string subTotal = row.Cells[3].Value?.ToString() ?? "0.00";
+
+                        filas += "<tr>";
+                        filas += $"<td style='text-align: left;'>{producto}</td>";
+                        filas += $"<td style='text-align: right;'>{precioCompra}</td>";
+                        filas += $"<td style='text-align: right;'>{cantidad}</td>";
+                        filas += $"<td style='text-align: right;'>{subTotal}</td>";
+                        filas += "</tr>";
+                    }
+                }
+                Texto_Html = Texto_Html.Replace("@filas", filas);
+                Texto_Html = Texto_Html.Replace("@montototal", txtMontoTotalD.Text);
+
+                SaveFileDialog savefile = new SaveFileDialog
+                {
+                    FileName = $"Compra_{txtBuscarD.Text}.pdf",
+                    Filter = "PDF Files|*.pdf"
+                };
+
+                if (savefile.ShowDialog() == DialogResult.OK)
+                {
+                    using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                    {
+                        iTextSharp.text.Document pdfDoc = new iTextSharp.text.Document(iTextSharp.text.PageSize.A4, 25, 25, 25, 25);
+                        PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                        pdfDoc.Open();
+
+                        bool obtenido = true;
+                        byte[] byteImage = new CN_Negocio().ObtenerLogo(out obtenido);
+
+                        if (obtenido && byteImage != null && byteImage.Length > 0)
+                        {
+                            iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(byteImage);
+                            img.ScaleToFit(60, 60);
+                            img.Alignment = iTextSharp.text.Image.UNDERLYING;
+                            img.SetAbsolutePosition(pdfDoc.Left, pdfDoc.GetTop(51));
+                            pdfDoc.Add(img);
+                        }
+
+                        using (StringReader sr = new StringReader(Texto_Html))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                        }
+
+                        pdfDoc.Close();
                     }
 
-                    using (StringReader sr = new StringReader(Texto_Html))
-                    {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
-                    }
-
-                    pdfDoc.Close();
-                    stream.Close();
                     MessageBox.Show("Documento Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void tabControl1_Layout(object sender, LayoutEventArgs e)
+        {
+            cmbTipoDocumentoD.Items.Add(new OpcionCombos() { Valor = "Boleta", Texto = "Boleta" });
+            cmbTipoDocumentoD.Items.Add(new OpcionCombos() { Valor = "Factura", Texto = "Factura" });
+            cmbTipoDocumentoD.DisplayMember = "Texto";
+            cmbTipoDocumentoD.ValueMember = "Valor";
+            cmbTipoDocumentoD.SelectedIndex = 0;
         }
     }
 }

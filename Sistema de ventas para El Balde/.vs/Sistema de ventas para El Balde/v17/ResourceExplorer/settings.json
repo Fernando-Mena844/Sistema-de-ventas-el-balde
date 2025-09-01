@@ -1,1 +1,17 @@
-{"ShowEmptyProjects":false,"CustomColumnOrderings":{"name":0,"type":1,"neutral-value":2,"neutral-comment":3},"ShowValidationErrors":true,"SelectedResourceGroupsByProjectFilePath":{"C:\\Users\\japvs\\OneDrive\\Escritorio\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\CapaVisual.csproj":["C:\\Users\\japvs\\OneDrive\\Escritorio\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmNegocio.resx"]},"VisibleColumnKeys":["name","neutral-value","neutral-comment"]}
+{
+  "ShowEmptyProjects": false,
+  "SelectedGroups": [],
+  "ExpandedProjects": [],
+  "EnableSpellChecker": true,
+  "ColumnOrder": [
+    "name",
+    "type",
+    "neutral-value",
+    "neutral-comment"
+  ],
+  "VisibleColumnKeys": [
+    "name",
+    "neutral-comment",
+    "neutral-value"
+  ]
+}

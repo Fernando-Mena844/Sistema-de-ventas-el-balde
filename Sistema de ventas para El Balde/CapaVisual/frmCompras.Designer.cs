@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCompras));
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -79,7 +78,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDescargarPDF = new System.Windows.Forms.Button();
             this.txtBuscarD = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblNumeroDocumento = new System.Windows.Forms.Label();
             this.txtMontoTotalD = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.btnBorrarD = new System.Windows.Forms.Button();
@@ -119,31 +118,23 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(312, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "hola, soy el formulario de compras";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 0);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(886, 560);
             this.tabControl1.TabIndex = 6;
+            this.tabControl1.Layout += new System.Windows.Forms.LayoutEventHandler(this.tabControl1_Layout);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(878, 534);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registrar";
@@ -581,7 +572,7 @@
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(878, 534);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ver detalle";
@@ -592,7 +583,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnDescargarPDF);
             this.panel1.Controls.Add(this.txtBuscarD);
-            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.lblNumeroDocumento);
             this.panel1.Controls.Add(this.txtMontoTotalD);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.btnBorrarD);
@@ -623,14 +614,14 @@
             this.txtBuscarD.Size = new System.Drawing.Size(144, 20);
             this.txtBuscarD.TabIndex = 6;
             // 
-            // label18
+            // lblNumeroDocumento
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(271, 14);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(97, 13);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Nuevo Documento";
+            this.lblNumeroDocumento.AutoSize = true;
+            this.lblNumeroDocumento.Location = new System.Drawing.Point(257, 14);
+            this.lblNumeroDocumento.Name = "lblNumeroDocumento";
+            this.lblNumeroDocumento.Size = new System.Drawing.Size(115, 13);
+            this.lblNumeroDocumento.TabIndex = 6;
+            this.lblNumeroDocumento.Text = "Número de documento";
             // 
             // txtMontoTotalD
             // 
@@ -857,7 +848,6 @@
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(892, 563);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label1);
             this.Name = "frmCompras";
             this.Text = "frmCompras";
             this.Load += new System.EventHandler(this.frmCompras_Load);
@@ -882,12 +872,10 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel2;
@@ -937,7 +925,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDescargarPDF;
         private System.Windows.Forms.TextBox txtBuscarD;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblNumeroDocumento;
         private System.Windows.Forms.TextBox txtMontoTotalD;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnBorrarD;
