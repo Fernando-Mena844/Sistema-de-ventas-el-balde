@@ -142,7 +142,7 @@ namespace CapaDatos
 
                     query.AppendLine("select P.nombreProducto, dc.PrecioCompra, dc.Cantidad, dc.MontoTotal from DETALLE_COMPRA dc");
                     query.AppendLine("inner join PRODUCTO P on P.IdProducto = dc.producto_id");
-                    query.AppendLine("where dc.compra_id = @idcommpra");
+                    query.AppendLine("where dc.compra_id = @idcompra");
 
                     SqlCommand cmd = new SqlCommand(query.ToString(), conexion);
                     cmd.Parameters.AddWithValue("@idcompra", idCompra);

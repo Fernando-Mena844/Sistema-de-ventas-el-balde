@@ -432,9 +432,8 @@ namespace CapaVisual
                     {
                         dgvDetalleCompra.Rows.Add(
                             dc.oProducto.nombreProducto,
-                            dc.PrecioCompra.ToString("0.00"),   
-                            dc.PrecioVenta.ToString("0.00"),
-                            dc.Cantidad,
+                            dc.PrecioCompra.ToString("0.00"),
+                            dc.Cantidad.ToString(),
                             dc.MontoTotal.ToString("0.00")
                         );
                     }
@@ -468,6 +467,7 @@ namespace CapaVisual
 
             try
             {
+                string numeroDocumento = string.Format("{0:00000}", int.Parse(txtBuscarD.Text));
                 string Texto_Html = Properties.Resources.PlantillaCompra.ToString();
                 DatosNegocio odatos = new CN_Negocio().ObtenerDatosNegocio();
 
@@ -476,7 +476,7 @@ namespace CapaVisual
                 Texto_Html = Texto_Html.Replace("@direccionnegocio", odatos.ubicacionNegocio);
 
                 Texto_Html = Texto_Html.Replace("@tipodocumento", cmbTipoDocumentoD.Text);
-                Texto_Html = Texto_Html.Replace("@numerodocumento", txtBuscarD.Text);
+                Texto_Html = Texto_Html.Replace("@numerodocumento", numeroDocumento);
 
                 Texto_Html = Texto_Html.Replace("@docproveedor", txtNumeroDocumentoProveedorD.Text);
                 Texto_Html = Texto_Html.Replace("@nombreproveedor", txtRazonSocialD.Text);
@@ -496,7 +496,7 @@ namespace CapaVisual
                         string subTotal = row.Cells[3].Value?.ToString() ?? "0.00";
 
                         filas += "<tr>";
-                        filas += $"<td style='text-align: left;'>{producto}</td>";
+                        filas += $"<td style='text-align: center;'>{producto}</td>";
                         filas += $"<td style='text-align: right;'>{precioCompra}</td>";
                         filas += $"<td style='text-align: right;'>{cantidad}</td>";
                         filas += $"<td style='text-align: right;'>{subTotal}</td>";
@@ -508,7 +508,7 @@ namespace CapaVisual
 
                 SaveFileDialog savefile = new SaveFileDialog
                 {
-                    FileName = $"Compra_{txtBuscarD.Text}.pdf",
+                    FileName = $"Compra_{numeroDocumento}.pdf",
                     Filter = "PDF Files|*.pdf"
                 };
 

@@ -46,13 +46,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnRegistrarC = new System.Windows.Forms.Button();
-            this.txtNuevodoc = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnagregar = new System.Windows.Forms.Button();
             this.txttotalapagar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnBorrarC = new System.Windows.Forms.Button();
-            this.btnBuscarC = new System.Windows.Forms.Button();
             this.dgvdata = new System.Windows.Forms.DataGridView();
             this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,10 +80,8 @@
             this.btnBorrarD = new System.Windows.Forms.Button();
             this.btnBuscarD = new System.Windows.Forms.Button();
             this.dgvDetalleCompra = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductoD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioCompraD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantidadD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotalD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -146,13 +140,9 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.btnRegistrarC);
-            this.panel2.Controls.Add(this.txtNuevodoc);
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.btnagregar);
             this.panel2.Controls.Add(this.txttotalapagar);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.btnBorrarC);
-            this.panel2.Controls.Add(this.btnBuscarC);
             this.panel2.Controls.Add(this.dgvdata);
             this.panel2.Controls.Add(this.groupBoxProveedor);
             this.panel2.Controls.Add(this.groupBoxCompra);
@@ -309,23 +299,6 @@
             this.btnRegistrarC.UseVisualStyleBackColor = true;
             this.btnRegistrarC.Click += new System.EventHandler(this.btnRegistrarC_Click);
             // 
-            // txtNuevodoc
-            // 
-            this.txtNuevodoc.Location = new System.Drawing.Point(374, 11);
-            this.txtNuevodoc.Name = "txtNuevodoc";
-            this.txtNuevodoc.Size = new System.Drawing.Size(144, 20);
-            this.txtNuevodoc.TabIndex = 6;
-            this.txtNuevodoc.TextChanged += new System.EventHandler(this.txtNuevodoc_TextChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(271, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 13);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Nuevo Documento";
-            // 
             // btnagregar
             // 
             this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -353,28 +326,6 @@
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Monto Total";
-            // 
-            // btnBorrarC
-            // 
-            this.btnBorrarC.BackColor = System.Drawing.Color.IndianRed;
-            this.btnBorrarC.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarC.Location = new System.Drawing.Point(631, 11);
-            this.btnBorrarC.Name = "btnBorrarC";
-            this.btnBorrarC.Size = new System.Drawing.Size(89, 23);
-            this.btnBorrarC.TabIndex = 12;
-            this.btnBorrarC.Text = "Borrar";
-            this.btnBorrarC.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscarC
-            // 
-            this.btnBuscarC.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnBuscarC.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarC.Location = new System.Drawing.Point(536, 11);
-            this.btnBuscarC.Name = "btnBuscarC";
-            this.btnBuscarC.Size = new System.Drawing.Size(89, 23);
-            this.btnBuscarC.TabIndex = 11;
-            this.btnBuscarC.Text = "Buscar";
-            this.btnBuscarC.UseVisualStyleBackColor = false;
             // 
             // dgvdata
             // 
@@ -603,7 +554,7 @@
             this.btnDescargarPDF.Name = "btnDescargarPDF";
             this.btnDescargarPDF.Size = new System.Drawing.Size(119, 23);
             this.btnDescargarPDF.TabIndex = 14;
-            this.btnDescargarPDF.Text = "Descargara en PDF";
+            this.btnDescargarPDF.Text = "Descargar a PDF";
             this.btnDescargarPDF.UseVisualStyleBackColor = true;
             this.btnDescargarPDF.Click += new System.EventHandler(this.btnDescargarPDF_Click);
             // 
@@ -668,10 +619,8 @@
             // 
             this.dgvDetalleCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleCompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
             this.ProductoD,
             this.PrecioCompraD,
-            this.dataGridViewTextBoxColumn4,
             this.CantidadD,
             this.SubTotalD,
             this.dataGridViewButtonColumn1});
@@ -680,14 +629,6 @@
             this.dgvDetalleCompra.RowHeadersWidth = 51;
             this.dgvDetalleCompra.Size = new System.Drawing.Size(705, 161);
             this.dgvDetalleCompra.TabIndex = 5;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdProducto";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // ProductoD
             // 
@@ -702,14 +643,6 @@
             this.PrecioCompraD.MinimumWidth = 6;
             this.PrecioCompraD.Name = "PrecioCompraD";
             this.PrecioCompraD.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Precio Venta";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // CantidadD
             // 
@@ -757,6 +690,7 @@
             // 
             this.txtRazonSocialD.Location = new System.Drawing.Point(168, 47);
             this.txtRazonSocialD.Name = "txtRazonSocialD";
+            this.txtRazonSocialD.ReadOnly = true;
             this.txtRazonSocialD.Size = new System.Drawing.Size(162, 20);
             this.txtRazonSocialD.TabIndex = 4;
             // 
@@ -764,6 +698,7 @@
             // 
             this.txtNumeroDocumentoProveedorD.Location = new System.Drawing.Point(9, 45);
             this.txtNumeroDocumentoProveedorD.Name = "txtNumeroDocumentoProveedorD";
+            this.txtNumeroDocumentoProveedorD.ReadOnly = true;
             this.txtNumeroDocumentoProveedorD.Size = new System.Drawing.Size(137, 20);
             this.txtNumeroDocumentoProveedorD.TabIndex = 2;
             // 
@@ -800,6 +735,7 @@
             // 
             // cmbTipoDocumentoD
             // 
+            this.cmbTipoDocumentoD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoDocumentoD.FormattingEnabled = true;
             this.cmbTipoDocumentoD.Location = new System.Drawing.Point(152, 45);
             this.cmbTipoDocumentoD.Name = "cmbTipoDocumentoD";
@@ -810,6 +746,7 @@
             // 
             this.txtFechaD.Location = new System.Drawing.Point(9, 45);
             this.txtFechaD.Name = "txtFechaD";
+            this.txtFechaD.ReadOnly = true;
             this.txtFechaD.Size = new System.Drawing.Size(100, 20);
             this.txtFechaD.TabIndex = 2;
             // 
@@ -880,13 +817,9 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnRegistrarC;
-        private System.Windows.Forms.TextBox txtNuevodoc;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.TextBox txttotalapagar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnBorrarC;
-        private System.Windows.Forms.Button btnBuscarC;
         private System.Windows.Forms.DataGridView dgvdata;
         private System.Windows.Forms.GroupBox groupBoxProveedor;
         private System.Windows.Forms.TextBox txtRazonsocial;
@@ -943,10 +876,8 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductoD;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompraD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantidadD;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotalD;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
