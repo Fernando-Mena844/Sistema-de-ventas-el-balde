@@ -557,5 +557,7 @@ namespace CapaVisual
             cmbTipoDocumentoD.ValueMember = "Valor";
             cmbTipoDocumentoD.SelectedIndex = 0;
         }
+
+        
     }
 }

@@ -329,6 +329,7 @@
             // 
             // dgvdata
             // 
+            this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProducto,
@@ -514,9 +515,9 @@
             this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuarios.Location = new System.Drawing.Point(12, 9);
             this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(133, 20);
+            this.lblUsuarios.Size = new System.Drawing.Size(150, 20);
             this.lblUsuarios.TabIndex = 0;
-            this.lblUsuarios.Text = "Detalle Compra";
+            this.lblUsuarios.Text = "Registrar Compra";
             // 
             // tabPage2
             // 
@@ -617,6 +618,7 @@
             // 
             // dgvDetalleCompra
             // 
+            this.dgvDetalleCompra.AllowUserToAddRows = false;
             this.dgvDetalleCompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleCompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductoD,

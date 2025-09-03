@@ -18,5 +18,7 @@ namespace CapaEntidad
 
         public string FechaRegistro { get; set; }
 
+        public string NumeroDocumentoVenta { get; set; }
+
     }
 }
