@@ -277,11 +277,11 @@ namespace CapaVisual
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.Location = new System.Drawing.Point(65, 54);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(909, 505);
-            this.pnlContenedor.TabIndex = 2;
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedor.Location = new System.Drawing.Point(35, 35);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(1015, 631);
+            this.pnlContenedor.TabIndex = 2;
             // 
             // contextMenuStripMantenimiento
             // 
@@ -343,10 +343,9 @@ namespace CapaVisual
             this.pnlWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlWrapper.Location = new System.Drawing.Point(99, 60);
             this.pnlWrapper.Name = "pnlWrapper";
+            this.pnlWrapper.Padding = new System.Windows.Forms.Padding(35);
             this.pnlWrapper.Size = new System.Drawing.Size(1085, 701);
             this.pnlWrapper.TabIndex = 3;
-            this.pnlWrapper.Padding = new System.Windows.Forms.Padding(35);
-            this.pnlWrapper.Controls.Add(this.pnlContenedor);
             // 
             // frmInicio
             // 
@@ -358,6 +357,7 @@ namespace CapaVisual
             this.Controls.Add(this.gbModulos);
             this.Controls.Add(this.gbEncabezado);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";

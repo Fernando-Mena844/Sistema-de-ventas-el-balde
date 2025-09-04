@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnbuscarresultado = new System.Windows.Forms.Button();
@@ -38,6 +40,12 @@
             this.lblReporteCompras = new System.Windows.Forms.Label();
             this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBorrarBusqueda = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtBusca = new System.Windows.Forms.TextBox();
+            this.cmbBusca = new System.Windows.Forms.ComboBox();
+            this.lblBusca = new System.Windows.Forms.Label();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.dgvdata = new System.Windows.Forms.DataGridView();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,12 +61,6 @@
             this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExportar = new System.Windows.Forms.Button();
-            this.btnBorrarBusqueda = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.txtBusca = new System.Windows.Forms.TextBox();
-            this.cmbBusca = new System.Windows.Forms.ComboBox();
-            this.lblBusca = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -70,11 +72,14 @@
             this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaInicio.Location = new System.Drawing.Point(87, 43);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaInicio.Size = new System.Drawing.Size(104, 21);
             this.dtpFechaInicio.TabIndex = 0;
+            this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dtpFechaInicio_ValueChanged);
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnbuscarresultado);
             this.panel1.Controls.Add(this.cboproveedor);
@@ -84,7 +89,8 @@
             this.panel1.Controls.Add(this.lblReporteCompras);
             this.panel1.Controls.Add(this.dtpFechaFin);
             this.panel1.Controls.Add(this.dtpFechaInicio);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.panel1.Location = new System.Drawing.Point(22, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(756, 82);
             this.panel1.TabIndex = 1;
@@ -109,7 +115,7 @@
             this.cboproveedor.FormattingEnabled = true;
             this.cboproveedor.Location = new System.Drawing.Point(486, 41);
             this.cboproveedor.Name = "cboproveedor";
-            this.cboproveedor.Size = new System.Drawing.Size(121, 21);
+            this.cboproveedor.Size = new System.Drawing.Size(121, 23);
             this.cboproveedor.TabIndex = 6;
             // 
             // lblProveedor
@@ -117,7 +123,7 @@
             this.lblProveedor.AutoSize = true;
             this.lblProveedor.Location = new System.Drawing.Point(421, 46);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(59, 13);
+            this.lblProveedor.Size = new System.Drawing.Size(66, 15);
             this.lblProveedor.TabIndex = 5;
             this.lblProveedor.Text = "Proveedor:";
             // 
@@ -126,7 +132,7 @@
             this.lblFechafin.AutoSize = true;
             this.lblFechafin.Location = new System.Drawing.Point(210, 47);
             this.lblFechafin.Name = "lblFechafin";
-            this.lblFechafin.Size = new System.Drawing.Size(54, 13);
+            this.lblFechafin.Size = new System.Drawing.Size(60, 15);
             this.lblFechafin.TabIndex = 4;
             this.lblFechafin.Text = "Fecha fin:";
             // 
@@ -135,7 +141,7 @@
             this.lblFechaInicio.AutoSize = true;
             this.lblFechaInicio.Location = new System.Drawing.Point(13, 47);
             this.lblFechaInicio.Name = "lblFechaInicio";
-            this.lblFechaInicio.Size = new System.Drawing.Size(68, 13);
+            this.lblFechaInicio.Size = new System.Drawing.Size(76, 15);
             this.lblFechaInicio.TabIndex = 3;
             this.lblFechaInicio.Text = "Fecha Inicio:";
             // 
@@ -145,9 +151,9 @@
             this.lblReporteCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReporteCompras.Location = new System.Drawing.Point(0, 0);
             this.lblReporteCompras.Name = "lblReporteCompras";
-            this.lblReporteCompras.Size = new System.Drawing.Size(173, 24);
+            this.lblReporteCompras.Size = new System.Drawing.Size(200, 24);
             this.lblReporteCompras.TabIndex = 2;
-            this.lblReporteCompras.Text = "Reporte Compras";
+            this.lblReporteCompras.Text = "Reporte de compras";
             // 
             // dtpFechaFin
             // 
@@ -155,11 +161,15 @@
             this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaFin.Location = new System.Drawing.Point(270, 43);
             this.dtpFechaFin.Name = "dtpFechaFin";
-            this.dtpFechaFin.Size = new System.Drawing.Size(104, 20);
+            this.dtpFechaFin.Size = new System.Drawing.Size(104, 21);
             this.dtpFechaFin.TabIndex = 1;
+            this.dtpFechaFin.ValueChanged += new System.EventHandler(this.dtpFechaFin_ValueChanged);
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btnBorrarBusqueda);
             this.panel2.Controls.Add(this.btnBuscar);
@@ -168,117 +178,11 @@
             this.panel2.Controls.Add(this.lblBusca);
             this.panel2.Controls.Add(this.btnExportar);
             this.panel2.Controls.Add(this.dgvdata);
-            this.panel2.Location = new System.Drawing.Point(12, 100);
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.panel2.Location = new System.Drawing.Point(22, 100);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(756, 338);
             this.panel2.TabIndex = 2;
-            // 
-            // dgvdata
-            // 
-            this.dgvdata.AllowUserToAddRows = false;
-            this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FechaRegistro,
-            this.TipoDocumento,
-            this.NumeroDocumentoCompra,
-            this.MontoTotal,
-            this.UsuarioRegistro,
-            this.DocumentoProveedor,
-            this.RazonSocial,
-            this.CodigoProducto,
-            this.NombreProducto,
-            this.Categoria,
-            this.PrecioCompra,
-            this.PrecioVenta,
-            this.Cantidad,
-            this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(3, 85);
-            this.dgvdata.Name = "dgvdata";
-            this.dgvdata.RowHeadersWidth = 51;
-            this.dgvdata.Size = new System.Drawing.Size(750, 250);
-            this.dgvdata.TabIndex = 6;
-            // 
-            // FechaRegistro
-            // 
-            this.FechaRegistro.HeaderText = "Fecha Registro";
-            this.FechaRegistro.Name = "FechaRegistro";
-            // 
-            // TipoDocumento
-            // 
-            this.TipoDocumento.HeaderText = "Tipo Documento";
-            this.TipoDocumento.Name = "TipoDocumento";
-            // 
-            // NumeroDocumentoCompra
-            // 
-            this.NumeroDocumentoCompra.HeaderText = "Numero Documento";
-            this.NumeroDocumentoCompra.Name = "NumeroDocumentoCompra";
-            // 
-            // MontoTotal
-            // 
-            this.MontoTotal.HeaderText = "Monto Total";
-            this.MontoTotal.Name = "MontoTotal";
-            // 
-            // UsuarioRegistro
-            // 
-            this.UsuarioRegistro.HeaderText = "Usuario Registro";
-            this.UsuarioRegistro.Name = "UsuarioRegistro";
-            // 
-            // DocumentoProveedor
-            // 
-            this.DocumentoProveedor.HeaderText = "Documento Proveedor";
-            this.DocumentoProveedor.Name = "DocumentoProveedor";
-            // 
-            // RazonSocial
-            // 
-            this.RazonSocial.HeaderText = "Razon Social";
-            this.RazonSocial.Name = "RazonSocial";
-            // 
-            // CodigoProducto
-            // 
-            this.CodigoProducto.HeaderText = "Codigo Producto";
-            this.CodigoProducto.Name = "CodigoProducto";
-            // 
-            // NombreProducto
-            // 
-            this.NombreProducto.HeaderText = "Nombre Producto";
-            this.NombreProducto.Name = "NombreProducto";
-            // 
-            // Categoria
-            // 
-            this.Categoria.HeaderText = "Categoria";
-            this.Categoria.Name = "Categoria";
-            // 
-            // PrecioCompra
-            // 
-            this.PrecioCompra.HeaderText = "Precio Compra";
-            this.PrecioCompra.Name = "PrecioCompra";
-            // 
-            // PrecioVenta
-            // 
-            this.PrecioVenta.HeaderText = "Precio Venta";
-            this.PrecioVenta.Name = "PrecioVenta";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "SubTotal";
-            this.SubTotal.Name = "SubTotal";
-            // 
-            // btnExportar
-            // 
-            this.btnExportar.Image = global::CapaVisual.Properties.Resources.Excel2;
-            this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportar.Location = new System.Drawing.Point(622, 55);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(86, 24);
-            this.btnExportar.TabIndex = 14;
-            this.btnExportar.Text = "Descargar";
-            this.btnExportar.UseVisualStyleBackColor = true;
-            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // btnBorrarBusqueda
             // 
@@ -315,9 +219,9 @@
             this.txtBusca.Location = new System.Drawing.Point(247, 16);
             this.txtBusca.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusca.Name = "txtBusca";
-            this.txtBusca.Size = new System.Drawing.Size(138, 20);
+            this.txtBusca.ShortcutsEnabled = false;
+            this.txtBusca.Size = new System.Drawing.Size(138, 21);
             this.txtBusca.TabIndex = 17;
-         
             // 
             // cmbBusca
             // 
@@ -325,7 +229,7 @@
             this.cmbBusca.Location = new System.Drawing.Point(73, 16);
             this.cmbBusca.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBusca.Name = "cmbBusca";
-            this.cmbBusca.Size = new System.Drawing.Size(170, 21);
+            this.cmbBusca.Size = new System.Drawing.Size(170, 23);
             this.cmbBusca.TabIndex = 16;
             // 
             // lblBusca
@@ -334,9 +238,152 @@
             this.lblBusca.Location = new System.Drawing.Point(11, 20);
             this.lblBusca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBusca.Name = "lblBusca";
-            this.lblBusca.Size = new System.Drawing.Size(58, 13);
+            this.lblBusca.Size = new System.Drawing.Size(65, 15);
             this.lblBusca.TabIndex = 15;
             this.lblBusca.Text = "Busca por:";
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportar.Image = global::CapaVisual.Properties.Resources.Excel2;
+            this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExportar.Location = new System.Drawing.Point(667, 55);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(86, 24);
+            this.btnExportar.TabIndex = 14;
+            this.btnExportar.Text = "Descargar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
+            // dgvdata
+            // 
+            this.dgvdata.AllowUserToAddRows = false;
+            this.dgvdata.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvdata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FechaRegistro,
+            this.TipoDocumento,
+            this.NumeroDocumentoCompra,
+            this.MontoTotal,
+            this.UsuarioRegistro,
+            this.DocumentoProveedor,
+            this.RazonSocial,
+            this.CodigoProducto,
+            this.NombreProducto,
+            this.Categoria,
+            this.PrecioCompra,
+            this.PrecioVenta,
+            this.Cantidad,
+            this.SubTotal});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvdata.Location = new System.Drawing.Point(3, 85);
+            this.dgvdata.Name = "dgvdata";
+            this.dgvdata.RowHeadersWidth = 51;
+            this.dgvdata.Size = new System.Drawing.Size(750, 250);
+            this.dgvdata.TabIndex = 6;
+            // 
+            // FechaRegistro
+            // 
+            this.FechaRegistro.HeaderText = "Fecha Registro";
+            this.FechaRegistro.Name = "FechaRegistro";
+            this.FechaRegistro.Width = 106;
+            // 
+            // TipoDocumento
+            // 
+            this.TipoDocumento.HeaderText = "Tipo Documento";
+            this.TipoDocumento.Name = "TipoDocumento";
+            this.TipoDocumento.Width = 113;
+            // 
+            // NumeroDocumentoCompra
+            // 
+            this.NumeroDocumentoCompra.HeaderText = "Numero Documento";
+            this.NumeroDocumentoCompra.Name = "NumeroDocumentoCompra";
+            this.NumeroDocumentoCompra.Width = 132;
+            // 
+            // MontoTotal
+            // 
+            this.MontoTotal.HeaderText = "Monto Total";
+            this.MontoTotal.Name = "MontoTotal";
+            this.MontoTotal.Width = 89;
+            // 
+            // UsuarioRegistro
+            // 
+            this.UsuarioRegistro.HeaderText = "Usuario Registro";
+            this.UsuarioRegistro.Name = "UsuarioRegistro";
+            this.UsuarioRegistro.Width = 114;
+            // 
+            // DocumentoProveedor
+            // 
+            this.DocumentoProveedor.HeaderText = "Documento Proveedor";
+            this.DocumentoProveedor.Name = "DocumentoProveedor";
+            this.DocumentoProveedor.Width = 142;
+            // 
+            // RazonSocial
+            // 
+            this.RazonSocial.HeaderText = "Razon Social";
+            this.RazonSocial.Name = "RazonSocial";
+            this.RazonSocial.Width = 97;
+            // 
+            // CodigoProducto
+            // 
+            this.CodigoProducto.HeaderText = "Codigo Producto";
+            this.CodigoProducto.Name = "CodigoProducto";
+            this.CodigoProducto.Width = 113;
+            // 
+            // NombreProducto
+            // 
+            this.NombreProducto.HeaderText = "Nombre Producto";
+            this.NombreProducto.Name = "NombreProducto";
+            this.NombreProducto.Width = 118;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.Width = 85;
+            // 
+            // PrecioCompra
+            // 
+            this.PrecioCompra.HeaderText = "Precio Compra";
+            this.PrecioCompra.Name = "PrecioCompra";
+            this.PrecioCompra.Width = 105;
+            // 
+            // PrecioVenta
+            // 
+            this.PrecioVenta.HeaderText = "Precio Venta";
+            this.PrecioVenta.Name = "PrecioVenta";
+            this.PrecioVenta.Width = 93;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.Width = 81;
+            // 
+            // SubTotal
+            // 
+            this.SubTotal.HeaderText = "SubTotal";
+            this.SubTotal.Name = "SubTotal";
+            this.SubTotal.Width = 81;
             // 
             // frmReporteCompra
             // 

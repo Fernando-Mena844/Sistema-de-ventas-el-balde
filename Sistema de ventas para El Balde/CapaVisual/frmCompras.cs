@@ -108,8 +108,7 @@ namespace CapaVisual
                     txtcodproducto.Text = modal._Producto.codigoProducto;
                     txtproducto.Text = modal._Producto.nombreProducto;
                     txtpreciocompra.Text=modal._Producto.PrecioCompra.ToString();
-                    txtprecioventa.Text=modal._Producto.PrecioVenta.ToString();
-                    txtpreciocompra.Select();
+                    txtcantidad.Select();
                 }
                 else
                 {
@@ -164,13 +163,6 @@ namespace CapaVisual
                 return;
             }
 
-            if (!decimal.TryParse(txtprecioventa.Text, out precioventa))
-            {
-                MessageBox.Show("Precio de venta - Formato de moneda no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtprecioventa.Select();
-                return;
-            }
-
             foreach (DataGridViewRow fila in dgvdata.Rows)
             {
 
@@ -211,10 +203,8 @@ namespace CapaVisual
             txtidproducto.Text = "0";
             txtcodproducto.Text = "";
             txtcodproducto.BackColor = System.Drawing.Color.White;
-            ;
             txtproducto.Text = "";
             txtpreciocompra.Text = "0.00";
-            txtprecioventa.Text = "0.00";
             txtcantidad.Value = 1;
         }
 
@@ -251,7 +241,7 @@ namespace CapaVisual
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-                e.Graphics.DrawImage(Properties.Resources.Check, new Rectangle(x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.Delete, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }
@@ -282,33 +272,6 @@ namespace CapaVisual
             else
             {
                 if (txtpreciocompra.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
-                {
-                    e.Handled = true;
-                }
-                else
-                {
-                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
-                    {
-                        e.Handled = false;
-                    }
-                    else
-                    {
-                        e.Handled = true;
-                    }
-
-                }
-            }
-        }
-
-        private void txtprecioventa_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                if (txtprecioventa.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
                 {
                     e.Handled = true;
                 }

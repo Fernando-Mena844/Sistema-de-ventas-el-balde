@@ -46,6 +46,9 @@
             // 
             // pnlNegocio
             // 
+            this.pnlNegocio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlNegocio.BackColor = System.Drawing.Color.White;
             this.pnlNegocio.Controls.Add(this.pbLogoNegocio);
             this.pnlNegocio.Controls.Add(this.btnGuardarCambios);
@@ -76,12 +79,13 @@
             // btnGuardarCambios
             // 
             this.btnGuardarCambios.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnGuardarCambios.Image = global::CapaVisual.Properties.Resources.save_icon;
             this.btnGuardarCambios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardarCambios.Location = new System.Drawing.Point(220, 240);
             this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
-            this.btnGuardarCambios.Size = new System.Drawing.Size(140, 22);
+            this.btnGuardarCambios.Size = new System.Drawing.Size(150, 29);
             this.btnGuardarCambios.TabIndex = 9;
             this.btnGuardarCambios.Text = "Guardar Cambios";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
@@ -90,12 +94,13 @@
             // btnSubirLogo
             // 
             this.btnSubirLogo.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnSubirLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnSubirLogo.Image = global::CapaVisual.Properties.Resources.upload;
             this.btnSubirLogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubirLogo.Location = new System.Drawing.Point(24, 240);
             this.btnSubirLogo.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubirLogo.Name = "btnSubirLogo";
-            this.btnSubirLogo.Size = new System.Drawing.Size(135, 22);
+            this.btnSubirLogo.Size = new System.Drawing.Size(145, 29);
             this.btnSubirLogo.TabIndex = 1;
             this.btnSubirLogo.Text = "Subir";
             this.btnSubirLogo.UseVisualStyleBackColor = false;
@@ -103,6 +108,9 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtDireccion.Location = new System.Drawing.Point(220, 171);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccion.Multiline = true;
@@ -113,57 +121,77 @@
             // 
             // txtNIT
             // 
+            this.txtNIT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtNIT.Location = new System.Drawing.Point(220, 119);
             this.txtNIT.Margin = new System.Windows.Forms.Padding(2);
             this.txtNIT.Name = "txtNIT";
-            this.txtNIT.Size = new System.Drawing.Size(140, 20);
+            this.txtNIT.Size = new System.Drawing.Size(140, 21);
             this.txtNIT.TabIndex = 6;
             // 
             // txtNombreNegocio
             // 
+            this.txtNombreNegocio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombreNegocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtNombreNegocio.Location = new System.Drawing.Point(220, 63);
             this.txtNombreNegocio.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreNegocio.Name = "txtNombreNegocio";
-            this.txtNombreNegocio.Size = new System.Drawing.Size(140, 20);
+            this.txtNombreNegocio.ShortcutsEnabled = false;
+            this.txtNombreNegocio.Size = new System.Drawing.Size(140, 21);
             this.txtNombreNegocio.TabIndex = 5;
             // 
             // lblDireccion
             // 
+            this.lblDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblDireccion.Location = new System.Drawing.Point(218, 156);
             this.lblDireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(52, 13);
+            this.lblDireccion.Size = new System.Drawing.Size(59, 15);
             this.lblDireccion.TabIndex = 4;
             this.lblDireccion.Text = "Direccion";
             // 
             // lblNIT
             // 
+            this.lblNIT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNIT.AutoSize = true;
+            this.lblNIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblNIT.Location = new System.Drawing.Point(218, 104);
             this.lblNIT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNIT.Name = "lblNIT";
-            this.lblNIT.Size = new System.Drawing.Size(25, 13);
+            this.lblNIT.Size = new System.Drawing.Size(26, 15);
             this.lblNIT.TabIndex = 3;
             this.lblNIT.Text = "NIT";
             // 
             // lblNombreNegocio
             // 
+            this.lblNombreNegocio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombreNegocio.AutoSize = true;
+            this.lblNombreNegocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblNombreNegocio.Location = new System.Drawing.Point(218, 48);
             this.lblNombreNegocio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreNegocio.Name = "lblNombreNegocio";
-            this.lblNombreNegocio.Size = new System.Drawing.Size(102, 13);
+            this.lblNombreNegocio.Size = new System.Drawing.Size(119, 15);
             this.lblNombreNegocio.TabIndex = 2;
             this.lblNombreNegocio.Text = "Nombre del negocio";
             // 
             // lblLogo
             // 
+            this.lblLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLogo.AutoSize = true;
+            this.lblLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblLogo.Location = new System.Drawing.Point(21, 48);
             this.lblLogo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(31, 13);
+            this.lblLogo.Size = new System.Drawing.Size(35, 15);
             this.lblLogo.TabIndex = 1;
             this.lblLogo.Text = "Logo";
             // 

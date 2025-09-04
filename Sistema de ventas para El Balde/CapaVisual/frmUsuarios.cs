@@ -156,58 +156,6 @@ namespace CapaVisual
                 }
 
             }
-            //string mensaje = string.Empty;
-            //Usuario objusuario = new Usuario()
-            //{
-            //    IdUsuario = Convert.ToInt32(txtid.Text),
-            //    DocumentoUsuario = txtNroDocumento.Text,
-            //    NombreCompletoUsuario = txtNombre.Text,
-            //    correoUsuario = txtCorreo.Text,
-            //    Clave = BCrypt.Net.BCrypt.HashPassword(txtClave.Text), //Aqui hasheamos la clave para encriptarla
-            //    oRol = new Rol() { IdRol = Convert.ToInt32(((OpcionCombos)cmbRol.SelectedItem).Valor) },
-            //    Estado = Convert.ToInt32(((OpcionCombos)cmbEstado.SelectedItem).Valor) == 1 ? true : false
-            //};
-
-            //if(objusuario.IdUsuario == 0)
-            //{
-            //    int IdUsuarioGenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
-
-            //    if (IdUsuarioGenerado != 0)
-            //    {
-            //        dgvUsuarios.Rows.Add(new object[] { "", IdUsuarioGenerado, txtNroDocumento.Text, txtNombre.Text, txtCorreo.Text, txtClave.Text,
-            //((OpcionCombos)cmbRol.SelectedItem).Valor.ToString(),
-            //((OpcionCombos)cmbRol.SelectedItem).Texto.ToString(),
-            //((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
-            //((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
-            //});
-            //        Limpiar();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show(mensaje);
-            //    }
-            //}
-
-            //else
-            //{
-            //    bool resultado = new CN_Usuario().Editar(objusuario, out mensaje);
-            //    if (resultado)
-            //    {
-            //        DataGridViewRow row = dgvUsuarios.Rows[Convert.ToInt32(txtIndice.Text)];
-            //        row.Cells["id"].Value = txtid.Text;
-            //        row.Cells["NroDocumento"].Value = txtNroDocumento.Text;
-            //        row.Cells["Nombre"].Value = txtNombre.Text;
-            //        row.Cells["Correo"].Value = txtCorreo.Text;
-            //        row.Cells["Contraseña"].Value = txtClave.Text;
-            //        row.Cells["idRol"].Value = ((OpcionCombos)cmbRol.SelectedItem).Valor.ToString();
-            //        row.Cells["EstadoValor"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString();
-            //        row.Cells["Estado"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString();
-
-            //        Limpiar();
-            //    }
-
-            //}
-
         }
 
         private void Limpiar()

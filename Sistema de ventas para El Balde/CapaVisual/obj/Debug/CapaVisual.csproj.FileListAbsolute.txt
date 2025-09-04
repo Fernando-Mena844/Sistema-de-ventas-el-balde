@@ -297,3 +297,4 @@ C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas 
 C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\itextsharp.xml
 C:\Users\japvs\OneDrive\Escritorio\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdCliente.resources
 C:\Users\ferme\OneDrive\Documentos\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdCliente.resources
+C:\Users\ferme\OneDrive\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-para-El-Balde-c-\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.Modales.mdCliente.resources

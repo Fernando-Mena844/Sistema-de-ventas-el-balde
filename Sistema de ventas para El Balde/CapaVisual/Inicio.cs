@@ -44,7 +44,11 @@ namespace CapaVisual
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //Si se desea cerrar solo el formulario actual
+            //this.Close();
+
+            //Si se desea cerrar toda la aplicación
+            Application.Exit(); // Cierra toda la aplicación
         }
 
 

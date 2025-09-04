@@ -48,7 +48,7 @@
             this.gbLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(36)))), ((int)(((byte)(39)))));
             this.gbLogo.Controls.Add(this.pictureBox1);
             this.gbLogo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbLogo.Location = new System.Drawing.Point(-3, -4);
+            this.gbLogo.Location = new System.Drawing.Point(-3, -7);
             this.gbLogo.Name = "gbLogo";
             this.gbLogo.Size = new System.Drawing.Size(305, 302);
             this.gbLogo.TabIndex = 0;
@@ -57,7 +57,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 188);
             this.pictureBox1.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.lblIniciarSesion.Name = "lblIniciarSesion";
             this.lblIniciarSesion.Size = new System.Drawing.Size(184, 25);
             this.lblIniciarSesion.TabIndex = 1;
-            this.lblIniciarSesion.Text = "INICIAR SESION";
+            this.lblIniciarSesion.Text = "INICIAR SESIÓN";
             // 
             // lblUsuario
             // 
@@ -79,9 +79,9 @@
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(333, 65);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(154, 24);
+            this.lblUsuario.Size = new System.Drawing.Size(159, 24);
             this.lblUsuario.TabIndex = 2;
-            this.lblUsuario.Text = "Num Documento";
+            this.lblUsuario.Text = "Num. Documento";
             // 
             // lblContraseña
             // 
@@ -90,7 +90,7 @@
             this.lblContraseña.Location = new System.Drawing.Point(333, 156);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(106, 24);
-            this.lblContraseña.TabIndex = 3;
+            this.lblContraseña.TabIndex = 4;
             this.lblContraseña.Text = "Contraseña";
             // 
             // txtContrasena
@@ -99,8 +99,10 @@
             this.txtContrasena.Location = new System.Drawing.Point(336, 183);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.ShortcutsEnabled = false;
             this.txtContrasena.Size = new System.Drawing.Size(324, 20);
-            this.txtContrasena.TabIndex = 4;
+            this.txtContrasena.TabIndex = 5;
+            this.txtContrasena.Text = "admin123";
             this.txtContrasena.TextChanged += new System.EventHandler(this.txtContrasena_TextChanged);
             // 
             // txtUsuario
@@ -108,8 +110,10 @@
             this.txtUsuario.BackColor = System.Drawing.Color.White;
             this.txtUsuario.Location = new System.Drawing.Point(336, 92);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ShortcutsEnabled = false;
             this.txtUsuario.Size = new System.Drawing.Size(324, 20);
-            this.txtUsuario.TabIndex = 5;
+            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "0001";
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // btnIngresar

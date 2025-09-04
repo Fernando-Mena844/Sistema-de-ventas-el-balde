@@ -29,45 +29,36 @@
         private void InitializeComponent()
         {
             this.lblAcercade = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pnlSoporte = new System.Windows.Forms.Panel();
             this.btnDescargarPDF = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.lblSoporte = new System.Windows.Forms.Label();
+            this.pnlSoporte.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblAcercade
             // 
-            this.lblAcercade.AutoSize = true;
             this.lblAcercade.BackColor = System.Drawing.Color.Transparent;
             this.lblAcercade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAcercade.Location = new System.Drawing.Point(34, 127);
+            this.lblAcercade.Location = new System.Drawing.Point(26, 128);
             this.lblAcercade.Name = "lblAcercade";
             this.lblAcercade.Size = new System.Drawing.Size(658, 40);
             this.lblAcercade.TabIndex = 2;
             this.lblAcercade.Text = "Ante culaquier duda o problema, puedes consultar con nuestro manual de uso ubicad" +
     "o en el\r\n siguiente PDF.";
             // 
-            // panel1
+            // pnlSoporte
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btnDescargarPDF);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblAcercade);
-            this.panel1.Location = new System.Drawing.Point(51, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(707, 397);
-            this.panel1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(301, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 29);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Soporte";
+            this.pnlSoporte.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlSoporte.BackColor = System.Drawing.Color.White;
+            this.pnlSoporte.Controls.Add(this.btnDescargarPDF);
+            this.pnlSoporte.Controls.Add(this.lblSoporte);
+            this.pnlSoporte.Controls.Add(this.lblAcercade);
+            this.pnlSoporte.Location = new System.Drawing.Point(51, 21);
+            this.pnlSoporte.Name = "pnlSoporte";
+            this.pnlSoporte.Size = new System.Drawing.Size(707, 413);
+            this.pnlSoporte.TabIndex = 3;
             // 
             // btnDescargarPDF
             // 
@@ -79,16 +70,27 @@
             this.btnDescargarPDF.Text = "Descargar a PDF";
             this.btnDescargarPDF.UseVisualStyleBackColor = false;
             // 
+            // lblSoporte
+            // 
+            this.lblSoporte.AutoSize = true;
+            this.lblSoporte.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoporte.Location = new System.Drawing.Point(301, 0);
+            this.lblSoporte.Name = "lblSoporte";
+            this.lblSoporte.Size = new System.Drawing.Size(106, 29);
+            this.lblSoporte.TabIndex = 3;
+            this.lblSoporte.Text = "Soporte";
+            // 
             // frmAcercaDe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlSoporte);
             this.Name = "frmAcercaDe";
             this.Text = "frmAcercaDe";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlSoporte.ResumeLayout(false);
+            this.pnlSoporte.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -96,8 +98,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblAcercade;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlSoporte;
+        private System.Windows.Forms.Label lblSoporte;
         private System.Windows.Forms.Button btnDescargarPDF;
     }
 }

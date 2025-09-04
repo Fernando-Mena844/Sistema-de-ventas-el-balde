@@ -46,6 +46,12 @@ namespace CapaVisual
             cmbBusca.DisplayMember = "Texto";
             cmbBusca.ValueMember = "Valor";
             cmbBusca.SelectedIndex = 0;
+            dtpFechaFin.MaxDate = DateTime.Today;
+            dtpFechaInicio.MaxDate = dtpFechaFin.Value;
+            dtpFechaFin.MinDate = dtpFechaInicio.Value;
+            // Llamar a los eventos
+            dtpFechaFin.ValueChanged += dtpFechaFin_ValueChanged;
+            dtpFechaInicio.ValueChanged += dtpFechaInicio_ValueChanged;
         }
 
         private void btnbuscarresultado_Click(object sender, EventArgs e)
@@ -167,6 +173,24 @@ namespace CapaVisual
             }
         }
 
-        
+        private void dtpFechaInicio_ValueChanged(object sender, EventArgs e)
+        {
+            // dtpFechaFin no puede ser menor a dtpFechaInicio
+            dtpFechaFin.MinDate = dtpFechaInicio.Value;
+            if (dtpFechaFin.Value < dtpFechaInicio.Value)
+            {
+                dtpFechaFin.Value = dtpFechaInicio.Value;
+            }
+        }
+
+        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
+        {
+            // dtpFechaInicio no puede superar dtpFechaFin
+            dtpFechaInicio.MaxDate = dtpFechaFin.Value;
+            if (dtpFechaInicio.Value > dtpFechaFin.Value)
+            {
+                dtpFechaInicio.Value = dtpFechaFin.Value;
+            }
+        }
     }
 }
