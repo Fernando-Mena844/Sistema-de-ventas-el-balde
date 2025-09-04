@@ -225,6 +225,7 @@
             this.txtpreciocompra.Location = new System.Drawing.Point(502, 47);
             this.txtpreciocompra.Name = "txtpreciocompra";
             this.txtpreciocompra.ReadOnly = true;
+            this.txtpreciocompra.ShortcutsEnabled = false;
             this.txtpreciocompra.Size = new System.Drawing.Size(103, 21);
             this.txtpreciocompra.TabIndex = 0;
             this.txtpreciocompra.TabStop = false;
@@ -235,6 +236,7 @@
             this.txtidproducto.Location = new System.Drawing.Point(110, 23);
             this.txtidproducto.Name = "txtidproducto";
             this.txtidproducto.ReadOnly = true;
+            this.txtidproducto.ShortcutsEnabled = false;
             this.txtidproducto.Size = new System.Drawing.Size(36, 21);
             this.txtidproducto.TabIndex = 0;
             this.txtidproducto.TabStop = false;
@@ -255,6 +257,7 @@
             this.txtproducto.Location = new System.Drawing.Point(197, 47);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.ReadOnly = true;
+            this.txtproducto.ShortcutsEnabled = false;
             this.txtproducto.Size = new System.Drawing.Size(162, 21);
             this.txtproducto.TabIndex = 0;
             this.txtproducto.TabStop = false;
@@ -264,6 +267,7 @@
             this.txtcodproducto.Location = new System.Drawing.Point(9, 45);
             this.txtcodproducto.Name = "txtcodproducto";
             this.txtcodproducto.ReadOnly = true;
+            this.txtcodproducto.ShortcutsEnabled = false;
             this.txtcodproducto.Size = new System.Drawing.Size(137, 21);
             this.txtcodproducto.TabIndex = 0;
             this.txtcodproducto.TabStop = false;
@@ -441,6 +445,7 @@
             this.txtidproveedor.Location = new System.Drawing.Point(309, 25);
             this.txtidproveedor.Name = "txtidproveedor";
             this.txtidproveedor.ReadOnly = true;
+            this.txtidproveedor.ShortcutsEnabled = false;
             this.txtidproveedor.Size = new System.Drawing.Size(50, 21);
             this.txtidproveedor.TabIndex = 0;
             this.txtidproveedor.TabStop = false;
@@ -461,6 +466,7 @@
             this.txtRazonsocial.Location = new System.Drawing.Point(197, 47);
             this.txtRazonsocial.Name = "txtRazonsocial";
             this.txtRazonsocial.ReadOnly = true;
+            this.txtRazonsocial.ShortcutsEnabled = false;
             this.txtRazonsocial.Size = new System.Drawing.Size(162, 21);
             this.txtRazonsocial.TabIndex = 0;
             this.txtRazonsocial.TabStop = false;
@@ -470,6 +476,7 @@
             this.txtdocproveedor.Location = new System.Drawing.Point(9, 45);
             this.txtdocproveedor.Name = "txtdocproveedor";
             this.txtdocproveedor.ReadOnly = true;
+            this.txtdocproveedor.ShortcutsEnabled = false;
             this.txtdocproveedor.Size = new System.Drawing.Size(137, 21);
             this.txtdocproveedor.TabIndex = 0;
             this.txtdocproveedor.TabStop = false;
@@ -519,6 +526,7 @@
             this.txtFechaC.Location = new System.Drawing.Point(9, 45);
             this.txtFechaC.Name = "txtFechaC";
             this.txtFechaC.ReadOnly = true;
+            this.txtFechaC.ShortcutsEnabled = false;
             this.txtFechaC.Size = new System.Drawing.Size(100, 21);
             this.txtFechaC.TabIndex = 1;
             this.txtFechaC.TabStop = false;
@@ -604,6 +612,7 @@
             this.txtBuscarD.Name = "txtBuscarD";
             this.txtBuscarD.Size = new System.Drawing.Size(144, 21);
             this.txtBuscarD.TabIndex = 6;
+            this.txtBuscarD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscarD_KeyPress);
             // 
             // lblNumeroDocumento
             // 
@@ -750,6 +759,7 @@
             // 
             this.txtIdProveedorD.Location = new System.Drawing.Point(280, 25);
             this.txtIdProveedorD.Name = "txtIdProveedorD";
+            this.txtIdProveedorD.ShortcutsEnabled = false;
             this.txtIdProveedorD.Size = new System.Drawing.Size(50, 21);
             this.txtIdProveedorD.TabIndex = 6;
             // 
@@ -758,6 +768,7 @@
             this.txtRazonSocialD.Location = new System.Drawing.Point(168, 47);
             this.txtRazonSocialD.Name = "txtRazonSocialD";
             this.txtRazonSocialD.ReadOnly = true;
+            this.txtRazonSocialD.ShortcutsEnabled = false;
             this.txtRazonSocialD.Size = new System.Drawing.Size(162, 21);
             this.txtRazonSocialD.TabIndex = 4;
             // 
@@ -766,6 +777,7 @@
             this.txtNumeroDocumentoProveedorD.Location = new System.Drawing.Point(9, 45);
             this.txtNumeroDocumentoProveedorD.Name = "txtNumeroDocumentoProveedorD";
             this.txtNumeroDocumentoProveedorD.ReadOnly = true;
+            this.txtNumeroDocumentoProveedorD.ShortcutsEnabled = false;
             this.txtNumeroDocumentoProveedorD.Size = new System.Drawing.Size(137, 21);
             this.txtNumeroDocumentoProveedorD.TabIndex = 2;
             // 
@@ -815,6 +827,7 @@
             this.txtFechaD.Location = new System.Drawing.Point(9, 45);
             this.txtFechaD.Name = "txtFechaD";
             this.txtFechaD.ReadOnly = true;
+            this.txtFechaD.ShortcutsEnabled = false;
             this.txtFechaD.Size = new System.Drawing.Size(100, 21);
             this.txtFechaD.TabIndex = 2;
             // 

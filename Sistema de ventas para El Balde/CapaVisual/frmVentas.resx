@@ -121,9 +121,17 @@
   <data name="BtnCrearVenta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAGlJREFUKFNjYCATaDMwMBxhYGA4gwOD5LSQNaQxMDD8J4BBanBq6INiojR0MjAw
+        DQAACw0B7QfALAAAAGlJREFUKFNjYCATaDMwMBxhYGA4gwOD5LSQNaQxMDD8J4BBanBq6INiojR0MjAw
         SEAxiE1QA8jkaVCMbAtODSA8E4qJchJRGlKI0JCMrAHkwYlICluhGMYHyYHU4AQg61GcQAgYQjEGAABU
         sUI3GnZswQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnbuscarproducto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAIZJREFUKFN9z7EOQUEQheEPV6NQ33gLteeiVWi8k+Q+CSWdREWHDLPJZiX+ZLMz
+        s2fO7PBllKdm3OQfQrTGA0c8sUDXijbYVnlwxaydFA41MXaOoS5Gx6ntTM5t4Z53WWCCFfa1QTz2uOWf
+        giVeGU+LMAiH2PCAC3ZZL+Kf7WuKUxH/pYi7N2zxES1vaBxfAAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="IdProducto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -144,14 +152,6 @@
   <metadata name="btnEliminar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="btnbuscarproducto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAIZJREFUKFN9z7EOQUEQheEPV6NQ33gLteeiVWi8k+Q+CSWdREWHDLPJZiX+ZLMz
-        s2fO7PBllKdm3OQfQrTGA0c8sUDXijbYVnlwxaydFA41MXaOoS5Gx6ntTM5t4Z53WWCCFfa1QTz2uOWf
-        giVeGU+LMAiH2PCAC3ZZL+Kf7WuKUxH/pYi7N2zxES1vaBxfAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnBuscarCliente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

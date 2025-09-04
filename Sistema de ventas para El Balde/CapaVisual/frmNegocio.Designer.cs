@@ -129,6 +129,7 @@
             this.txtNIT.Name = "txtNIT";
             this.txtNIT.Size = new System.Drawing.Size(140, 21);
             this.txtNIT.TabIndex = 6;
+            this.txtNIT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNIT_KeyPress);
             // 
             // txtNombreNegocio
             // 

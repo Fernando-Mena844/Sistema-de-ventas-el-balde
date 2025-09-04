@@ -521,6 +521,14 @@ namespace CapaVisual
             cmbTipoDocumentoD.SelectedIndex = 0;
         }
 
-        
+        private void txtBuscarD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtBuscarD.Clear();
+            }
+        }
     }
 }

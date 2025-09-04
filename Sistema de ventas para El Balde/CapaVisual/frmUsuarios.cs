@@ -16,7 +16,7 @@ using BCrypt.Net;
 
 namespace CapaVisual
 {
-    public partial class frmUsuarios: Form
+    public partial class frmUsuarios : Form
     {
         public frmUsuarios()
         {
@@ -45,7 +45,7 @@ namespace CapaVisual
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
                 {
-                    cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText});
+                    cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
                 }
             }
 
@@ -66,7 +66,7 @@ namespace CapaVisual
 
             foreach (DataGridViewColumn columna in dgvUsuarios.Columns)
             {
-                if(columna.Visible == true && columna.Name != "btnseleccionar" && columna.Name != "idRol" && columna.Name != "EstadoValor")
+                if (columna.Visible == true && columna.Name != "btnseleccionar" && columna.Name != "idRol" && columna.Name != "EstadoValor")
                 {
                     cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
                 }
@@ -186,7 +186,7 @@ namespace CapaVisual
                 var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
                 var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
 
-                e.Graphics.DrawImage(Properties.Resources.Check, new Rectangle (x, y, w, h));
+                e.Graphics.DrawImage(Properties.Resources.Check, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
         }
@@ -233,7 +233,7 @@ namespace CapaVisual
         {
             if (Convert.ToInt32(txtid.Text) != 0)
             {
-                if(MessageBox.Show("Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string mensaje = string.Empty;
                     Usuario objusuario = new Usuario()
@@ -250,7 +250,7 @@ namespace CapaVisual
                     }
                     else
                     {
-                        MessageBox.Show(mensaje , "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
             }
@@ -259,7 +259,7 @@ namespace CapaVisual
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string columnaFiltro = ((OpcionCombos)cmbBusca.SelectedItem).Valor.ToString();
-            if(dgvUsuarios.Rows.Count > 0 )
+            if (dgvUsuarios.Rows.Count > 0)
             {
                 foreach (DataGridViewRow row in dgvUsuarios.Rows)
                 {
@@ -269,7 +269,7 @@ namespace CapaVisual
                     }
                     else
                     {
-                        row.Visible=false;
+                        row.Visible = false;
                     }
                 }
             }
@@ -288,6 +288,27 @@ namespace CapaVisual
             foreach (DataGridViewRow row in dgvUsuarios.Rows)
             {
                 row.Visible = true;
+            }
+        }
+
+        private void txtNroDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNroDocumento.Clear();
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNombre.Clear();
+
             }
         }
     }

@@ -230,6 +230,41 @@ namespace CapaVisual
                 row.Visible = true;
             }
         }
+
+        private void txtNroDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números y un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNroDocumento.Clear();
+            }
+
+            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permite un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNroDocumento.Clear();
+            }
+
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números y un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNroDocumento.Clear();
+            }
+
+            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permite un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNroDocumento.Clear();
+            }
+        }
     }
 }
 

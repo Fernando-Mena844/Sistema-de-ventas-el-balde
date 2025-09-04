@@ -15,7 +15,7 @@ using System.IO;
 
 namespace CapaVisual
 {
-    public partial class frmNegocio: Form
+    public partial class frmNegocio : Form
     {
         public frmNegocio()
         {
@@ -40,7 +40,7 @@ namespace CapaVisual
                 pbLogoNegocio.Image = ByteToImage(byteImagen);
             }
 
-            DatosNegocio datos =  new CN_Negocio().ObtenerDatosNegocio();
+            DatosNegocio datos = new CN_Negocio().ObtenerDatosNegocio();
             txtNombreNegocio.Text = datos.NombreNegocio;
             txtNIT.Text = datos.NitDatoNegocio;
             txtDireccion.Text = datos.ubicacionNegocio;
@@ -54,7 +54,7 @@ namespace CapaVisual
             oOpenFileDialog.FileName = "Files|*.jpg;*.jpeg;*.png;*.bmp";
             if (oOpenFileDialog.ShowDialog() == DialogResult.OK)
             {
-                byte [] byteImagen = File.ReadAllBytes(oOpenFileDialog.FileName);
+                byte[] byteImagen = File.ReadAllBytes(oOpenFileDialog.FileName);
                 bool respuesta = new CN_Negocio().ActualizarLogo(byteImagen, out mensaje);
                 if (respuesta)
                 {
@@ -84,6 +84,23 @@ namespace CapaVisual
             else
             {
                 MessageBox.Show("No se pudieron actualizar los datos", "Error al actualizar datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtNIT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números y un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNIT.Clear();
+            }
+
+            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permite un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNIT.Clear();
             }
         }
     }

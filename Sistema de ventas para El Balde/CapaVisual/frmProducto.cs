@@ -396,6 +396,71 @@ namespace CapaVisual
 
         }
 
-        
+        private void txtCodigoProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras y números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtCodigoProducto.Clear();
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras y números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNombre.Clear();
+            }
+        }
+
+        private void txtStock_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtStock.Clear();
+            }
+        }
+
+        private void txtPrecioCompra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números y un punto (.)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPrecioCompra.Clear();
+            }
+
+            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permite un punto (.)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPrecioCompra.Clear();
+            }
+
+        }
+
+        private void txtPrecioVenta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten números y un punto (.)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPrecioVenta.Clear();
+            }
+
+            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permite un punto (.)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPrecioVenta.Clear();
+            }
+
+
+        }
     }
 }

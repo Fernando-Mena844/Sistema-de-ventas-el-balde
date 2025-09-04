@@ -231,5 +231,15 @@ namespace CapaVisual
             }
 
         }
+
+        private void txtNombreCategoria_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNombreCategoria.Clear();
+            }
+        }
     }
 }
