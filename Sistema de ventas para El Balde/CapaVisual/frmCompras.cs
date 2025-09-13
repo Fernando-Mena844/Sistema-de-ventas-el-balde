@@ -60,22 +60,6 @@ namespace CapaVisual
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txtNuevodoc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBuscarprov_Click(object sender, EventArgs e)
         {
             using (var modal = new mdProveedor())
@@ -195,6 +179,17 @@ namespace CapaVisual
 
 
 
+        }
+
+        private void limpiarDocumento()
+        {
+            txtBuscarD.Text = string.Empty;
+            txtFechaD.Text = string.Empty;
+            txtNumeroDocumentoProveedorD.Text = string.Empty;
+            txtRazonSocialD.Text = string.Empty;
+            cmbTipoDocumentoD.SelectedIndex = -1;
+            txtMontoTotalD.Text = "0.00";
+            dgvDetalleCompra.Rows.Clear();
         }
 
 
@@ -446,7 +441,12 @@ namespace CapaVisual
                 Texto_Html = Texto_Html.Replace("@fecharegistro", txtFechaD.Text);
 
                 // Si tienes el usuario que registró la compra, reemplaza aquí
-                Texto_Html = Texto_Html.Replace("@usuarioregistro", "Usuario");
+                frmInicio frmAbierto = Application.OpenForms["frmInicio"] as frmInicio;
+
+                if (frmAbierto != null)
+                {
+                    Texto_Html = Texto_Html.Replace("@usuarioregistro", frmAbierto.lblUsuario.Text);
+                }
 
                 string filas = string.Empty;
                 foreach (DataGridViewRow row in dgvDetalleCompra.Rows)
@@ -510,6 +510,7 @@ namespace CapaVisual
             {
                 MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            limpiarDocumento();
         }
 
         private void tabControl1_Layout(object sender, LayoutEventArgs e)

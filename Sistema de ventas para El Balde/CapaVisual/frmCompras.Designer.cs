@@ -138,7 +138,6 @@
             this.tpRegistroCompra.TabIndex = 0;
             this.tpRegistroCompra.Text = "Registro de compra";
             this.tpRegistroCompra.UseVisualStyleBackColor = true;
-            this.tpRegistroCompra.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // pnlRegistroCompra
             // 

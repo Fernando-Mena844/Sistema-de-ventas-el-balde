@@ -12,13 +12,10 @@ namespace CapaEntidad
         public Usuario oUsuario { get; set; }
         public Cliente oCliente { get; set; }
         public TipoDocumentoVenta oTipoDocumentoVenta { get; set; }
+        public string NumeroDocumentoVenta { get; set; }
         public decimal MontoPago { get; set; }
         public decimal MontoCambio { get; set; }
         public decimal MontoTotal { get; set; }
-
         public string FechaRegistro { get; set; }
-
-        public string NumeroDocumentoVenta { get; set; }
-
     }
 }

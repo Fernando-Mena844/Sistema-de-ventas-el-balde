@@ -388,7 +388,6 @@ namespace CapaVisual
         private System.Windows.Forms.Button btnVentas;
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Panel pnlContenedor;
-        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripMantenimiento;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
@@ -397,6 +396,7 @@ namespace CapaVisual
         private System.Windows.Forms.ToolStripMenuItem comprasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.Panel pnlWrapper;
+        public System.Windows.Forms.Label lblUsuario;
     }
 }
 

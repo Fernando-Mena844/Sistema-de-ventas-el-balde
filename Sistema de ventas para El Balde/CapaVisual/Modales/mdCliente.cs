@@ -41,7 +41,7 @@ namespace CapaVisual.Modales
             foreach (Cliente items in lista)
             { 
              if(items.Estado)
-                    dgvdata.Rows.Add(new object[] { items.documentoCliente, items.nombreCompletoCliente });
+                    dgvdata.Rows.Add(new object[] { items.IdCliente, items.documentoCliente, items.nombreCompletoCliente });
             }
         }
 
@@ -53,6 +53,7 @@ namespace CapaVisual.Modales
             {
                 _Cliente = new Cliente()
                 {
+                    IdCliente = Convert.ToInt32(dgvdata.Rows[iRow].Cells["IdCliente"].Value.ToString()),
                     documentoCliente = dgvdata.Rows[iRow].Cells["NroDocumento"].Value.ToString(),
                     nombreCompletoCliente = dgvdata.Rows[iRow].Cells["nombre"].Value.ToString()
                 };

@@ -102,6 +102,7 @@
             this.txtContrasena.ShortcutsEnabled = false;
             this.txtContrasena.Size = new System.Drawing.Size(324, 20);
             this.txtContrasena.TabIndex = 5;
+            this.txtContrasena.Text = "admin123";
             this.txtContrasena.TextChanged += new System.EventHandler(this.txtContrasena_TextChanged);
             // 
             // txtUsuario
@@ -112,6 +113,7 @@
             this.txtUsuario.ShortcutsEnabled = false;
             this.txtUsuario.Size = new System.Drawing.Size(324, 20);
             this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.Text = "0001";
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // btnIngresar
