@@ -30,5 +30,15 @@ namespace CapaNegocio
         {
             return objCD_Venta.SumarStock(idProducto, cantidad);
         }
+        public Venta ObtenerVenta(string numero)
+        {
+            Venta oVenta =  objCD_Venta.ObtenerVenta(numero);
+            if (oVenta.IdVenta != 0)
+            {
+                List<DetalleVenta> oListaDetalleVenta = objCD_Venta.ObtenerDetalleVenta(oVenta.IdVenta);
+                oVenta.oDetalleVenta = oListaDetalleVenta;
+            }
+            return oVenta;
+        }
     }
 }

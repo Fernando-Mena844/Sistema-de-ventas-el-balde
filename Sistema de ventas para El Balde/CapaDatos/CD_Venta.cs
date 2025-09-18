@@ -139,6 +139,7 @@ namespace CapaDatos
                     oconexion.Open();
                     StringBuilder query = new StringBuilder();
                     query.AppendLine("select v.IdVenta, ");
+                    query.AppendLine(" c.IdCliente, ");
                     query.AppendLine(" u.nombreCompletoUsuario, ");
                     query.AppendLine("c.documentoCliente, ");
                     query.AppendLine("c.nombreCompletoCliente, ");
@@ -164,6 +165,7 @@ namespace CapaDatos
                                 oUsuario = new Usuario() { NombreCompletoUsuario = dr["nombreCompletoUsuario"].ToString() },
                                 oCliente = new Cliente()
                                 {
+                                    IdCliente = Convert.ToInt32(dr["IdCliente"]),
                                     documentoCliente = dr["documentoCliente"].ToString(),
                                     nombreCompletoCliente = dr["nombreCompletoCliente"].ToString()
                                 },
@@ -186,7 +188,7 @@ namespace CapaDatos
             return obj;
         }
 
-        public List<DetalleVenta> ObtenerDetalle(string IdDetalleVenta)
+        public List<DetalleVenta> ObtenerDetalleVenta(int IdVenta)
         {
             List<DetalleVenta> oLista = new List<DetalleVenta>();
             using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
@@ -198,9 +200,9 @@ namespace CapaDatos
                     query.AppendLine("select p.nombreProducto, p.PrecioVenta, dv.Cantidad, dv.SubTotal");
                     query.AppendLine("from DETALLE_VENTA dv");
                     query.AppendLine("inner join PRODUCTO p on p.IdProducto=dv.producto_id");
-                    query.AppendLine("where dv.IdDetalleVenta = @IdVenta");
+                    query.AppendLine("where dv.venta_id = @IdVenta");
                     SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
-                    cmd.Parameters.AddWithValue("@IdVenta", IdDetalleVenta);
+                    cmd.Parameters.AddWithValue("@IdVenta", IdVenta);
                     cmd.CommandType = CommandType.Text;
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
@@ -208,7 +210,6 @@ namespace CapaDatos
                         {
                             oLista.Add(new DetalleVenta()
                             {
-                                IdDetalleVenta = Convert.ToInt32(dr["IdDetalleVenta"]),
                                 oProducto = new Producto() { nombreProducto = dr["NombreProducto"].ToString() },
                                 Cantidad = Convert.ToInt32(dr["Cantidad"]),
                                 PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"]),

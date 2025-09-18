@@ -16,5 +16,9 @@ namespace CapaNegocio
         {
             return objcd_reporte.Compra(fechainicio, fechafin, idproveedor);
         }
+        public List<ReporteVenta> Venta(string fechainicio, string fechafin, int idcliente)
+        {
+            return objcd_reporte.Venta(fechainicio, fechafin, idcliente);
+        }
     }
 }

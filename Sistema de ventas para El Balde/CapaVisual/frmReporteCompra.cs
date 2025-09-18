@@ -1,9 +1,4 @@
-﻿using CapaEntidad;
-using CapaNegocio;
-using CapaVisual.Utilidades;
-using ClosedXML.Excel;
-using DocumentFormat.OpenXml.Office.Y2022.FeaturePropertyBag;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaNegocio;
+using CapaVisual.Modales;
+using CapaVisual.Utilidades;
+using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Office.Y2022.FeaturePropertyBag;
 
 namespace CapaVisual
 {
     public partial class frmReporteCompra : Form
     {
+        int idProveedorReporte = 0;
         public frmReporteCompra()
         {
             InitializeComponent();
@@ -26,26 +28,10 @@ namespace CapaVisual
         {
             List<Proveedor> listaProveedor = new CN_Proveedor().Listar();
 
-            //Aqui podemos hacer q se filtren todos los proveedores o uno en especifico toma el valor 0
-            //pq es el q esta en sql para filtrar todos, el resto de valores va a depender segun el proveedor q se busque
-            cboproveedor.Items.Add(new OpcionCombos() { Valor = 0, Texto = "TODOS" });
-            foreach (Proveedor item in listaProveedor)
-            {
-                cboproveedor.Items.Add(new OpcionCombos() { Valor = item.IdProveedor, Texto = item.razonSocialProveedor });
-            }
-
-            cboproveedor.DisplayMember = "Texto";
-            cboproveedor.ValueMember = "Valor";
-            cboproveedor.SelectedIndex = 0;
-
-
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
                 cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
             }
-            cmbBusca.DisplayMember = "Texto";
-            cmbBusca.ValueMember = "Valor";
-            cmbBusca.SelectedIndex = 0;
             dtpFechaFin.MaxDate = DateTime.Today;
             dtpFechaInicio.MaxDate = dtpFechaFin.Value;
             dtpFechaFin.MinDate = dtpFechaInicio.Value;
@@ -56,15 +42,13 @@ namespace CapaVisual
 
         private void btnbuscarresultado_Click(object sender, EventArgs e)
         {
-            int idproveedor = Convert.ToInt32(((OpcionCombos)cboproveedor.SelectedItem).Valor.ToString());
-
 
             List<ReporteCompra> lista = new List<ReporteCompra>();
 
             lista = new CN_Reporte().Compra(
                 dtpFechaInicio.Value.ToString("dd/MM/yyyy"),
                 dtpFechaFin.Value.ToString("dd/MM/yyyy"),
-                idproveedor
+                idProveedorReporte
                 );
 
             dgvdata.Rows.Clear();
@@ -142,7 +126,9 @@ namespace CapaVisual
                     MessageBox.Show("Error al exportar el archivo", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-
+            txtProveedor.Text = "TODOS";
+            idProveedorReporte = 0;
+            btnBorrarBusqueda_Click(sender, e);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -191,6 +177,21 @@ namespace CapaVisual
             {
                 dtpFechaInicio.Value = dtpFechaFin.Value;
             }
+        }
+
+        private void btnBuscarProveedor_Click(object sender, EventArgs e)
+        {
+            using (var modal = new mdProveedor())
+            {
+                var result = modal.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    txtProveedor.Text = modal._Proveedor.razonSocialProveedor;
+                    idProveedorReporte = modal._Proveedor.IdProveedor;
+                }
+            }
+
         }
     }
 }

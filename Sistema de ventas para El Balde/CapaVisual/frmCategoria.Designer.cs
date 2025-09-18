@@ -75,24 +75,28 @@
             this.txtIndice.Location = new System.Drawing.Point(102, 11);
             this.txtIndice.Margin = new System.Windows.Forms.Padding(2);
             this.txtIndice.Name = "txtIndice";
+            this.txtIndice.ReadOnly = true;
             this.txtIndice.Size = new System.Drawing.Size(24, 20);
             this.txtIndice.TabIndex = 17;
             this.txtIndice.Text = "0";
+            this.txtIndice.Visible = false;
             // 
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(102, 32);
             this.txtid.Margin = new System.Windows.Forms.Padding(2);
             this.txtid.Name = "txtid";
+            this.txtid.ReadOnly = true;
             this.txtid.Size = new System.Drawing.Size(24, 20);
             this.txtid.TabIndex = 16;
             this.txtid.Text = "0";
+            this.txtid.Visible = false;
             // 
             // cmbEstado
             // 
             this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(8, 136);
+            this.cmbEstado.Location = new System.Drawing.Point(8, 148);
             this.cmbEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);
@@ -101,7 +105,7 @@
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(4, 121);
+            this.lblEstado.Location = new System.Drawing.Point(4, 133);
             this.lblEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(43, 13);
@@ -114,7 +118,7 @@
             this.lblDetallesCategoria.Location = new System.Drawing.Point(3, 10);
             this.lblDetallesCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDetallesCategoria.Name = "lblDetallesCategoria";
-            this.lblDetallesCategoria.Size = new System.Drawing.Size(98, 41);
+            this.lblDetallesCategoria.Size = new System.Drawing.Size(98, 68);
             this.lblDetallesCategoria.TabIndex = 11;
             this.lblDetallesCategoria.Text = "Detalles de la categoría";
             // 
@@ -248,7 +252,7 @@
             // 
             // txtNombreCategoria
             // 
-            this.txtNombreCategoria.Location = new System.Drawing.Point(7, 92);
+            this.txtNombreCategoria.Location = new System.Drawing.Point(7, 104);
             this.txtNombreCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreCategoria.Name = "txtNombreCategoria";
             this.txtNombreCategoria.ShortcutsEnabled = false;
@@ -259,7 +263,7 @@
             // lblNombreCategoría
             // 
             this.lblNombreCategoría.AutoSize = true;
-            this.lblNombreCategoría.Location = new System.Drawing.Point(4, 78);
+            this.lblNombreCategoría.Location = new System.Drawing.Point(4, 90);
             this.lblNombreCategoría.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreCategoría.Name = "lblNombreCategoría";
             this.lblNombreCategoría.Size = new System.Drawing.Size(54, 13);

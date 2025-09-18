@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnbuscarresultado = new System.Windows.Forms.Button();
-            this.cboproveedor = new System.Windows.Forms.ComboBox();
             this.lblProveedor = new System.Windows.Forms.Label();
             this.lblFechafin = new System.Windows.Forms.Label();
             this.lblFechaInicio = new System.Windows.Forms.Label();
@@ -61,6 +60,8 @@
             this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBuscarProveedor = new System.Windows.Forms.Button();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -81,8 +82,9 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtProveedor);
+            this.panel1.Controls.Add(this.btnBuscarProveedor);
             this.panel1.Controls.Add(this.btnbuscarresultado);
-            this.panel1.Controls.Add(this.cboproveedor);
             this.panel1.Controls.Add(this.lblProveedor);
             this.panel1.Controls.Add(this.lblFechafin);
             this.panel1.Controls.Add(this.lblFechaInicio);
@@ -100,28 +102,19 @@
             this.btnbuscarresultado.BackColor = System.Drawing.Color.LightGray;
             this.btnbuscarresultado.Image = global::CapaVisual.Properties.Resources.Search;
             this.btnbuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbuscarresultado.Location = new System.Drawing.Point(622, 40);
+            this.btnbuscarresultado.Location = new System.Drawing.Point(622, 44);
             this.btnbuscarresultado.Name = "btnbuscarresultado";
-            this.btnbuscarresultado.Size = new System.Drawing.Size(64, 23);
+            this.btnbuscarresultado.Size = new System.Drawing.Size(103, 23);
             this.btnbuscarresultado.TabIndex = 7;
-            this.btnbuscarresultado.Text = "Buscar";
+            this.btnbuscarresultado.Text = "Buscar ventas";
             this.btnbuscarresultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscarresultado.UseVisualStyleBackColor = false;
             this.btnbuscarresultado.Click += new System.EventHandler(this.btnbuscarresultado_Click);
             // 
-            // cboproveedor
-            // 
-            this.cboproveedor.BackColor = System.Drawing.SystemColors.Window;
-            this.cboproveedor.FormattingEnabled = true;
-            this.cboproveedor.Location = new System.Drawing.Point(486, 41);
-            this.cboproveedor.Name = "cboproveedor";
-            this.cboproveedor.Size = new System.Drawing.Size(121, 23);
-            this.cboproveedor.TabIndex = 6;
-            // 
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
-            this.lblProveedor.Location = new System.Drawing.Point(421, 46);
+            this.lblProveedor.Location = new System.Drawing.Point(413, 11);
             this.lblProveedor.Name = "lblProveedor";
             this.lblProveedor.Size = new System.Drawing.Size(66, 15);
             this.lblProveedor.TabIndex = 5;
@@ -264,14 +257,14 @@
             this.dgvdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvdata.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FechaRegistro,
@@ -288,14 +281,14 @@
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.Location = new System.Drawing.Point(3, 85);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersWidth = 51;
@@ -386,6 +379,30 @@
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.Width = 81;
             // 
+            // btnBuscarProveedor
+            // 
+            this.btnBuscarProveedor.BackColor = System.Drawing.Color.LightGray;
+            this.btnBuscarProveedor.Image = global::CapaVisual.Properties.Resources.Search;
+            this.btnBuscarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarProveedor.Location = new System.Drawing.Point(622, 7);
+            this.btnBuscarProveedor.Name = "btnBuscarProveedor";
+            this.btnBuscarProveedor.Size = new System.Drawing.Size(121, 23);
+            this.btnBuscarProveedor.TabIndex = 8;
+            this.btnBuscarProveedor.Text = "Buscar proveedor";
+            this.btnBuscarProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarProveedor.UseVisualStyleBackColor = false;
+            this.btnBuscarProveedor.Click += new System.EventHandler(this.btnBuscarProveedor_Click);
+            // 
+            // txtProveedor
+            // 
+            this.txtProveedor.Location = new System.Drawing.Point(481, 9);
+            this.txtProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.ShortcutsEnabled = false;
+            this.txtProveedor.Size = new System.Drawing.Size(138, 21);
+            this.txtProveedor.TabIndex = 20;
+            this.txtProveedor.Text = "TODOS";
+            // 
             // frmReporteCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +428,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblReporteCompras;
         private System.Windows.Forms.DateTimePicker dtpFechaFin;
-        private System.Windows.Forms.ComboBox cboproveedor;
         private System.Windows.Forms.Label lblProveedor;
         private System.Windows.Forms.Label lblFechafin;
         private System.Windows.Forms.Label lblFechaInicio;
@@ -438,5 +454,7 @@
         private System.Windows.Forms.TextBox txtBusca;
         private System.Windows.Forms.ComboBox cmbBusca;
         private System.Windows.Forms.Label lblBusca;
+        private System.Windows.Forms.Button btnBuscarProveedor;
+        private System.Windows.Forms.TextBox txtProveedor;
     }
 }
