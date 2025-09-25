@@ -28,14 +28,6 @@ namespace CapaVisual
             cmbEstado.ValueMember = "Valor";
             cmbEstado.SelectedIndex = 0;
 
-            foreach (DataGridViewColumn columna in dgvCategorias.Columns)
-            {
-                if (columna.Visible == true && columna.Name != "btnseleccionar")
-                {
-                    cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
-                }
-            }
-
             List<Categoria> listaCategoria = new CN_Categoria().Listar();
 
             foreach (Categoria item in listaCategoria)

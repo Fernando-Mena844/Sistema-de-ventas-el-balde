@@ -35,6 +35,16 @@ namespace CapaNegocio
                 Mensaje += "Es necesaria la descripción del producto\n";
             }
 
+            if (obj.oProveedor.IdProveedor == 0)
+            {
+                Mensaje += "Es necesario el proveedor del producto\n";
+            }
+
+            if (obj.Stock <= 0)
+            {
+                Mensaje += "El stock no puede ser menor o igual a cero\n";
+            }
+
             if (Mensaje != string.Empty)
             {
                 return 0;
@@ -62,6 +72,16 @@ namespace CapaNegocio
             if (obj.descripcionProducto == "")
             {
                 Mensaje += "Es necesaria la descripción del producto\n";
+            }
+
+            if (obj.oProveedor.IdProveedor == 0)
+            {
+                Mensaje += "Es necesario el proveedor del producto\n";
+            }
+
+            if (obj.Stock <= 0)
+            {
+                Mensaje += "El stock no puede ser menor o igual a cero\n";
             }
 
             if (Mensaje != string.Empty)

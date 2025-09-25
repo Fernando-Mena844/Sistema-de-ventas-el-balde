@@ -42,18 +42,6 @@ namespace CapaVisual
             cmbCategoria.ValueMember = "Valor";
             cmbCategoria.SelectedIndex = 0;
 
-            cmbBusca.Items.Clear();
-
-            if (cmbBusca.Items.Count == 0)
-            {
-                foreach (DataGridViewColumn columna in dgvProductos.Columns)
-                {
-                    if (columna.Visible == true && columna.Name != "btnseleccionar")
-                    {
-                        cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
-                    }
-                }
-            }
 
             List<Producto> listaProducto = new CN_Producto().Listar();
 
@@ -65,6 +53,7 @@ namespace CapaVisual
                 });
             }
 
+            cmbBusca.Items.Clear();
             foreach (DataGridViewColumn columna in dgvProductos.Columns)
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar" && columna.Name != "idRol" && columna.Name != "EstadoValor")
@@ -138,77 +127,77 @@ namespace CapaVisual
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty;
-            Producto objProducto = new Producto()
-            {
-                IdProducto = Convert.ToInt32(txtid.Text),
-                codigoProducto = txtCodigoProducto.Text,
-                nombreProducto = txtNombre.Text,
-                descripcionProducto = txtDescripcion.Text,
-                oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(((OpcionCombos)cmbCategoria.SelectedItem).Valor) },
-                oProveedor = new Proveedor() { IdProveedor = Convert.ToInt32(txtProveedor.Tag) },
-                Stock = Convert.ToInt32(txtStock.Text),
-                PrecioCompra = Convert.ToDecimal(txtPrecioCompra.Text),
-                PrecioVenta = Convert.ToDecimal(txtPrecioVenta.Text),
-                Estado = Convert.ToInt32(((OpcionCombos)cmbEstado.SelectedItem).Valor) == 1 ? true : false
-            };
-
-            if (objProducto.IdProducto == 0)
-            {
-                int IdProductoGenerado = new CN_Producto().Registrar(objProducto, out mensaje);
-
-                if (IdProductoGenerado != 0)
+                Producto objProducto = new Producto()
                 {
-                    dgvProductos.Rows.Add(new object[] {
-            "", IdProductoGenerado,
-            txtCodigoProducto.Text,
-            txtNombre.Text,
-            txtDescripcion.Text,
-            ((OpcionCombos)cmbCategoria.SelectedItem).Valor.ToString(),
-            ((OpcionCombos)cmbCategoria.SelectedItem).Texto.ToString(),
-            txtProveedor.Tag.ToString(),
-            txtProveedor.Text,
-            txtStock.Text,
-            txtPrecioCompra.Text,
-            txtPrecioVenta.Text,
-            ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
-            ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
-        });
+                    IdProducto = Convert.ToInt32(txtid.Text),
+                    codigoProducto = txtCodigoProducto.Text,
+                    nombreProducto = txtNombre.Text,
+                    descripcionProducto = txtDescripcion.Text,
+                    oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(((OpcionCombos)cmbCategoria.SelectedItem).Valor) },
+                    oProveedor = new Proveedor() { IdProveedor = Convert.ToInt32(txtProveedor.Tag) },
+                    Stock = Convert.ToInt32(txtStock.Text),
+                    PrecioCompra = Convert.ToDecimal(txtPrecioCompra.Text),
+                    PrecioVenta = Convert.ToDecimal(txtPrecioVenta.Text),
+                    Estado = Convert.ToInt32(((OpcionCombos)cmbEstado.SelectedItem).Valor) == 1 ? true : false
+                };
 
-                    Limpiar();
+                if (objProducto.IdProducto == 0)
+                {
+                    int IdProductoGenerado = new CN_Producto().Registrar(objProducto, out mensaje);
+
+                    if (IdProductoGenerado != 0)
+                    {
+                        dgvProductos.Rows.Add(new object[] {
+                "", IdProductoGenerado,
+                txtCodigoProducto.Text,
+                txtNombre.Text,
+                txtDescripcion.Text,
+                ((OpcionCombos)cmbCategoria.SelectedItem).Valor.ToString(),
+                ((OpcionCombos)cmbCategoria.SelectedItem).Texto.ToString(),
+                txtProveedor.Tag.ToString(),
+                txtProveedor.Text,
+                txtStock.Text,
+                txtPrecioCompra.Text,
+                txtPrecioVenta.Text,
+                ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
+                ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
+            });
+
+                        Limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(mensaje);
-                }
-            }
-            else
-            {
-                bool resultado = new CN_Producto().Editar(objProducto, out mensaje);
+                    bool resultado = new CN_Producto().Editar(objProducto, out mensaje);
 
-                if (resultado)
-                {
-                    DataGridViewRow row = dgvProductos.Rows[Convert.ToInt32(txtIndice.Text)];
+                    if (resultado)
+                    {
+                        DataGridViewRow row = dgvProductos.Rows[Convert.ToInt32(txtIndice.Text)];
 
-                    row.Cells["idProducto"].Value = txtid.Text;
-                    row.Cells["Codigo"].Value = txtCodigoProducto.Text;
-                    row.Cells["Producto"].Value = txtNombre.Text;
-                    row.Cells["Descripcion"].Value = txtDescripcion.Text;
-                    row.Cells["idCategoria"].Value = ((OpcionCombos)cmbCategoria.SelectedItem).Valor.ToString();
-                    row.Cells["Categoria"].Value = ((OpcionCombos)cmbCategoria.SelectedItem).Texto.ToString();
-                    row.Cells["idProveedor"].Value = txtProveedor.Tag.ToString();
-                    row.Cells["Proveedor"].Value = txtProveedor.Text;
-                    row.Cells["Stock"].Value = txtStock.Text;
-                    row.Cells["PrecioCompra"].Value = txtPrecioCompra.Text;
-                    row.Cells["PrecioVenta"].Value = txtPrecioVenta.Text;
-                    row.Cells["EstadoBit"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString();
-                    row.Cells["EstadoVisible"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString();
+                        row.Cells["idProducto"].Value = txtid.Text;
+                        row.Cells["Codigo"].Value = txtCodigoProducto.Text;
+                        row.Cells["Producto"].Value = txtNombre.Text;
+                        row.Cells["Descripcion"].Value = txtDescripcion.Text;
+                        row.Cells["idCategoria"].Value = ((OpcionCombos)cmbCategoria.SelectedItem).Valor.ToString();
+                        row.Cells["Categoria"].Value = ((OpcionCombos)cmbCategoria.SelectedItem).Texto.ToString();
+                        row.Cells["idProveedor"].Value = txtProveedor.Tag.ToString();
+                        row.Cells["Proveedor"].Value = txtProveedor.Text;
+                        row.Cells["Stock"].Value = txtStock.Text;
+                        row.Cells["PrecioCompra"].Value = txtPrecioCompra.Text;
+                        row.Cells["PrecioVenta"].Value = txtPrecioVenta.Text;
+                        row.Cells["EstadoBit"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString();
+                        row.Cells["EstadoVisible"].Value = ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString();
 
-                    Limpiar();
-                }
-                else
-                {
-                    MessageBox.Show(mensaje);
-                }
+                        Limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje);
+                    }
             }
         }
 
@@ -408,7 +397,7 @@ namespace CapaVisual
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ')
             {
                 e.Handled = true;
                 MessageBox.Show("Solo se permiten letras y números", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

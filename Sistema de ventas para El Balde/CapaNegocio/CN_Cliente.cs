@@ -37,6 +37,11 @@ namespace CapaNegocio
                 Mensaje += "Es necesario el correo del Cliente\n";
             }
 
+            if(obj.telefonoCliente == "")
+            {
+                Mensaje += "Es necesario el telefono del Cliente\n";
+            }
+
             if (Mensaje != string.Empty)
             {
                 return 0;

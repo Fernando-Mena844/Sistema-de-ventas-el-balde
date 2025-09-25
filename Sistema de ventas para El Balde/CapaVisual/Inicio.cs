@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaNegocio;
 using CapaEntidad; 
 
 namespace CapaVisual
@@ -135,6 +135,30 @@ namespace CapaVisual
         private void frmInicio_Load(object sender, EventArgs e)
         {
             lblUsuario.Text = usuarioActual.NombreCompletoUsuario;
+            int rolActivo = usuarioActual.oRol.IdRol;
+            if (rolActivo == 1)
+            {
+                btnUsuario.Visible = true;
+                btnVentas.Visible = true;
+                btnCompras.Visible = true;
+                btnProveedores.Visible = true;
+                btnClientes.Visible = true;
+                btnReportes.Visible = true;
+                btnMantenimiento.Visible = true;
+                btnAcercaDe.Visible = true;
+            }
+            if (rolActivo == 2)
+            {
+                btnUsuario.Visible = false;
+                btnVentas.Visible = true;
+                btnCompras.Visible = true;
+                btnProveedores.Visible = true;
+                btnClientes.Visible = true;
+                btnReportes.Visible = true;
+                negocioToolStripMenuItem.Visible = false;
+                btnAcercaDe.Visible = true;
+            }
+
         }
 
         private void btnMantenimiento_Click(object sender, EventArgs e)

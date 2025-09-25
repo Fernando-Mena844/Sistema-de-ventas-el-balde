@@ -30,6 +30,11 @@ namespace CapaNegocio
                 Mensaje += "Es necesario el nombre del usuario\n";
             }
 
+            if (obj.correoUsuario == "")
+            {
+                Mensaje += "Es necesario el correo del usuario\n";
+            }
+
             if (obj.Clave == "")
             {
                 Mensaje += "Es necesario la contraseña del usuario\n";
@@ -62,6 +67,11 @@ namespace CapaNegocio
             if (obj.Clave == "")
             {
                 Mensaje += "Es necesario la contraseña del usuario\n";
+            }
+
+            if (obj.correoUsuario == "")
+            {
+                Mensaje += "Es necesario el correo del usuario\n";
             }
 
             if (Mensaje != string.Empty)

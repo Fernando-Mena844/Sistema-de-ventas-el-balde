@@ -498,17 +498,17 @@
             // 
             this.cmbBusca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbBusca.FormattingEnabled = true;
-            this.cmbBusca.Location = new System.Drawing.Point(296, 30);
+            this.cmbBusca.Location = new System.Drawing.Point(268, 30);
             this.cmbBusca.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBusca.Name = "cmbBusca";
-            this.cmbBusca.Size = new System.Drawing.Size(73, 23);
+            this.cmbBusca.Size = new System.Drawing.Size(101, 23);
             this.cmbBusca.TabIndex = 2;
             // 
             // lblBusca
             // 
             this.lblBusca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBusca.AutoSize = true;
-            this.lblBusca.Location = new System.Drawing.Point(235, 32);
+            this.lblBusca.Location = new System.Drawing.Point(199, 36);
             this.lblBusca.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBusca.Name = "lblBusca";
             this.lblBusca.Size = new System.Drawing.Size(65, 15);

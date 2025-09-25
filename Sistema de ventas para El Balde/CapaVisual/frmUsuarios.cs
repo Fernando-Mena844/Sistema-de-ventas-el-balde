@@ -31,39 +31,32 @@ namespace CapaVisual
             cmbEstado.ValueMember = "Valor";
             cmbEstado.SelectedIndex = 0;
 
+            cmbRol.Items.Clear();
             List<Rol> listaRol = new CN_Rol().Listar();
-
             foreach (Rol item in listaRol)
             {
                 cmbRol.Items.Add(new OpcionCombos() { Valor = item.IdRol, Texto = item.Descripcion });
             }
             cmbRol.DisplayMember = "Texto";
             cmbRol.ValueMember = "Valor";
-            cmbRol.SelectedIndex = 0;
-
-            foreach (DataGridViewColumn columna in dgvUsuarios.Columns)
+            if (cmbRol.Items.Count > 0)
             {
-                if (columna.Visible == true && columna.Name != "btnseleccionar")
-                {
-                    cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
-                }
-            }
+                cmbRol.SelectedIndex = 0;
+            }   
 
             List<Usuario> listaUsuario = new CN_Usuario().Listar();
-
             foreach (Usuario item in listaUsuario)
             {
-                dgvUsuarios.Rows.Add(new object[] { "", item.IdUsuario, item.DocumentoUsuario, item.NombreCompletoUsuario, item.correoUsuario, "******",
-                item.oRol.IdRol,
-                item.oRol.Descripcion,
-                item.Estado == true ? 1 : 0,
-                item.Estado == true ? "Activo" : "No Activo"
+            dgvUsuarios.Rows.Add(new object[] { "", item.IdUsuario, item.DocumentoUsuario, item.NombreCompletoUsuario, item.correoUsuario, "******",
+            item.oRol.IdRol,
+            item.oRol.Descripcion,
+            item.Estado == true ? 1 : 0,
+            item.Estado == true ? "Activo" : "No Activo"
                 });
             }
-            cmbRol.DisplayMember = "Texto";
-            cmbRol.ValueMember = "Valor";
-            cmbRol.SelectedIndex = 0;
 
+            // Criterios de búsqueda (sin duplicados)
+            cmbBusca.Items.Clear();
             foreach (DataGridViewColumn columna in dgvUsuarios.Columns)
             {
                 if (columna.Visible == true && columna.Name != "btnseleccionar" && columna.Name != "idRol" && columna.Name != "EstadoValor")
@@ -73,7 +66,10 @@ namespace CapaVisual
             }
             cmbBusca.DisplayMember = "Texto";
             cmbBusca.ValueMember = "Valor";
-            cmbBusca.SelectedIndex = 0;
+            if (cmbBusca.Items.Count > 0) 
+            { 
+                cmbBusca.SelectedIndex = 0; 
+            }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

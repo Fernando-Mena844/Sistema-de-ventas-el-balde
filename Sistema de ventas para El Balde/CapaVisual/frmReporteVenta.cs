@@ -31,7 +31,7 @@ namespace CapaVisual
 
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-                cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
+                //cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
             }
 
             dtpFechaFin.MaxDate = DateTime.Today;
@@ -110,28 +110,8 @@ namespace CapaVisual
 
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            string columnaFiltro = ((OpcionCombos)cmbBusca.SelectedItem).Valor.ToString();
-            if (dgvdata.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgvdata.Rows)
-                {
-                    if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtBusca.Text.Trim().ToUpper()))
-                    {
-                        row.Visible = true;
-                    }
-                    else
-                    {
-                        row.Visible = false;
-                    }
-                }
-            }
-        }
-
         private void btnBorrarBusqueda_Click(object sender, EventArgs e)
         {
-            txtBusca.Text = "";
             foreach (DataGridViewRow row in dgvdata.Rows)
             {
                 row.Visible = true;

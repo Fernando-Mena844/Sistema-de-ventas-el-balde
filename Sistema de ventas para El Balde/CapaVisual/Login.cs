@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using CapaNegocio;
-using CapaEntidad; //Se llama la referencia CapaEntidad que fue agregada al proyecto previamente
 using BCrypt.Net;
+using CapaEntidad; //Se llama la referencia CapaEntidad que fue agregada al proyecto previamente
+using CapaNegocio;
 
 
 namespace CapaVisual
@@ -21,16 +21,30 @@ namespace CapaVisual
         {
             InitializeComponent();
         }
+        public Image ByteToImage(byte[] ImageBytes)
+        {
+            MemoryStream ms = new MemoryStream();
+            ms.Write(ImageBytes, 0, ImageBytes.Length);
+            Image logo = new Bitmap(ms);
+            return logo;
+        }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            bool obtenido = true;
+            byte[] byteImagen = new CN_Negocio().ObtenerLogo(out obtenido);
+            if (obtenido)
+            {
+                pbLogo.Image = ByteToImage(byteImagen);
+            }
 
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
+
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {

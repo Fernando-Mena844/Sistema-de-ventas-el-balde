@@ -35,6 +35,11 @@ namespace CapaNegocio
                 Mensaje += "Es necesario la correo del Proveedor\n";
             }
 
+            if(obj.telefonoProveedor == "")
+            {
+                Mensaje += "Es necesario el telefono del Proveedor\n";
+            }
+
             if (Mensaje != string.Empty)
             {
                 return 0;
@@ -63,6 +68,12 @@ namespace CapaNegocio
             {
                 Mensaje += "Es necesario la correo del Proveedor\n";
             }
+
+            if (obj.telefonoProveedor == "")
+            {
+                Mensaje += "Es necesario el telefono del Proveedor\n";
+            }
+
             if (Mensaje != string.Empty)
             {
                 return false;
