@@ -27,9 +27,10 @@ namespace CapaVisual.Modales
         {
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-                
+                if(columna.Visible == true && columna.Name != "IdCliente")
+                {
                     cmbBusca.Items.Add(new OpcionCombos() { Valor = columna.Name, Texto = columna.HeaderText });
-                
+                }
             }
 
             cmbBusca.DisplayMember = "Texto";

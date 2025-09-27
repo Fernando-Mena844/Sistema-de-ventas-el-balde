@@ -69,6 +69,7 @@
             this.btnDescargarPDF.TabIndex = 15;
             this.btnDescargarPDF.Text = "Descargar a PDF";
             this.btnDescargarPDF.UseVisualStyleBackColor = false;
+            this.btnDescargarPDF.Click += new System.EventHandler(this.btnDescargarPDF_Click);
             // 
             // lblSoporte
             // 
