@@ -7,7 +7,7 @@
     <ProjectGuid>{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CapaVisual</RootNamespace>
-    <AssemblyName>CapaVisual</AssemblyName>
+    <AssemblyName>Sistema de Ventas</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
