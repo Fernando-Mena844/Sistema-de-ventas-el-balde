@@ -49,6 +49,8 @@ namespace CapaVisual.Modales
                 item.Stock,
                 item.PrecioCompra,
                 item.PrecioVenta,
+                item.oProveedor.IdProveedor,
+                item.oProveedor.razonSocialProveedor,
 
                 });
             }

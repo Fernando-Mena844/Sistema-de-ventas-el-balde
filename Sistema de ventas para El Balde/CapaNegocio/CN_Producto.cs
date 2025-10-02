@@ -45,6 +45,16 @@ namespace CapaNegocio
                 Mensaje += "El stock no puede ser menor o igual a cero\n";
             }
 
+            if (obj.PrecioCompra <= 0)
+            {
+                Mensaje += "El precio de compra no puede ser menor o igual a cero\n";
+            }
+
+            if (obj.PrecioVenta < obj.PrecioCompra)
+            {
+                Mensaje += "El precio de venta no puede ser menor al precio de compra\n";
+            }
+
             if (Mensaje != string.Empty)
             {
                 return 0;
@@ -82,6 +92,16 @@ namespace CapaNegocio
             if (obj.Stock <= 0)
             {
                 Mensaje += "El stock no puede ser menor o igual a cero\n";
+            }
+
+            if(obj.PrecioCompra <= 0)
+            {
+                Mensaje += "El precio de compra no puede ser menor o igual a cero\n";
+            }
+
+            if (obj.PrecioVenta < obj.PrecioCompra)
+            {
+                Mensaje += "El precio de venta no puede ser menor al precio de compra\n";
             }
 
             if (Mensaje != string.Empty)

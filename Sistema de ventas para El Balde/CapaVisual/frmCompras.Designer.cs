@@ -238,6 +238,7 @@
             this.txtidproducto.Size = new System.Drawing.Size(36, 21);
             this.txtidproducto.TabIndex = 0;
             this.txtidproducto.TabStop = false;
+            this.txtidproducto.Visible = false;
             // 
             // btnbuscarproducto
             // 

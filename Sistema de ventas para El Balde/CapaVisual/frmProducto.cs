@@ -451,5 +451,10 @@ namespace CapaVisual
 
 
         }
+
+        private void txtPrecioVenta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
