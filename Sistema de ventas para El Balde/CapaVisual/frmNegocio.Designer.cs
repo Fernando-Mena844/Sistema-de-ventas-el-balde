@@ -113,6 +113,7 @@
             this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtDireccion.Location = new System.Drawing.Point(220, 171);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDireccion.MaxLength = 100;
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -126,6 +127,7 @@
             this.txtNIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtNIT.Location = new System.Drawing.Point(220, 119);
             this.txtNIT.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNIT.MaxLength = 17;
             this.txtNIT.Name = "txtNIT";
             this.txtNIT.Size = new System.Drawing.Size(140, 21);
             this.txtNIT.TabIndex = 6;
@@ -138,6 +140,7 @@
             this.txtNombreNegocio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtNombreNegocio.Location = new System.Drawing.Point(220, 63);
             this.txtNombreNegocio.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreNegocio.MaxLength = 20;
             this.txtNombreNegocio.Name = "txtNombreNegocio";
             this.txtNombreNegocio.ShortcutsEnabled = false;
             this.txtNombreNegocio.Size = new System.Drawing.Size(140, 21);

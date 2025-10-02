@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbcVentas = new System.Windows.Forms.TabControl();
             this.tpRegistrarVenta = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlVentas = new System.Windows.Forms.Panel();
             this.BtnCrearVenta = new System.Windows.Forms.Button();
             this.txtCambio = new System.Windows.Forms.TextBox();
             this.txtPagaCon = new System.Windows.Forms.TextBox();
@@ -43,19 +43,19 @@
             this.lblCambio = new System.Windows.Forms.Label();
             this.lblPagaCon = new System.Windows.Forms.Label();
             this.lblTotalAPagar = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbDetallesProducto = new System.Windows.Forms.GroupBox();
             this.txtcantidad = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblStock = new System.Windows.Forms.Label();
+            this.lblPrecioVenta = new System.Windows.Forms.Label();
             this.txtstock = new System.Windows.Forms.TextBox();
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.txtidproducto = new System.Windows.Forms.TextBox();
             this.btnbuscarproducto = new System.Windows.Forms.Button();
             this.txtproducto = new System.Windows.Forms.TextBox();
             this.txtcodproducto = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblNombreProducto = new System.Windows.Forms.Label();
+            this.lblCodigoProducto = new System.Windows.Forms.Label();
             this.btnagregar = new System.Windows.Forms.Button();
             this.dgvdata = new System.Windows.Forms.DataGridView();
             this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,20 +70,24 @@
             this.txtNombreClienteRegistroVenta = new System.Windows.Forms.TextBox();
             this.txtDocClienteRegistroVenta = new System.Windows.Forms.TextBox();
             this.lblNombreClienteVentaRegistro = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblDocumentoCliente = new System.Windows.Forms.Label();
             this.groupBoxVenta = new System.Windows.Forms.GroupBox();
             this.cbotipodocumento = new System.Windows.Forms.ComboBox();
             this.txtFechaC = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tipoDocumentoVenta = new System.Windows.Forms.Label();
+            this.lblFechaVenta = new System.Windows.Forms.Label();
             this.lblRegistrarVenta = new System.Windows.Forms.Label();
             this.tpVerDetalleVenta = new System.Windows.Forms.TabPage();
             this.pnlDetalleVenta = new System.Windows.Forms.Panel();
+            this.txtCambioDetalle = new System.Windows.Forms.TextBox();
+            this.lblCambioDetalle = new System.Windows.Forms.Label();
+            this.txtPagoDetalle = new System.Windows.Forms.TextBox();
+            this.lblPagoDetalle = new System.Windows.Forms.Label();
             this.btnDescargarPDF = new System.Windows.Forms.Button();
             this.txtBuscarD = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblNumeroDocumentoVenta = new System.Windows.Forms.Label();
             this.txtMontoTotalD = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblMontoTotalVenta = new System.Windows.Forms.Label();
             this.btnBorrarD = new System.Windows.Forms.Button();
             this.btnBuscarD = new System.Windows.Forms.Button();
             this.dgvDetalleVenta = new System.Windows.Forms.DataGridView();
@@ -97,21 +101,17 @@
             this.txtNombreClienteDocumentoVenta = new System.Windows.Forms.TextBox();
             this.txtNumeroDocumentoCliente = new System.Windows.Forms.TextBox();
             this.lblNombreClienteVentaDocumento = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblDocumentoClienteDetalleVenta = new System.Windows.Forms.Label();
             this.gbInfoVentaDocumento = new System.Windows.Forms.GroupBox();
             this.txtTipoDocumentoVentaDetalle = new System.Windows.Forms.TextBox();
             this.txtFechaD = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.llblTipoDocumentoVentaDetalle = new System.Windows.Forms.Label();
+            this.lblFechaDetallVenta = new System.Windows.Forms.Label();
             this.lblDetalleVentaDocumento = new System.Windows.Forms.Label();
-            this.txtPagoDetalle = new System.Windows.Forms.TextBox();
-            this.lblPagoDetalle = new System.Windows.Forms.Label();
-            this.txtCambioDetalle = new System.Windows.Forms.TextBox();
-            this.lblCambioDetalle = new System.Windows.Forms.Label();
             this.tbcVentas.SuspendLayout();
             this.tpRegistrarVenta.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.pnlVentas.SuspendLayout();
+            this.gbDetallesProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.gbInformacionCliente.SuspendLayout();
@@ -138,7 +138,7 @@
             // 
             // tpRegistrarVenta
             // 
-            this.tpRegistrarVenta.Controls.Add(this.panel2);
+            this.tpRegistrarVenta.Controls.Add(this.pnlVentas);
             this.tpRegistrarVenta.Location = new System.Drawing.Point(4, 22);
             this.tpRegistrarVenta.Name = "tpRegistrarVenta";
             this.tpRegistrarVenta.Padding = new System.Windows.Forms.Padding(3);
@@ -147,30 +147,30 @@
             this.tpRegistrarVenta.Text = "Registro de venta";
             this.tpRegistrarVenta.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // pnlVentas
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.BtnCrearVenta);
-            this.panel2.Controls.Add(this.txtCambio);
-            this.panel2.Controls.Add(this.txtPagaCon);
-            this.panel2.Controls.Add(this.txtTotalPagar);
-            this.panel2.Controls.Add(this.lblCambio);
-            this.panel2.Controls.Add(this.lblPagaCon);
-            this.panel2.Controls.Add(this.lblTotalAPagar);
-            this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Controls.Add(this.btnagregar);
-            this.panel2.Controls.Add(this.dgvdata);
-            this.panel2.Controls.Add(this.gbInformacionCliente);
-            this.panel2.Controls.Add(this.groupBoxVenta);
-            this.panel2.Controls.Add(this.lblRegistrarVenta);
-            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.panel2.Location = new System.Drawing.Point(55, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(769, 515);
-            this.panel2.TabIndex = 8;
+            this.pnlVentas.BackColor = System.Drawing.Color.White;
+            this.pnlVentas.Controls.Add(this.BtnCrearVenta);
+            this.pnlVentas.Controls.Add(this.txtCambio);
+            this.pnlVentas.Controls.Add(this.txtPagaCon);
+            this.pnlVentas.Controls.Add(this.txtTotalPagar);
+            this.pnlVentas.Controls.Add(this.lblCambio);
+            this.pnlVentas.Controls.Add(this.lblPagaCon);
+            this.pnlVentas.Controls.Add(this.lblTotalAPagar);
+            this.pnlVentas.Controls.Add(this.gbDetallesProducto);
+            this.pnlVentas.Controls.Add(this.btnagregar);
+            this.pnlVentas.Controls.Add(this.dgvdata);
+            this.pnlVentas.Controls.Add(this.gbInformacionCliente);
+            this.pnlVentas.Controls.Add(this.groupBoxVenta);
+            this.pnlVentas.Controls.Add(this.lblRegistrarVenta);
+            this.pnlVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.pnlVentas.Location = new System.Drawing.Point(55, 10);
+            this.pnlVentas.Name = "pnlVentas";
+            this.pnlVentas.Size = new System.Drawing.Size(769, 515);
+            this.pnlVentas.TabIndex = 8;
             // 
             // BtnCrearVenta
             // 
@@ -245,28 +245,28 @@
             this.lblTotalAPagar.TabIndex = 15;
             this.lblTotalAPagar.Text = "Total a pagar:";
             // 
-            // groupBox1
+            // gbDetallesProducto
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbDetallesProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.txtcantidad);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtstock);
-            this.groupBox1.Controls.Add(this.txtprecio);
-            this.groupBox1.Controls.Add(this.txtidproducto);
-            this.groupBox1.Controls.Add(this.btnbuscarproducto);
-            this.groupBox1.Controls.Add(this.txtproducto);
-            this.groupBox1.Controls.Add(this.txtcodproducto);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(19, 150);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(732, 87);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Informacion Producto";
+            this.gbDetallesProducto.Controls.Add(this.txtcantidad);
+            this.gbDetallesProducto.Controls.Add(this.label12);
+            this.gbDetallesProducto.Controls.Add(this.lblStock);
+            this.gbDetallesProducto.Controls.Add(this.lblPrecioVenta);
+            this.gbDetallesProducto.Controls.Add(this.txtstock);
+            this.gbDetallesProducto.Controls.Add(this.txtprecio);
+            this.gbDetallesProducto.Controls.Add(this.txtidproducto);
+            this.gbDetallesProducto.Controls.Add(this.btnbuscarproducto);
+            this.gbDetallesProducto.Controls.Add(this.txtproducto);
+            this.gbDetallesProducto.Controls.Add(this.txtcodproducto);
+            this.gbDetallesProducto.Controls.Add(this.lblNombreProducto);
+            this.gbDetallesProducto.Controls.Add(this.lblCodigoProducto);
+            this.gbDetallesProducto.Location = new System.Drawing.Point(19, 150);
+            this.gbDetallesProducto.Name = "gbDetallesProducto";
+            this.gbDetallesProducto.Size = new System.Drawing.Size(732, 87);
+            this.gbDetallesProducto.TabIndex = 7;
+            this.gbDetallesProducto.TabStop = false;
+            this.gbDetallesProducto.Text = "Informacion Producto";
             // 
             // txtcantidad
             // 
@@ -299,23 +299,23 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Cantidad";
             // 
-            // label11
+            // lblStock
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(502, 31);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 15);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Stock";
+            this.lblStock.AutoSize = true;
+            this.lblStock.Location = new System.Drawing.Point(502, 31);
+            this.lblStock.Name = "lblStock";
+            this.lblStock.Size = new System.Drawing.Size(37, 15);
+            this.lblStock.TabIndex = 11;
+            this.lblStock.Text = "Stock";
             // 
-            // label10
+            // lblPrecioVenta
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(393, 31);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 15);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Precio";
+            this.lblPrecioVenta.AutoSize = true;
+            this.lblPrecioVenta.Location = new System.Drawing.Point(393, 31);
+            this.lblPrecioVenta.Name = "lblPrecioVenta";
+            this.lblPrecioVenta.Size = new System.Drawing.Size(42, 15);
+            this.lblPrecioVenta.TabIndex = 10;
+            this.lblPrecioVenta.Text = "Precio";
             // 
             // txtstock
             // 
@@ -341,6 +341,7 @@
             this.txtidproducto.ReadOnly = true;
             this.txtidproducto.Size = new System.Drawing.Size(36, 21);
             this.txtidproducto.TabIndex = 6;
+            this.txtidproducto.Visible = false;
             // 
             // btnbuscarproducto
             // 
@@ -370,23 +371,23 @@
             this.txtcodproducto.TabIndex = 2;
             this.txtcodproducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtcodproducto_KeyDown);
             // 
-            // label4
+            // lblNombreProducto
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(194, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Producto";
+            this.lblNombreProducto.AutoSize = true;
+            this.lblNombreProducto.Location = new System.Drawing.Point(194, 30);
+            this.lblNombreProducto.Name = "lblNombreProducto";
+            this.lblNombreProducto.Size = new System.Drawing.Size(56, 15);
+            this.lblNombreProducto.TabIndex = 1;
+            this.lblNombreProducto.Text = "Producto";
             // 
-            // label9
+            // lblCodigoProducto
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 29);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 15);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Cod. Producto";
+            this.lblCodigoProducto.AutoSize = true;
+            this.lblCodigoProducto.Location = new System.Drawing.Point(6, 29);
+            this.lblCodigoProducto.Name = "lblCodigoProducto";
+            this.lblCodigoProducto.Size = new System.Drawing.Size(84, 15);
+            this.lblCodigoProducto.TabIndex = 0;
+            this.lblCodigoProducto.Text = "Cod. Producto";
             // 
             // btnagregar
             // 
@@ -408,14 +409,14 @@
             this.dgvdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvdata.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProducto,
@@ -424,14 +425,14 @@
             this.cantidad,
             this.subtotal,
             this.btnEliminar});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvdata.Location = new System.Drawing.Point(19, 280);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersWidth = 51;
@@ -486,7 +487,7 @@
             this.gbInformacionCliente.Controls.Add(this.txtNombreClienteRegistroVenta);
             this.gbInformacionCliente.Controls.Add(this.txtDocClienteRegistroVenta);
             this.gbInformacionCliente.Controls.Add(this.lblNombreClienteVentaRegistro);
-            this.gbInformacionCliente.Controls.Add(this.label7);
+            this.gbInformacionCliente.Controls.Add(this.lblDocumentoCliente);
             this.gbInformacionCliente.Location = new System.Drawing.Point(374, 46);
             this.gbInformacionCliente.Name = "gbInformacionCliente";
             this.gbInformacionCliente.Size = new System.Drawing.Size(377, 87);
@@ -502,6 +503,7 @@
             this.txtIdCliente.ShortcutsEnabled = false;
             this.txtIdCliente.Size = new System.Drawing.Size(50, 21);
             this.txtIdCliente.TabIndex = 6;
+            this.txtIdCliente.Visible = false;
             // 
             // btnBuscarCliente
             // 
@@ -539,14 +541,14 @@
             this.lblNombreClienteVentaRegistro.TabIndex = 1;
             this.lblNombreClienteVentaRegistro.Text = "Nombre";
             // 
-            // label7
+            // lblDocumentoCliente
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 15);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Numero Documento";
+            this.lblDocumentoCliente.AutoSize = true;
+            this.lblDocumentoCliente.Location = new System.Drawing.Point(6, 29);
+            this.lblDocumentoCliente.Name = "lblDocumentoCliente";
+            this.lblDocumentoCliente.Size = new System.Drawing.Size(119, 15);
+            this.lblDocumentoCliente.TabIndex = 0;
+            this.lblDocumentoCliente.Text = "Numero Documento";
             // 
             // groupBoxVenta
             // 
@@ -554,8 +556,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxVenta.Controls.Add(this.cbotipodocumento);
             this.groupBoxVenta.Controls.Add(this.txtFechaC);
-            this.groupBoxVenta.Controls.Add(this.label3);
-            this.groupBoxVenta.Controls.Add(this.label2);
+            this.groupBoxVenta.Controls.Add(this.tipoDocumentoVenta);
+            this.groupBoxVenta.Controls.Add(this.lblFechaVenta);
             this.groupBoxVenta.Location = new System.Drawing.Point(19, 46);
             this.groupBoxVenta.Name = "groupBoxVenta";
             this.groupBoxVenta.Size = new System.Drawing.Size(329, 87);
@@ -579,23 +581,23 @@
             this.txtFechaC.Size = new System.Drawing.Size(100, 21);
             this.txtFechaC.TabIndex = 2;
             // 
-            // label3
+            // tipoDocumentoVenta
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(149, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Tipo documento";
+            this.tipoDocumentoVenta.AutoSize = true;
+            this.tipoDocumentoVenta.Location = new System.Drawing.Point(149, 29);
+            this.tipoDocumentoVenta.Name = "tipoDocumentoVenta";
+            this.tipoDocumentoVenta.Size = new System.Drawing.Size(96, 15);
+            this.tipoDocumentoVenta.TabIndex = 1;
+            this.tipoDocumentoVenta.Text = "Tipo documento";
             // 
-            // label2
+            // lblFechaVenta
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Fecha";
+            this.lblFechaVenta.AutoSize = true;
+            this.lblFechaVenta.Location = new System.Drawing.Point(6, 29);
+            this.lblFechaVenta.Name = "lblFechaVenta";
+            this.lblFechaVenta.Size = new System.Drawing.Size(41, 15);
+            this.lblFechaVenta.TabIndex = 0;
+            this.lblFechaVenta.Text = "Fecha";
             // 
             // lblRegistrarVenta
             // 
@@ -630,9 +632,9 @@
             this.pnlDetalleVenta.Controls.Add(this.lblPagoDetalle);
             this.pnlDetalleVenta.Controls.Add(this.btnDescargarPDF);
             this.pnlDetalleVenta.Controls.Add(this.txtBuscarD);
-            this.pnlDetalleVenta.Controls.Add(this.label18);
+            this.pnlDetalleVenta.Controls.Add(this.lblNumeroDocumentoVenta);
             this.pnlDetalleVenta.Controls.Add(this.txtMontoTotalD);
-            this.pnlDetalleVenta.Controls.Add(this.label19);
+            this.pnlDetalleVenta.Controls.Add(this.lblMontoTotalVenta);
             this.pnlDetalleVenta.Controls.Add(this.btnBorrarD);
             this.pnlDetalleVenta.Controls.Add(this.btnBuscarD);
             this.pnlDetalleVenta.Controls.Add(this.dgvDetalleVenta);
@@ -644,6 +646,46 @@
             this.pnlDetalleVenta.Name = "pnlDetalleVenta";
             this.pnlDetalleVenta.Size = new System.Drawing.Size(769, 515);
             this.pnlDetalleVenta.TabIndex = 9;
+            // 
+            // txtCambioDetalle
+            // 
+            this.txtCambioDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtCambioDetalle.Location = new System.Drawing.Point(479, 487);
+            this.txtCambioDetalle.Name = "txtCambioDetalle";
+            this.txtCambioDetalle.ReadOnly = true;
+            this.txtCambioDetalle.Size = new System.Drawing.Size(137, 21);
+            this.txtCambioDetalle.TabIndex = 17;
+            this.txtCambioDetalle.Text = "0";
+            // 
+            // lblCambioDetalle
+            // 
+            this.lblCambioDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblCambioDetalle.AutoSize = true;
+            this.lblCambioDetalle.Location = new System.Drawing.Point(423, 486);
+            this.lblCambioDetalle.Name = "lblCambioDetalle";
+            this.lblCambioDetalle.Size = new System.Drawing.Size(50, 15);
+            this.lblCambioDetalle.TabIndex = 18;
+            this.lblCambioDetalle.Text = "Cambio";
+            // 
+            // txtPagoDetalle
+            // 
+            this.txtPagoDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtPagoDetalle.Location = new System.Drawing.Point(280, 488);
+            this.txtPagoDetalle.Name = "txtPagoDetalle";
+            this.txtPagoDetalle.ReadOnly = true;
+            this.txtPagoDetalle.Size = new System.Drawing.Size(137, 21);
+            this.txtPagoDetalle.TabIndex = 15;
+            this.txtPagoDetalle.Text = "0";
+            // 
+            // lblPagoDetalle
+            // 
+            this.lblPagoDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPagoDetalle.AutoSize = true;
+            this.lblPagoDetalle.Location = new System.Drawing.Point(236, 491);
+            this.lblPagoDetalle.Name = "lblPagoDetalle";
+            this.lblPagoDetalle.Size = new System.Drawing.Size(36, 15);
+            this.lblPagoDetalle.TabIndex = 16;
+            this.lblPagoDetalle.Text = "Pago";
             // 
             // btnDescargarPDF
             // 
@@ -665,15 +707,15 @@
             this.txtBuscarD.TabIndex = 6;
             this.txtBuscarD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscarD_KeyPress);
             // 
-            // label18
+            // lblNumeroDocumentoVenta
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(271, 14);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 15);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "N° Documento:";
+            this.lblNumeroDocumentoVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNumeroDocumentoVenta.AutoSize = true;
+            this.lblNumeroDocumentoVenta.Location = new System.Drawing.Point(271, 14);
+            this.lblNumeroDocumentoVenta.Name = "lblNumeroDocumentoVenta";
+            this.lblNumeroDocumentoVenta.Size = new System.Drawing.Size(91, 15);
+            this.lblNumeroDocumentoVenta.TabIndex = 6;
+            this.lblNumeroDocumentoVenta.Text = "N° Documento:";
             // 
             // txtMontoTotalD
             // 
@@ -685,15 +727,15 @@
             this.txtMontoTotalD.TabIndex = 9;
             this.txtMontoTotalD.Text = "0";
             // 
-            // label19
+            // lblMontoTotalVenta
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(18, 491);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(72, 15);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Monto Total";
+            this.lblMontoTotalVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblMontoTotalVenta.AutoSize = true;
+            this.lblMontoTotalVenta.Location = new System.Drawing.Point(18, 491);
+            this.lblMontoTotalVenta.Name = "lblMontoTotalVenta";
+            this.lblMontoTotalVenta.Size = new System.Drawing.Size(72, 15);
+            this.lblMontoTotalVenta.TabIndex = 9;
+            this.lblMontoTotalVenta.Text = "Monto Total";
             // 
             // btnBorrarD
             // 
@@ -730,14 +772,14 @@
             this.dgvDetalleVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetalleVenta.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.dgvDetalleVenta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDetalleVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalleVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDetalleVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductoD,
@@ -745,14 +787,14 @@
             this.CantidadD,
             this.SubTotalD,
             this.dataGridViewButtonColumn1});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalleVenta.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalleVenta.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDetalleVenta.Location = new System.Drawing.Point(19, 163);
             this.dgvDetalleVenta.Name = "dgvDetalleVenta";
             this.dgvDetalleVenta.RowHeadersWidth = 51;
@@ -797,7 +839,7 @@
             this.gbInfoClienteDocumento.Controls.Add(this.txtNombreClienteDocumentoVenta);
             this.gbInfoClienteDocumento.Controls.Add(this.txtNumeroDocumentoCliente);
             this.gbInfoClienteDocumento.Controls.Add(this.lblNombreClienteVentaDocumento);
-            this.gbInfoClienteDocumento.Controls.Add(this.label21);
+            this.gbInfoClienteDocumento.Controls.Add(this.lblDocumentoClienteDetalleVenta);
             this.gbInfoClienteDocumento.Location = new System.Drawing.Point(374, 46);
             this.gbInfoClienteDocumento.Name = "gbInfoClienteDocumento";
             this.gbInfoClienteDocumento.Size = new System.Drawing.Size(350, 87);
@@ -835,20 +877,20 @@
             // lblNombreClienteVentaDocumento
             // 
             this.lblNombreClienteVentaDocumento.AutoSize = true;
-            this.lblNombreClienteVentaDocumento.Location = new System.Drawing.Point(165, 30);
+            this.lblNombreClienteVentaDocumento.Location = new System.Drawing.Point(165, 25);
             this.lblNombreClienteVentaDocumento.Name = "lblNombreClienteVentaDocumento";
             this.lblNombreClienteVentaDocumento.Size = new System.Drawing.Size(52, 15);
             this.lblNombreClienteVentaDocumento.TabIndex = 1;
             this.lblNombreClienteVentaDocumento.Text = "Nombre";
             // 
-            // label21
+            // lblDocumentoClienteDetalleVenta
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 29);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(119, 15);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Numero Documento";
+            this.lblDocumentoClienteDetalleVenta.AutoSize = true;
+            this.lblDocumentoClienteDetalleVenta.Location = new System.Drawing.Point(6, 29);
+            this.lblDocumentoClienteDetalleVenta.Name = "lblDocumentoClienteDetalleVenta";
+            this.lblDocumentoClienteDetalleVenta.Size = new System.Drawing.Size(119, 15);
+            this.lblDocumentoClienteDetalleVenta.TabIndex = 0;
+            this.lblDocumentoClienteDetalleVenta.Text = "Numero Documento";
             // 
             // gbInfoVentaDocumento
             // 
@@ -856,8 +898,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbInfoVentaDocumento.Controls.Add(this.txtTipoDocumentoVentaDetalle);
             this.gbInfoVentaDocumento.Controls.Add(this.txtFechaD);
-            this.gbInfoVentaDocumento.Controls.Add(this.label22);
-            this.gbInfoVentaDocumento.Controls.Add(this.label23);
+            this.gbInfoVentaDocumento.Controls.Add(this.llblTipoDocumentoVentaDetalle);
+            this.gbInfoVentaDocumento.Controls.Add(this.lblFechaDetallVenta);
             this.gbInfoVentaDocumento.Location = new System.Drawing.Point(19, 46);
             this.gbInfoVentaDocumento.Name = "gbInfoVentaDocumento";
             this.gbInfoVentaDocumento.Size = new System.Drawing.Size(327, 87);
@@ -883,23 +925,23 @@
             this.txtFechaD.Size = new System.Drawing.Size(100, 21);
             this.txtFechaD.TabIndex = 2;
             // 
-            // label22
+            // llblTipoDocumentoVentaDetalle
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(149, 29);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(96, 15);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Tipo documento";
+            this.llblTipoDocumentoVentaDetalle.AutoSize = true;
+            this.llblTipoDocumentoVentaDetalle.Location = new System.Drawing.Point(149, 29);
+            this.llblTipoDocumentoVentaDetalle.Name = "llblTipoDocumentoVentaDetalle";
+            this.llblTipoDocumentoVentaDetalle.Size = new System.Drawing.Size(96, 15);
+            this.llblTipoDocumentoVentaDetalle.TabIndex = 1;
+            this.llblTipoDocumentoVentaDetalle.Text = "Tipo documento";
             // 
-            // label23
+            // lblFechaDetallVenta
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 29);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 15);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Fecha";
+            this.lblFechaDetallVenta.AutoSize = true;
+            this.lblFechaDetallVenta.Location = new System.Drawing.Point(6, 29);
+            this.lblFechaDetallVenta.Name = "lblFechaDetallVenta";
+            this.lblFechaDetallVenta.Size = new System.Drawing.Size(41, 15);
+            this.lblFechaDetallVenta.TabIndex = 0;
+            this.lblFechaDetallVenta.Text = "Fecha";
             // 
             // lblDetalleVentaDocumento
             // 
@@ -910,46 +952,6 @@
             this.lblDetalleVentaDocumento.Size = new System.Drawing.Size(159, 20);
             this.lblDetalleVentaDocumento.TabIndex = 0;
             this.lblDetalleVentaDocumento.Text = "Detalle de la venta";
-            // 
-            // txtPagoDetalle
-            // 
-            this.txtPagoDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPagoDetalle.Location = new System.Drawing.Point(280, 488);
-            this.txtPagoDetalle.Name = "txtPagoDetalle";
-            this.txtPagoDetalle.ReadOnly = true;
-            this.txtPagoDetalle.Size = new System.Drawing.Size(137, 21);
-            this.txtPagoDetalle.TabIndex = 15;
-            this.txtPagoDetalle.Text = "0";
-            // 
-            // lblPagoDetalle
-            // 
-            this.lblPagoDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblPagoDetalle.AutoSize = true;
-            this.lblPagoDetalle.Location = new System.Drawing.Point(236, 491);
-            this.lblPagoDetalle.Name = "lblPagoDetalle";
-            this.lblPagoDetalle.Size = new System.Drawing.Size(36, 15);
-            this.lblPagoDetalle.TabIndex = 16;
-            this.lblPagoDetalle.Text = "Pago";
-            // 
-            // txtCambioDetalle
-            // 
-            this.txtCambioDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtCambioDetalle.Location = new System.Drawing.Point(479, 487);
-            this.txtCambioDetalle.Name = "txtCambioDetalle";
-            this.txtCambioDetalle.ReadOnly = true;
-            this.txtCambioDetalle.Size = new System.Drawing.Size(137, 21);
-            this.txtCambioDetalle.TabIndex = 17;
-            this.txtCambioDetalle.Text = "0";
-            // 
-            // lblCambioDetalle
-            // 
-            this.lblCambioDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblCambioDetalle.AutoSize = true;
-            this.lblCambioDetalle.Location = new System.Drawing.Point(423, 491);
-            this.lblCambioDetalle.Name = "lblCambioDetalle";
-            this.lblCambioDetalle.Size = new System.Drawing.Size(50, 15);
-            this.lblCambioDetalle.TabIndex = 18;
-            this.lblCambioDetalle.Text = "Cambio";
             // 
             // frmVentas
             // 
@@ -963,10 +965,10 @@
             this.Load += new System.EventHandler(this.frmVentas_Load);
             this.tbcVentas.ResumeLayout(false);
             this.tpRegistrarVenta.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.pnlVentas.ResumeLayout(false);
+            this.pnlVentas.PerformLayout();
+            this.gbDetallesProducto.ResumeLayout(false);
+            this.gbDetallesProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
             this.gbInformacionCliente.ResumeLayout(false);
@@ -990,20 +992,20 @@
         private System.Windows.Forms.TabControl tbcVentas;
         private System.Windows.Forms.TabPage tpRegistrarVenta;
         private System.Windows.Forms.TabPage tpVerDetalleVenta;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel pnlVentas;
+        private System.Windows.Forms.GroupBox gbDetallesProducto;
         private System.Windows.Forms.NumericUpDown txtcantidad;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblStock;
+        private System.Windows.Forms.Label lblPrecioVenta;
         private System.Windows.Forms.TextBox txtstock;
         private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.TextBox txtidproducto;
         private System.Windows.Forms.Button btnbuscarproducto;
         private System.Windows.Forms.TextBox txtproducto;
         private System.Windows.Forms.TextBox txtcodproducto;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblNombreProducto;
+        private System.Windows.Forms.Label lblCodigoProducto;
         private System.Windows.Forms.Button btnagregar;
         private System.Windows.Forms.DataGridView dgvdata;
         private System.Windows.Forms.GroupBox gbInformacionCliente;
@@ -1012,19 +1014,19 @@
         private System.Windows.Forms.TextBox txtNombreClienteRegistroVenta;
         private System.Windows.Forms.TextBox txtDocClienteRegistroVenta;
         private System.Windows.Forms.Label lblNombreClienteVentaRegistro;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDocumentoCliente;
         private System.Windows.Forms.GroupBox groupBoxVenta;
         private System.Windows.Forms.ComboBox cbotipodocumento;
         private System.Windows.Forms.TextBox txtFechaC;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label tipoDocumentoVenta;
+        private System.Windows.Forms.Label lblFechaVenta;
         private System.Windows.Forms.Label lblRegistrarVenta;
         private System.Windows.Forms.Panel pnlDetalleVenta;
         private System.Windows.Forms.Button btnDescargarPDF;
         private System.Windows.Forms.TextBox txtBuscarD;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblNumeroDocumentoVenta;
         private System.Windows.Forms.TextBox txtMontoTotalD;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblMontoTotalVenta;
         private System.Windows.Forms.Button btnBorrarD;
         private System.Windows.Forms.Button btnBuscarD;
         private System.Windows.Forms.DataGridView dgvDetalleVenta;
@@ -1033,11 +1035,11 @@
         private System.Windows.Forms.TextBox txtNombreClienteDocumentoVenta;
         private System.Windows.Forms.TextBox txtNumeroDocumentoCliente;
         private System.Windows.Forms.Label lblNombreClienteVentaDocumento;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblDocumentoClienteDetalleVenta;
         private System.Windows.Forms.GroupBox gbInfoVentaDocumento;
         private System.Windows.Forms.TextBox txtFechaD;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label llblTipoDocumentoVentaDetalle;
+        private System.Windows.Forms.Label lblFechaDetallVenta;
         private System.Windows.Forms.Label lblDetalleVentaDocumento;
         private System.Windows.Forms.Label lblCambio;
         private System.Windows.Forms.Label lblPagaCon;

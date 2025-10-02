@@ -1,22 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CapaVisual||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6F992E5-9706-4FD1-8E8D-D87581D4F8A0}|CapaDatos\\CapaDatos.csproj|c:\\users\\ferme\\onedrive\\documentos\\versiones del ejecutable\\3\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capadatos\\cd_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6F992E5-9706-4FD1-8E8D-D87581D4F8A0}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B371F749-BD5A-418A-A43E-A99DB0D03790}|CapaNegocio\\CapaNegocio.csproj|C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\capanegocio\\cn_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B371F749-BD5A-418A-A43E-A99DB0D03790}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\onedrive\\documentos\\versiones del ejecutable\\3\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -24,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,43 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CapaVisual",
-              "DocumentMoniker": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\CapaVisual.csproj",
-              "RelativeDocumentMoniker": "CapaVisual\\CapaVisual.csproj",
-              "ToolTip": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\CapaVisual.csproj",
-              "RelativeToolTip": "CapaVisual\\CapaVisual.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-01T05:07:01.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CD_Venta.cs",
-              "DocumentMoniker": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaDatos\\CD_Venta.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Venta.cs",
-              "ToolTip": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaDatos\\CD_Venta.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Venta.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAUwHwAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:04:30.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CN_Venta.cs",
-              "DocumentMoniker": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaNegocio\\CN_Venta.cs",
-              "RelativeDocumentMoniker": "CapaNegocio\\CN_Venta.cs",
-              "ToolTip": "C:\\Users\\ferme\\OneDrive\\Documentos\\Versiones del ejecutable\\3\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaNegocio\\CN_Venta.cs",
-              "RelativeToolTip": "CapaNegocio\\CN_Venta.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwBUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:04:30.608Z"
             }
           ]
         }

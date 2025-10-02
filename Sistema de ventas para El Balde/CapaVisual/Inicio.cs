@@ -247,5 +247,10 @@ namespace CapaVisual
             ActivarBoton(btnAcercaDe);
 
         }
+
+        private void frmInicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

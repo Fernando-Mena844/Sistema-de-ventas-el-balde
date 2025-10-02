@@ -101,3 +101,22 @@ C:\Users\ferme\OneDrive\Documentos\Versiones del ejecutable\3\Sistema-de-ventas-
 C:\Users\ferme\OneDrive\Documentos\Versiones del ejecutable\3\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\ferme\OneDrive\Documentos\Versiones del ejecutable\3\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\ferme\OneDrive\Documentos\Versiones del ejecutable\3\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Buffers.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Memory.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Buffers.xml
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Memory.xml
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaDatos\obj\Debug\CapaDatos.pdb

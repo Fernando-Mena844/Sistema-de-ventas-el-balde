@@ -187,7 +187,7 @@ namespace CapaVisual
             txtFechaD.Text = string.Empty;
             txtNumeroDocumentoProveedorD.Text = string.Empty;
             txtRazonSocialD.Text = string.Empty;
-            cmbTipoDocumentoD.SelectedIndex = -1;
+            txtTipoDocumentoCompraDetalle.Text = string.Empty;
             txtMontoTotalD.Text = "0.00";
             dgvDetalleCompra.Rows.Clear();
         }
@@ -381,7 +381,7 @@ namespace CapaVisual
             {
                 txtNumeroDocumentoProveedorD.Text = oCompra.oProveedor.documentoProveedor;
                 txtFechaD.Text = oCompra.FechaRegistro;
-                cmbTipoDocumentoD.SelectedIndex = cmbTipoDocumentoD.FindStringExact(oCompra.oTipoDocumentoCompra.NombreDocumentoCompra);
+                txtTipoDocumentoCompraDetalle.Text = oCompra.oTipoDocumentoCompra.NombreDocumentoCompra;
                 txtRazonSocialD.Text = oCompra.oProveedor.razonSocialProveedor;
                 dgvDetalleCompra.Rows.Clear();
                 if (oCompra.oDetalleCompra != null && oCompra.oDetalleCompra.Count > 0)
@@ -408,7 +408,7 @@ namespace CapaVisual
         {
             txtFechaD.Text = "";
             txtNumeroDocumentoProveedorD.Text = "";
-            cmbTipoDocumentoD.SelectedIndex = -1;
+            txtTipoDocumentoCompraDetalle.Text=string.Empty;
             txtRazonSocialD.Text = "";
 
             dgvDetalleCompra.Rows.Clear();
@@ -433,7 +433,7 @@ namespace CapaVisual
                 Texto_Html = Texto_Html.Replace("@docnegocio", odatos.NitDatoNegocio);
                 Texto_Html = Texto_Html.Replace("@direccionnegocio", odatos.ubicacionNegocio);
 
-                Texto_Html = Texto_Html.Replace("@tipodocumento", cmbTipoDocumentoD.Text);
+                Texto_Html = Texto_Html.Replace("@tipodocumento", txtTipoDocumentoCompraDetalle.Text);
                 Texto_Html = Texto_Html.Replace("@numerodocumento", numeroDocumento);
 
                 Texto_Html = Texto_Html.Replace("@docproveedor", txtNumeroDocumentoProveedorD.Text);
@@ -511,15 +511,6 @@ namespace CapaVisual
                 MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             limpiarDocumento();
-        }
-
-        private void tabControl1_Layout(object sender, LayoutEventArgs e)
-        {
-            cmbTipoDocumentoD.Items.Add(new OpcionCombos() { Valor = "Boleta", Texto = "Boleta" });
-            cmbTipoDocumentoD.Items.Add(new OpcionCombos() { Valor = "Factura", Texto = "Factura" });
-            cmbTipoDocumentoD.DisplayMember = "Texto";
-            cmbTipoDocumentoD.ValueMember = "Valor";
-            cmbTipoDocumentoD.SelectedIndex = 0;
         }
 
         private void txtBuscarD_KeyPress(object sender, KeyPressEventArgs e)

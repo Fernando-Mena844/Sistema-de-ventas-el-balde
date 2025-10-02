@@ -202,6 +202,7 @@
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtTelefono.Location = new System.Drawing.Point(7, 196);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.MaxLength = 9;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.ShortcutsEnabled = false;
             this.txtTelefono.Size = new System.Drawing.Size(121, 21);
@@ -213,6 +214,7 @@
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtCorreo.Location = new System.Drawing.Point(7, 155);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCorreo.MaxLength = 50;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.ShortcutsEnabled = false;
             this.txtCorreo.Size = new System.Drawing.Size(121, 21);
@@ -223,6 +225,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtNombre.Location = new System.Drawing.Point(7, 114);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.MaxLength = 100;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ShortcutsEnabled = false;
             this.txtNombre.Size = new System.Drawing.Size(121, 21);
@@ -234,6 +237,7 @@
             this.txtNroDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtNroDocumento.Location = new System.Drawing.Point(7, 73);
             this.txtNroDocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNroDocumento.MaxLength = 10;
             this.txtNroDocumento.Name = "txtNroDocumento";
             this.txtNroDocumento.ShortcutsEnabled = false;
             this.txtNroDocumento.Size = new System.Drawing.Size(121, 21);

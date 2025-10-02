@@ -361,6 +361,7 @@ namespace CapaVisual
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmInicio_FormClosing);
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.gbEncabezado.ResumeLayout(false);
             this.gbEncabezado.PerformLayout();

@@ -39,7 +39,7 @@
             this.lblDetallesCategoria = new System.Windows.Forms.Label();
             this.btnBorrarBusqueda = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlCategoria = new System.Windows.Forms.Panel();
             this.txtBusca = new System.Windows.Forms.TextBox();
             this.lblBusca = new System.Windows.Forms.Label();
             this.lblCategorias = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDetallesUsuario = new System.Windows.Forms.Panel();
-            this.panel2.SuspendLayout();
+            this.pnlCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.pnlDetallesUsuario.SuspendLayout();
             this.SuspendLayout();
@@ -155,21 +155,21 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // panel2
+            // pnlCategoria
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnBorrarBusqueda);
-            this.panel2.Controls.Add(this.btnBuscar);
-            this.panel2.Controls.Add(this.txtBusca);
-            this.panel2.Controls.Add(this.cmbBusca);
-            this.panel2.Controls.Add(this.lblBusca);
-            this.panel2.Controls.Add(this.lblCategorias);
-            this.panel2.Location = new System.Drawing.Point(151, 11);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(641, 73);
-            this.panel2.TabIndex = 6;
+            this.pnlCategoria.BackColor = System.Drawing.Color.White;
+            this.pnlCategoria.Controls.Add(this.btnBorrarBusqueda);
+            this.pnlCategoria.Controls.Add(this.btnBuscar);
+            this.pnlCategoria.Controls.Add(this.txtBusca);
+            this.pnlCategoria.Controls.Add(this.cmbBusca);
+            this.pnlCategoria.Controls.Add(this.lblBusca);
+            this.pnlCategoria.Controls.Add(this.lblCategorias);
+            this.pnlCategoria.Location = new System.Drawing.Point(151, 11);
+            this.pnlCategoria.Name = "pnlCategoria";
+            this.pnlCategoria.Size = new System.Drawing.Size(641, 73);
+            this.pnlCategoria.TabIndex = 6;
             // 
             // txtBusca
             // 
@@ -254,6 +254,7 @@
             // 
             this.txtNombreCategoria.Location = new System.Drawing.Point(7, 104);
             this.txtNombreCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreCategoria.MaxLength = 100;
             this.txtNombreCategoria.Name = "txtNombreCategoria";
             this.txtNombreCategoria.ShortcutsEnabled = false;
             this.txtNombreCategoria.Size = new System.Drawing.Size(121, 20);
@@ -387,14 +388,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlCategoria);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.pnlDetallesUsuario);
             this.Name = "frmCategoria";
             this.Text = "frmCategoria";
             this.Load += new System.EventHandler(this.frmCategoria_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlCategoria.ResumeLayout(false);
+            this.pnlCategoria.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
             this.pnlDetallesUsuario.ResumeLayout(false);
             this.pnlDetallesUsuario.PerformLayout();
@@ -412,7 +413,7 @@
         private System.Windows.Forms.Label lblDetallesCategoria;
         private System.Windows.Forms.Button btnBorrarBusqueda;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlCategoria;
         private System.Windows.Forms.TextBox txtBusca;
         private System.Windows.Forms.Label lblBusca;
         private System.Windows.Forms.Label lblCategorias;
