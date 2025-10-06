@@ -56,10 +56,17 @@ namespace CapaVisual
 
                 if (IdGenerado != 0)
                 {
-                    dgvClientes.Rows.Add(new object[] { "", IdGenerado, txtNroDocumento.Text, txtNombre.Text, txtCorreo.Text, txtTelefono.Text,
-            ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
-            ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
-            });
+                    dgvClientes.Rows.Add(new object[]
+                    {
+                        "", // btnseleccionar
+                        IdGenerado, // idCliente
+                        txtNroDocumento.Text,
+                        txtNombre.Text,
+                        txtCorreo.Text,
+                        txtTelefono.Text,
+                        ((OpcionCombos)cmbEstado.SelectedItem).Valor.ToString(),
+                        ((OpcionCombos)cmbEstado.SelectedItem).Texto.ToString()
+                    });
                     Limpiar();
                 }
                 else
@@ -74,7 +81,7 @@ namespace CapaVisual
                 if (resultado)
                 {
                     DataGridViewRow row = dgvClientes.Rows[Convert.ToInt32(txtIndice.Text)];
-                    row.Cells["id"].Value = txtid.Text;
+                    row.Cells["idCliente"].Value = txtid.Text;
                     row.Cells["NroDocumento"].Value = txtNroDocumento.Text;
                     row.Cells["Nombre"].Value = txtNombre.Text;
                     row.Cells["Correo"].Value = txtCorreo.Text;
@@ -169,7 +176,7 @@ namespace CapaVisual
                     {
                         foreach (DataGridViewRow row in dgvClientes.Rows)
                         {
-                            if (row.Cells["id"].Value != null && row.Cells["id"].Value.ToString() == txtid.Text)
+                            if (row.Cells["idCliente"].Value != null && row.Cells["idCliente"].Value.ToString() == txtid.Text)
                             {
                                 dgvClientes.Rows.Remove(row);
                                 break;
@@ -179,7 +186,14 @@ namespace CapaVisual
                     }
                     else
                     {
-                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        if (mensaje == string.Empty)
+                        {
+                            MessageBox.Show("Recarga el formulario.", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                        else
+                        {
+                            MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
                     }
                 }
             }
@@ -223,7 +237,8 @@ namespace CapaVisual
                 if (indice >= 0)
                 {
                     txtIndice.Text = indice.ToString();
-                    txtid.Text = dgvClientes.Rows[indice].Cells["id"].Value.ToString();
+                    txtid.Text = dgvClientes.Rows[indice].Cells["idCliente"].Value.ToString();
+                    Console.WriteLine($"Valor del ID: {dgvClientes.Rows[indice].Cells["idCliente"].Value}");
                     txtNroDocumento.Text = dgvClientes.Rows[indice].Cells["NroDocumento"].Value.ToString();
                     txtNombre.Text = dgvClientes.Rows[indice].Cells["Nombre"].Value.ToString();
                     txtCorreo.Text = dgvClientes.Rows[indice].Cells["Correo"].Value.ToString();
@@ -246,6 +261,7 @@ namespace CapaVisual
             Limpiar();
         }
 
+        #region Validaciones
         private void txtNroDocumento_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
@@ -289,5 +305,6 @@ namespace CapaVisual
                 txtTelefono.Clear();
             }
         }
+        #endregion
     }
 }
