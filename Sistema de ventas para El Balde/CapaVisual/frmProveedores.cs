@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaEntidad;
@@ -223,24 +224,6 @@ namespace CapaVisual
             }
         }
 
-        private void txtNroDocumento_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten números y un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtNroDocumento.Clear();
-            }
-
-            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permite un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtNroDocumento.Clear();
-            }
-
-        }
-
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
@@ -255,6 +238,17 @@ namespace CapaVisual
                 e.Handled = true;
                 MessageBox.Show("Solo se permite un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtNroDocumento.Clear();
+            }
+        }
+
+        private void txtNroDocumento_Leave(object sender, EventArgs e)
+        {
+            string patron = @"^\d{8}-\d{1}$";
+            if (!Regex.IsMatch(txtNroDocumento.Text, patron))
+            {
+                MessageBox.Show("El formato debe ser 00000000-0", "Formato inválido",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNroDocumento.Focus();
             }
         }
     }

@@ -19,7 +19,7 @@ namespace CapaVisual
 
         private void btnDescargarPDF_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://docs.google.com/document/d/1250OKzD4h1y5Ele_6JVlRnCa7S4-o1VMt0RfSkNC_J4/edit?usp=sharing");
+            System.Diagnostics.Process.Start("https://drive.google.com/file/d/1sHsd5hQkn-uErxoX_fXjcni1YvydB_UA/view?usp=drive_link");
         }
     }
 }

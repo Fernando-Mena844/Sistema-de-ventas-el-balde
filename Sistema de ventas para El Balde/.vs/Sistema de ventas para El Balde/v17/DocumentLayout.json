@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\capavisual\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmacercade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmproveedores.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmproveedores.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\capavisual\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\capavisual\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|c:\\users\\ferme\\documentos\\colegio\\rical\\ptc\\sistema-de-ventas-el-balde\\sistema de ventas para el balde\\capavisual\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DC943DA-75BE-4FF5-A6BA-1C9EC84083DD}|CapaVisual\\CapaVisual.csproj|solutionrelative:capavisual\\frmnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,64 +66,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inicio.cs",
-              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Inicio.cs",
-              "RelativeDocumentMoniker": "CapaVisual\\Inicio.cs",
-              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Inicio.cs",
-              "RelativeToolTip": "CapaVisual\\Inicio.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDkAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmAcercaDe.cs",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmAcercaDe.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmAcercaDe.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmAcercaDe.cs",
+              "RelativeToolTip": "CapaVisual\\frmAcercaDe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T14:48:35.388Z",
+              "WhenOpened": "2025-10-08T05:34:42.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Inicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Inicio.cs",
-              "RelativeDocumentMoniker": "CapaVisual\\Inicio.cs",
-              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Inicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CapaVisual\\Inicio.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "frmAcercaDe.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmAcercaDe.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmAcercaDe.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmAcercaDe.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVisual\\frmAcercaDe.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T14:48:30.399Z",
+              "WhenOpened": "2025-10-08T05:34:40.291Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmVentas.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmVentas.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmVentas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVisual\\frmVentas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T03:25:41.367Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmProveedores.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.Designer.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmProveedores.Designer.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.Designer.cs",
+              "RelativeToolTip": "CapaVisual\\frmProveedores.Designer.cs",
+              "ViewState": "AgIAAJkBAAAAAAAAAAAUwLQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T03:24:00.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "frmProveedores.cs",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmProveedores.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.cs",
+              "RelativeToolTip": "CapaVisual\\frmProveedores.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAjwPsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T03:23:54.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frmProveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.cs",
               "RelativeDocumentMoniker": "CapaVisual\\frmProveedores.cs",
               "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaVisual\\frmProveedores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T03:24:08.377Z"
+              "WhenOpened": "2025-10-08T03:23:48.818Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "frmClientes.cs",
               "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmClientes.cs",
               "RelativeDocumentMoniker": "CapaVisual\\frmClientes.cs",
               "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmClientes.cs",
               "RelativeToolTip": "CapaVisual\\frmClientes.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAowLMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAWwC8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T02:54:27.018Z",
+              "WhenOpened": "2025-10-08T03:20:48.86Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmProveedores.cs",
-              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.cs",
-              "RelativeDocumentMoniker": "CapaVisual\\frmProveedores.cs",
-              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmProveedores.cs",
-              "RelativeToolTip": "CapaVisual\\frmProveedores.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAASwJgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T03:21:52.462Z"
             },
             {
               "$type": "Document",
@@ -126,31 +161,33 @@
               "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmClientes.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaVisual\\frmClientes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T02:54:25.749Z",
+              "WhenOpened": "2025-10-08T03:20:36.565Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Login.cs",
-              "RelativeDocumentMoniker": "CapaVisual\\Login.cs",
-              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Login.cs",
-              "RelativeToolTip": "CapaVisual\\Login.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAawC4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "frmNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmNegocio.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmNegocio.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmNegocio.cs",
+              "RelativeToolTip": "CapaVisual\\frmNegocio.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAWwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T16:22:50.518Z"
+              "WhenOpened": "2025-10-08T03:20:15.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Login.cs",
-              "RelativeDocumentMoniker": "CapaVisual\\Login.cs",
-              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CapaVisual\\Login.cs [Dise\u00F1o]",
+              "DocumentIndex": 9,
+              "Title": "frmNegocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmNegocio.cs",
+              "RelativeDocumentMoniker": "CapaVisual\\frmNegocio.cs",
+              "ToolTip": "C:\\Users\\ferme\\Documentos\\Colegio\\Rical\\PTC\\Sistema-de-ventas-el-balde\\Sistema de ventas para El Balde\\CapaVisual\\frmNegocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVisual\\frmNegocio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T16:22:45.224Z"
+              "WhenOpened": "2025-10-08T03:20:09.303Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

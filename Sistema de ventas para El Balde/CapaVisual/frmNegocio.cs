@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Text.RegularExpressions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -87,20 +88,14 @@ namespace CapaVisual
             }
         }
 
-        private void txtNIT_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtNIT_Leave(object sender, EventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
+            string patron = @"^\d{4}-\d{6}-\d{3}-\d{1}$";
+            if (!Regex.IsMatch(txtNIT.Text, patron))
             {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten números y un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtNIT.Clear();
-            }
-
-            if (e.KeyChar == '-' && (sender as TextBox).Text.Contains("-"))
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permite un guion (-)", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtNIT.Clear();
+                MessageBox.Show("El formato debe ser 0000-000000-000-0", "Formato inválido",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNIT.Focus();
             }
         }
     }
