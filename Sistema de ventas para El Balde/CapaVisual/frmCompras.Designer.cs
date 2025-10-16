@@ -39,6 +39,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtcantidad = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
+            this.lblPrecioVenta = new System.Windows.Forms.Label();
+            this.txtPrecioVenta = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtpreciocompra = new System.Windows.Forms.TextBox();
             this.txtidproducto = new System.Windows.Forms.TextBox();
@@ -126,6 +128,7 @@
             this.tbcCompra.SelectedIndex = 0;
             this.tbcCompra.Size = new System.Drawing.Size(886, 560);
             this.tbcCompra.TabIndex = 6;
+            this.tbcCompra.Deselected += new System.Windows.Forms.TabControlEventHandler(this.tbcCompra_Deselected);
             // 
             // tpRegistroCompra
             // 
@@ -162,6 +165,8 @@
             // 
             this.groupBox1.Controls.Add(this.txtcantidad);
             this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.lblPrecioVenta);
+            this.groupBox1.Controls.Add(this.txtPrecioVenta);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtpreciocompra);
             this.groupBox1.Controls.Add(this.txtidproducto);
@@ -208,6 +213,26 @@
             this.label12.Size = new System.Drawing.Size(56, 15);
             this.label12.TabIndex = 12;
             this.label12.Text = "Cantidad";
+            // 
+            // lblPrecioVenta
+            // 
+            this.lblPrecioVenta.AutoSize = true;
+            this.lblPrecioVenta.Location = new System.Drawing.Point(394, 30);
+            this.lblPrecioVenta.Name = "lblPrecioVenta";
+            this.lblPrecioVenta.Size = new System.Drawing.Size(76, 15);
+            this.lblPrecioVenta.TabIndex = 10;
+            this.lblPrecioVenta.Text = "Precio Venta";
+            // 
+            // txtPrecioVenta
+            // 
+            this.txtPrecioVenta.Location = new System.Drawing.Point(394, 46);
+            this.txtPrecioVenta.Name = "txtPrecioVenta";
+            this.txtPrecioVenta.ReadOnly = true;
+            this.txtPrecioVenta.ShortcutsEnabled = false;
+            this.txtPrecioVenta.Size = new System.Drawing.Size(103, 21);
+            this.txtPrecioVenta.TabIndex = 0;
+            this.txtPrecioVenta.TabStop = false;
+            this.txtPrecioVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpreciocompra_KeyPress);
             // 
             // label10
             // 
@@ -962,5 +987,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotalD;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.TextBox txtTipoDocumentoCompraDetalle;
+        private System.Windows.Forms.Label lblPrecioVenta;
+        private System.Windows.Forms.TextBox txtPrecioVenta;
     }
 }

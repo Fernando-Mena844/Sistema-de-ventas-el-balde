@@ -47,9 +47,21 @@ namespace CapaVisual
 
             foreach (Producto item in listaProducto)
             {
-                dgvProductos.Rows.Add(new object[] { "", item.IdProducto, item.codigoProducto, item.nombreProducto, item.descripcionProducto, item.oCategoria.descripcionCategoria,item.oCategoria.IdCategoria, item.oProveedor.razonSocialProveedor, item.oProveedor.IdProveedor,item.Stock, item.PrecioCompra, item.PrecioVenta,
-                item.Estado == true ? "Activo" : "No Activo",
-                item.Estado == true ? 1 : 0,
+                dgvProductos.Rows.Add(new object[] { 
+                    "", 
+                    item.IdProducto, 
+                    item.codigoProducto, 
+                    item.nombreProducto, 
+                    item.descripcionProducto, 
+                    item.oCategoria.descripcionCategoria,
+                    item.oCategoria.IdCategoria, 
+                    item.oProveedor.razonSocialProveedor, 
+                    item.oProveedor.IdProveedor,
+                    item.Stock, 
+                    item.PrecioCompra, 
+                    item.PrecioVenta,
+                    item.Estado == true ? "Activo" : "No Activo",
+                    item.Estado == true ? 1 : 0,
                 });
             }
 
@@ -199,6 +211,30 @@ namespace CapaVisual
                         MessageBox.Show(mensaje);
                     }
             }
+            dgvProductos.Rows.Clear();
+            List<Producto> listaProducto = new CN_Producto().Listar();
+
+            foreach (Producto item in listaProducto)
+            {
+                dgvProductos.Rows.Add(new object[] {
+                    "",
+                    item.IdProducto,
+                    item.codigoProducto,
+                    item.nombreProducto,
+                    item.descripcionProducto,
+                    item.oCategoria.descripcionCategoria,
+                    item.oCategoria.IdCategoria,
+                    item.oProveedor.razonSocialProveedor,
+                    item.oProveedor.IdProveedor,
+                    item.Stock,
+                    item.PrecioCompra,
+                    item.PrecioVenta,
+                    item.Estado == true ? "Activo" : "No Activo",
+                    item.Estado == true ? 1 : 0,
+                });
+            }
+
+
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -293,7 +329,7 @@ namespace CapaVisual
                     }
                 }
             }
-
+            Limpiar();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

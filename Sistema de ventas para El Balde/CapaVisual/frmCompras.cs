@@ -91,6 +91,7 @@ namespace CapaVisual
                     txtidproducto.Text = modal._Producto.IdProducto.ToString();
                     txtcodproducto.Text = modal._Producto.codigoProducto;
                     txtproducto.Text = modal._Producto.nombreProducto;
+                    txtPrecioVenta.Text = modal._Producto.PrecioVenta.ToString();
                     txtpreciocompra.Text=modal._Producto.PrecioCompra.ToString();
                     txtcantidad.Select();
                 }
@@ -199,6 +200,7 @@ namespace CapaVisual
             txtcodproducto.Text = "";
             txtcodproducto.BackColor = System.Drawing.Color.White;
             txtproducto.Text = "";
+            txtPrecioVenta.Text = "0.00";
             txtpreciocompra.Text = "0.00";
             txtcantidad.Value = 1;
         }
@@ -406,6 +408,7 @@ namespace CapaVisual
 
         private void btnBorrarD_Click(object sender, EventArgs e)
         {
+            txtBuscarD.Text = string.Empty;
             txtFechaD.Text = "";
             txtNumeroDocumentoProveedorD.Text = "";
             txtTipoDocumentoCompraDetalle.Text=string.Empty;
@@ -522,5 +525,41 @@ namespace CapaVisual
                 txtBuscarD.Clear();
             }
         }
+
+        private void tbcCompra_Deselected(object sender, TabControlEventArgs e)
+        {
+            if (e.TabPage != null)
+            {
+                LimpiarPestaña(e.TabPage);
+            }
+        }
+
+        private void LimpiarPestaña(TabPage tabPage)
+        {
+            switch (tabPage.Name)
+            {
+                case "tpRegistroCompra":
+                    dgvdata.Rows.Clear();
+                    calcularTotal();
+                    txtidproveedor.Text = "0";
+                    txtdocproveedor.Text = "";
+                    txtRazonsocial.Text = "";
+                    txtFechaC.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                    cbotipodocumento.SelectedIndex = 0;
+                    break;
+                case "tpDetalleCompra":
+                    txtBuscarD.Text = string.Empty;
+                    txtFechaD.Text = "";
+                    txtNumeroDocumentoProveedorD.Text = "";
+                    txtTipoDocumentoCompraDetalle.Text = string.Empty;
+                    txtRazonSocialD.Text = "";
+                    dgvDetalleCompra.Rows.Clear();
+                    txtMontoTotalD.Text = "0.00";
+                    break;
+                default:
+                    break;
+            }
+        }
+
     }
 }

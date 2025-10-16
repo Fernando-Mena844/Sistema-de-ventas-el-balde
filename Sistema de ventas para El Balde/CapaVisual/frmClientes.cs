@@ -293,14 +293,16 @@ namespace CapaVisual
 
         private void txtNroDocumento_Leave(object sender, EventArgs e)
         {
-            string patron = @"^\d{8}-\d{1}$";
-            if (!Regex.IsMatch(txtNroDocumento.Text, patron))
+            if (Convert.ToInt32(txtid.Text) != 0)
             {
-                MessageBox.Show("El formato debe ser 00000000-0", "Formato inválido",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNroDocumento.Focus();
+                string patron = @"^\d{8}-\d{1}$";
+                if (!Regex.IsMatch(txtNroDocumento.Text, patron))
+                {
+                    MessageBox.Show("El formato debe ser 00000000-0", "Formato inválido",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //txtNroDocumento.Focus();
+                }
             }
-
         }
     }
 }

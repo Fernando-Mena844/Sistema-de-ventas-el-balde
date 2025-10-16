@@ -152,6 +152,17 @@ namespace CapaVisual
                 }
 
             }
+            dgvUsuarios.Rows.Clear();
+            List<Usuario> listaUsuario = new CN_Usuario().Listar();
+            foreach (Usuario item in listaUsuario)
+            {
+                dgvUsuarios.Rows.Add(new object[] { "", item.IdUsuario, item.DocumentoUsuario, item.NombreCompletoUsuario, item.correoUsuario, "******",
+            item.oRol.IdRol,
+            item.oRol.Descripcion,
+            item.Estado == true ? 1 : 0,
+            item.Estado == true ? "Activo" : "No Activo"
+                });
+            }
         }
 
         private void Limpiar()

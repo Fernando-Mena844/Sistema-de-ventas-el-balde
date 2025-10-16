@@ -441,7 +441,14 @@ namespace CapaVisual
 
             if (respuesta)
             {
-                var result = MessageBox.Show("Número de compra: " + numeroDocumento + "\n¿Desea copiarlo al portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (Convert.ToDecimal(txtPagaCon.Text) < Convert.ToDecimal(txtTotalPagar.Text))
+                {
+                    MessageBox.Show("El pago es menor al total a pagar.\nPor favor, ingrese un monto válido.", "Monto no válido", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    txtPagaCon.Select();
+                    txtCambio.Text = string.Empty;
+                    return;
+                }
+                var result = MessageBox.Show("Número de venta: " + numeroDocumento + "\n¿Desea copiarlo al portapapeles?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                     Clipboard.SetText(numeroDocumento);
@@ -600,6 +607,38 @@ namespace CapaVisual
                 MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             btnBorrarD_Click_1(sender, e);
+        }
+
+        private void tbcVentas_Deselected(object sender, TabControlEventArgs e)
+        {
+            // Se ejecuta cuando una pestaña pierde el foco (antes de cambiar)
+            if (e.TabPage != null)
+            {
+                LimpiarPestaña(e.TabPage);
+            }
+        }
+
+        private void LimpiarPestaña(TabPage tabPage)
+        {
+            // Identificar qué pestaña es por su nombre o tag
+            switch (tabPage.Name)
+            {
+                case "tpRegistrarVenta":
+                    limpiarRegistroVenta();
+                    break;
+                case "tpVerDetalleVenta":
+                    txtBuscarD.Text = string.Empty;
+                    txtFechaD.Text = string.Empty;
+                    txtTipoDocumentoVentaDetalle.Text = string.Empty;
+                    txtIdClienteDetalle.Text = string.Empty;
+                    txtNumeroDocumentoCliente.Text = string.Empty;
+                    txtNombreClienteDocumentoVenta.Text = string.Empty;
+                    dgvDetalleVenta.Rows.Clear();
+                    txtMontoTotalD.Text = string.Empty;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
