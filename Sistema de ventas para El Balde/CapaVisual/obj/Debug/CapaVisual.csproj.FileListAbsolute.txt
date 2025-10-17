@@ -40,7 +40,6 @@ C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema d
 C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.csproj.AssemblyReference.cache
-C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\Sistema de Ventas.exe.config
 C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmAcercaDe.resources
 C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmCategoria.resources
 C:\Users\ferme\Documentos\Colegio\Rical\PTC\Sistema-de-ventas-el-balde\Sistema de ventas para El Balde\CapaVisual\obj\Debug\CapaVisual.frmClientes.resources

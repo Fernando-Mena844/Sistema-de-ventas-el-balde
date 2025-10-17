@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{F6F992E5-9706-4FD1-8E8D-D87581D4F8A0}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupSistemaVentas", "SetupSistemaVentas\SetupSistemaVentas.vdproj", "{DF68A5F1-C94D-AA45-B68E-680561BE36C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,8 @@ Global
 		{F6F992E5-9706-4FD1-8E8D-D87581D4F8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6F992E5-9706-4FD1-8E8D-D87581D4F8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6F992E5-9706-4FD1-8E8D-D87581D4F8A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF68A5F1-C94D-AA45-B68E-680561BE36C9}.Debug|Any CPU.ActiveCfg = Debug
+		{DF68A5F1-C94D-AA45-B68E-680561BE36C9}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

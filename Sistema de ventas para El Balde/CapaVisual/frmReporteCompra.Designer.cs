@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtProveedor = new System.Windows.Forms.TextBox();
@@ -66,9 +66,10 @@
             // 
             this.dtpFechaInicio.CustomFormat = "dd/MM/yyyy";
             this.dtpFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaInicio.Location = new System.Drawing.Point(87, 43);
+            this.dtpFechaInicio.Location = new System.Drawing.Point(174, 83);
+            this.dtpFechaInicio.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(104, 21);
+            this.dtpFechaInicio.Size = new System.Drawing.Size(204, 21);
             this.dtpFechaInicio.TabIndex = 0;
             this.dtpFechaInicio.ValueChanged += new System.EventHandler(this.dtpFechaInicio_ValueChanged);
             // 
@@ -87,19 +88,20 @@
             this.panel1.Controls.Add(this.dtpFechaFin);
             this.panel1.Controls.Add(this.dtpFechaInicio);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.panel1.Location = new System.Drawing.Point(22, 12);
+            this.panel1.Location = new System.Drawing.Point(44, 23);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(756, 82);
+            this.panel1.Size = new System.Drawing.Size(1512, 158);
             this.panel1.TabIndex = 1;
             // 
             // txtProveedor
             // 
-            this.txtProveedor.Location = new System.Drawing.Point(481, 9);
-            this.txtProveedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProveedor.Location = new System.Drawing.Point(962, 17);
+            this.txtProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.ReadOnly = true;
             this.txtProveedor.ShortcutsEnabled = false;
-            this.txtProveedor.Size = new System.Drawing.Size(138, 21);
+            this.txtProveedor.Size = new System.Drawing.Size(272, 21);
             this.txtProveedor.TabIndex = 20;
             this.txtProveedor.Text = "TODOS";
             // 
@@ -108,9 +110,10 @@
             this.btnBuscarProveedor.BackColor = System.Drawing.Color.LightGray;
             this.btnBuscarProveedor.Image = global::CapaVisual.Properties.Resources.Search;
             this.btnBuscarProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarProveedor.Location = new System.Drawing.Point(622, 7);
+            this.btnBuscarProveedor.Location = new System.Drawing.Point(1244, 13);
+            this.btnBuscarProveedor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnBuscarProveedor.Name = "btnBuscarProveedor";
-            this.btnBuscarProveedor.Size = new System.Drawing.Size(121, 23);
+            this.btnBuscarProveedor.Size = new System.Drawing.Size(242, 44);
             this.btnBuscarProveedor.TabIndex = 8;
             this.btnBuscarProveedor.Text = "Buscar proveedor";
             this.btnBuscarProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -122,11 +125,12 @@
             this.btnbuscarresultado.BackColor = System.Drawing.Color.LightGray;
             this.btnbuscarresultado.Image = global::CapaVisual.Properties.Resources.Search;
             this.btnbuscarresultado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbuscarresultado.Location = new System.Drawing.Point(622, 44);
+            this.btnbuscarresultado.Location = new System.Drawing.Point(1244, 85);
+            this.btnbuscarresultado.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnbuscarresultado.Name = "btnbuscarresultado";
-            this.btnbuscarresultado.Size = new System.Drawing.Size(103, 23);
+            this.btnbuscarresultado.Size = new System.Drawing.Size(206, 44);
             this.btnbuscarresultado.TabIndex = 7;
-            this.btnbuscarresultado.Text = "Buscar ventas";
+            this.btnbuscarresultado.Text = "Buscar compras";
             this.btnbuscarresultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscarresultado.UseVisualStyleBackColor = false;
             this.btnbuscarresultado.Click += new System.EventHandler(this.btnbuscarresultado_Click);
@@ -134,7 +138,8 @@
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
-            this.lblProveedor.Location = new System.Drawing.Point(413, 11);
+            this.lblProveedor.Location = new System.Drawing.Point(826, 21);
+            this.lblProveedor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblProveedor.Name = "lblProveedor";
             this.lblProveedor.Size = new System.Drawing.Size(66, 15);
             this.lblProveedor.TabIndex = 5;
@@ -143,7 +148,8 @@
             // lblFechafin
             // 
             this.lblFechafin.AutoSize = true;
-            this.lblFechafin.Location = new System.Drawing.Point(210, 47);
+            this.lblFechafin.Location = new System.Drawing.Point(420, 90);
+            this.lblFechafin.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblFechafin.Name = "lblFechafin";
             this.lblFechafin.Size = new System.Drawing.Size(60, 15);
             this.lblFechafin.TabIndex = 4;
@@ -152,7 +158,8 @@
             // lblFechaInicio
             // 
             this.lblFechaInicio.AutoSize = true;
-            this.lblFechaInicio.Location = new System.Drawing.Point(13, 47);
+            this.lblFechaInicio.Location = new System.Drawing.Point(26, 90);
+            this.lblFechaInicio.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblFechaInicio.Name = "lblFechaInicio";
             this.lblFechaInicio.Size = new System.Drawing.Size(76, 15);
             this.lblFechaInicio.TabIndex = 3;
@@ -163,6 +170,7 @@
             this.lblReporteCompras.AutoSize = true;
             this.lblReporteCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReporteCompras.Location = new System.Drawing.Point(0, 0);
+            this.lblReporteCompras.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblReporteCompras.Name = "lblReporteCompras";
             this.lblReporteCompras.Size = new System.Drawing.Size(200, 24);
             this.lblReporteCompras.TabIndex = 2;
@@ -172,9 +180,10 @@
             // 
             this.dtpFechaFin.CustomFormat = "dd/MM/yyyy";
             this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaFin.Location = new System.Drawing.Point(270, 43);
+            this.dtpFechaFin.Location = new System.Drawing.Point(540, 83);
+            this.dtpFechaFin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dtpFechaFin.Name = "dtpFechaFin";
-            this.dtpFechaFin.Size = new System.Drawing.Size(104, 21);
+            this.dtpFechaFin.Size = new System.Drawing.Size(204, 21);
             this.dtpFechaFin.TabIndex = 1;
             this.dtpFechaFin.ValueChanged += new System.EventHandler(this.dtpFechaFin_ValueChanged);
             // 
@@ -187,9 +196,10 @@
             this.panel2.Controls.Add(this.btnExportar);
             this.panel2.Controls.Add(this.dgvdata);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.panel2.Location = new System.Drawing.Point(22, 100);
+            this.panel2.Location = new System.Drawing.Point(44, 192);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(756, 338);
+            this.panel2.Size = new System.Drawing.Size(1512, 650);
             this.panel2.TabIndex = 2;
             // 
             // btnExportar
@@ -197,9 +207,10 @@
             this.btnExportar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportar.Image = global::CapaVisual.Properties.Resources.Excel2;
             this.btnExportar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportar.Location = new System.Drawing.Point(622, 22);
+            this.btnExportar.Location = new System.Drawing.Point(1244, 42);
+            this.btnExportar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(131, 46);
+            this.btnExportar.Size = new System.Drawing.Size(262, 88);
             this.btnExportar.TabIndex = 14;
             this.btnExportar.Text = "Descargar";
             this.btnExportar.UseVisualStyleBackColor = true;
@@ -214,14 +225,14 @@
             this.dgvdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvdata.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgvdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FechaRegistro,
@@ -238,18 +249,19 @@
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvdata.Location = new System.Drawing.Point(3, 85);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvdata.Location = new System.Drawing.Point(6, 163);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.RowHeadersWidth = 51;
-            this.dgvdata.Size = new System.Drawing.Size(750, 250);
+            this.dgvdata.Size = new System.Drawing.Size(1500, 481);
             this.dgvdata.TabIndex = 6;
             // 
             // FechaRegistro
@@ -338,11 +350,12 @@
             // 
             // frmReporteCompra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmReporteCompra";
             this.Text = "frmReporteCompra";
             this.Load += new System.EventHandler(this.frmReporteCompra_Load);
